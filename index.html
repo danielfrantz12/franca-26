@@ -1,0 +1,2436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>França Junho 2026 · Guia Completo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #c8a96e;
+  --champagne: #f0e6cc;
+  --dark: #0c0a06;
+  --dark2: #141008;
+  --dark3: #1c160c;
+  --border: #2a2010;
+  --wine: #c97eb8;
+  --photo: #7eb8c9;
+  --food: #8a9a6a;
+  --walk: #e8956d;
+  --drive: #9a8a6a;
+  --green: #8a9a6a;
+  --red: #e8956d;
+  --blue: #7eb8c9;
+}
+* { margin:0;padding:0;box-sizing:border-box; }
+body { background:var(--dark);color:var(--champagne);font-family:'Jost',sans-serif;min-height:100vh; }
+
+.app-nav {
+  position:sticky;top:0;z-index:9999;
+  background:#060402;border-bottom:1px solid #c8a96e44;
+  display:flex;align-items:center;
+  overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+.app-nav::-webkit-scrollbar { display:none; }
+.app-nav-brand {
+  padding:0 16px;font-family:'Cormorant Garamond',serif;font-size:14px;
+  color:var(--gold);white-space:nowrap;border-right:1px solid var(--border);
+  height:48px;display:flex;align-items:center;flex-shrink:0;
+}
+.nav-btn {
+  padding:0 16px;height:48px;display:flex;align-items:center;gap:6px;
+  cursor:pointer;border:none;background:transparent;color:#5a4a2a;
+  font-family:'Jost',sans-serif;font-size:11px;font-weight:500;letter-spacing:1px;
+  white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;flex-shrink:0;
+}
+.nav-btn:hover { color:var(--gold);background:#141008; }
+.nav-btn.active { color:var(--gold);border-bottom-color:var(--gold);background:#141008; }
+
+.app-page { display:none; }
+.app-page.active { display:block; }
+
+
+  :root {
+    --gold: #c8a96e;
+    --gold-dim: #7a5a2a;
+    --champagne: #f0e6cc;
+    --dark: #0c0a06;
+    --dark2: #141008;
+    --dark3: #1c160c;
+    --border: #2a2010;
+    --paris: #7eb8c9;
+    --road: #c8a96e;
+    --flight: #e8956d;
+    --rest: #8a9a6a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--dark);
+    color: var(--champagne);
+    font-family: 'Jost', sans-serif;
+    min-height: 100vh;
+    padding: 0 0 80px;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(180deg, #1a1208 0%, #0c0a06 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 40px 24px 32px;
+    text-align: center;
+  }
+  .header-eyebrow {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 300;
+    color: var(--champagne);
+    line-height: 1.1;
+  }
+  .header-sub {
+    color: #6a5a3a;
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+
+  /* SUMMARY PILLS */
+  .summary {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 24px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .pill {
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 1px solid;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  /* LEGEND */
+  .legend {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .leg-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 11px;
+    color: #6a5a3a;
+    letter-spacing: 1px;
+  }
+  .leg-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    max-width: 720px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, var(--border) 5%, var(--border) 95%, transparent);
+  }
+
+  .day-block {
+    display: flex;
+    gap: 0;
+    margin-bottom: 4px;
+  }
+
+  /* LEFT DATE COLUMN */
+  .date-col {
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-top: 18px;
+  }
+  .date-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1;
+    color: #3a2e18;
+  }
+  .date-month {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #2a2010;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .date-weekday {
+    font-size: 9px;
+    color: #2a2010;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* NODE */
+  .node-col {
+    width: 0;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 22px;
+  }
+  .node {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--dark);
+    position: absolute;
+    left: -6px;
+    top: 22px;
+    z-index: 2;
+    flex-shrink: 0;
+  }
+
+  /* CONTENT */
+  .content-col {
+    flex: 1;
+    padding: 14px 0 14px 28px;
+  }
+  .day-type {
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  .day-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--champagne);
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .events {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .event {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: var(--dark2);
+    border-left: 2px solid transparent;
+  }
+  .event-time {
+    font-size: 11px;
+    color: #4a3a1a;
+    white-space: nowrap;
+    min-width: 40px;
+    font-weight: 500;
+    padding-top: 1px;
+    font-variant-numeric: tabular-nums;
+  }
+  .event-icon { font-size: 14px; flex-shrink: 0; }
+  .event-text {
+    font-size: 13px;
+    color: #a89878;
+    line-height: 1.4;
+  }
+  .event-text strong {
+    color: #d0be98;
+    font-weight: 500;
+  }
+  .event-note {
+    font-size: 11px;
+    color: #4a3a1a;
+    font-style: italic;
+    margin-top: 2px;
+  }
+
+  /* TYPE COLORS */
+  .type-flight { color: var(--flight); }
+  .type-paris { color: var(--paris); }
+  .type-road { color: var(--road); }
+  .type-rest { color: var(--rest); }
+
+  .node-flight { background: var(--flight); }
+  .node-paris { background: var(--paris); }
+  .node-road { background: var(--road); }
+  .node-rest { background: var(--rest); }
+
+  .event-flight { border-left-color: var(--flight); background: #1a0e08; }
+  .event-paris { border-left-color: var(--paris); background: #081418; }
+  .event-road { border-left-color: var(--road); background: #141008; }
+  .event-rest { border-left-color: var(--rest); }
+
+  /* SECTION DIVIDER */
+  .section-div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 0 20px 128px;
+    color: #2a2010;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .section-div::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* TOTAL BAR */
+  .total-bar {
+    max-width: 720px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+  }
+  .total-card {
+    background: var(--dark2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 28px 32px;
+  }
+  .total-title {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #4a3a1a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .total-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .total-item {
+    text-align: center;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+  .total-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1;
+  }
+  .total-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #4a3a1a;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  .tips {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .tip {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    color: #6a5a3a;
+    line-height: 1.5;
+  }
+  .tip-icon { flex-shrink: 0; }
+  .tip strong { color: #a08a5a; }
+
+
+  :root {
+    --gold: #c8a96e;
+    --champagne: #f0e6cc;
+    --dark: #0c0a06;
+    --dark2: #141008;
+    --dark3: #1c160c;
+    --border: #2a2010;
+    --wine: #c97eb8;
+    --photo: #7eb8c9;
+    --food: #8a9a6a;
+    --walk: #e8956d;
+    --drive: #9a8a6a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--dark);
+    color: var(--champagne);
+    font-family: 'Jost', sans-serif;
+    min-height: 100vh;
+    padding: 0 0 80px;
+  }
+
+  .header {
+    background: linear-gradient(180deg, #1a1208 0%, #0c0a06 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 36px 24px 28px;
+    text-align: center;
+  }
+  .header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(26px, 5vw, 42px);
+    font-weight: 300;
+  }
+  .header-sub { font-size: 12px; color: #5a4a2a; margin-top: 8px; letter-spacing: 1px; }
+
+  /* DAY TABS */
+  .day-tabs {
+    display: flex;
+    overflow-x: auto;
+    background: var(--dark2);
+    border-bottom: 1px solid var(--border);
+    gap: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .day-tabs::-webkit-scrollbar { display: none; }
+  .day-tab {
+    flex-shrink: 0;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    text-align: center;
+    min-width: 80px;
+  }
+  .day-tab:hover { background: var(--dark3); }
+  .day-tab.active { border-bottom-color: var(--gold); background: var(--dark3); }
+  .day-tab-num { font-size: 10px; color: #4a3a1a; letter-spacing: 2px; }
+  .day-tab-date { font-size: 12px; color: var(--gold); font-weight: 500; margin-top: 2px; }
+  .day-tab-city { font-size: 10px; color: #6a5a3a; margin-top: 2px; }
+
+  /* LEGEND */
+  .legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    background: var(--dark2);
+    border-bottom: 1px solid var(--border);
+    justify-content: center;
+  }
+  .leg { display: flex; align-items: center; gap: 5px; font-size: 10px; color: #5a4a2a; letter-spacing: 1px; }
+  .leg-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+  /* CONTENT */
+  .content { max-width: 700px; margin: 0 auto; padding: 24px 20px 0; }
+
+  .day-panel { display: none; }
+  .day-panel.active { display: block; }
+
+  .day-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .day-badge {
+    background: #1e1810;
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    padding: 8px 14px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .day-badge-num { font-family: 'Cormorant Garamond', serif; font-size: 32px; color: var(--gold); line-height: 1; }
+  .day-badge-month { font-size: 9px; color: #6a5a3a; letter-spacing: 2px; text-transform: uppercase; }
+  .day-badge-week { font-size: 9px; color: #4a3a1a; letter-spacing: 1px; }
+  .day-info {}
+  .day-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; line-height: 1.2; }
+  .day-subtitle { font-size: 12px; color: #6a5a3a; margin-top: 4px; line-height: 1.5; }
+  .day-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .day-tag {
+    font-size: 9px; letter-spacing: 1px; padding: 2px 8px;
+    border-radius: 2px; text-transform: uppercase;
+  }
+
+  /* TIMELINE */
+  .timeline { position: relative; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 52px;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: var(--border);
+  }
+
+  .slot {
+    display: flex;
+    gap: 0;
+    margin-bottom: 6px;
+    position: relative;
+  }
+  .slot-time {
+    width: 52px;
+    flex-shrink: 0;
+    font-size: 11px;
+    color: #4a3a1a;
+    padding-top: 12px;
+    text-align: right;
+    padding-right: 16px;
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+  }
+  .slot-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 14px;
+    margin-left: -5px;
+    border: 2px solid var(--dark);
+    z-index: 1;
+  }
+  .slot-body {
+    flex: 1;
+    padding: 10px 0 10px 16px;
+  }
+  .slot-card {
+    background: var(--dark2);
+    border-radius: 4px;
+    padding: 12px 14px;
+    border-left: 3px solid transparent;
+  }
+  .slot-type {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .slot-name {
+    font-size: 14px;
+    color: #d8c898;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .slot-desc {
+    font-size: 12px;
+    color: #7a6a4a;
+    margin-top: 5px;
+    line-height: 1.6;
+  }
+  .slot-addr {
+    font-size: 10px;
+    color: #4a3a1a;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  .slot-tip {
+    font-size: 11px;
+    color: #5a8a5a;
+    margin-top: 5px;
+    padding: 4px 8px;
+    background: #0a120a;
+    border-radius: 2px;
+    border-left: 2px solid #5a8a5a44;
+  }
+
+  /* TYPE COLORS */
+  .type-wine { --c: var(--wine); }
+  .type-photo { --c: var(--photo); }
+  .type-food { --c: var(--food); }
+  .type-walk { --c: var(--walk); }
+  .type-drive { --c: var(--drive); }
+  .type-sleep { --c: #6a5a8a; }
+
+  .slot-card { border-left-color: var(--c, var(--border)); }
+  .slot-dot { background: var(--c, var(--border)); }
+  .slot-type { color: var(--c, #5a4a2a); }
+
+  .drive-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    margin: 4px 0 4px 68px;
+    background: #0e0c08;
+    border: 1px dashed #2a2010;
+    border-radius: 3px;
+    font-size: 11px;
+    color: #4a3a1a;
+  }
+  .drive-bar span { color: var(--drive); font-weight: 500; }
+
+
+  :root {
+    --gold: #c8a96e;
+    --champagne: #f0e6cc;
+    --dark: #0c0a06;
+    --dark2: #141008;
+    --dark3: #1c160c;
+    --border: #2a2010;
+    --green: #8a9a6a;
+    --red: #e8956d;
+    --blue: #7eb8c9;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--dark);
+    color: var(--champagne);
+    font-family: 'Jost', sans-serif;
+    min-height: 100vh;
+    padding: 0 0 60px;
+  }
+
+  .header {
+    background: linear-gradient(180deg, #1a1208 0%, #0c0a06 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 36px 24px 28px;
+    text-align: center;
+  }
+  .header-eyebrow {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #7a5a2a;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(24px, 5vw, 38px);
+    font-weight: 300;
+    color: var(--champagne);
+  }
+  .header-sub {
+    font-size: 12px;
+    color: #5a4a2a;
+    margin-top: 8px;
+    letter-spacing: 1px;
+  }
+
+  .progress-bar {
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 0 20px;
+  }
+  .progress-track {
+    background: var(--border);
+    border-radius: 10px;
+    height: 6px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--green);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+  }
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #5a4a2a;
+    margin-top: 6px;
+    letter-spacing: 1px;
+  }
+
+  .content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px 20px 0;
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 8px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 8px;
+  }
+  .section-icon { font-size: 16px; }
+  .section-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+  }
+  .section-count {
+    margin-left: auto;
+    font-size: 10px;
+    color: #4a3a1a;
+    letter-spacing: 1px;
+  }
+
+  .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s;
+    margin-bottom: 4px;
+    border: 1px solid transparent;
+  }
+  .item:hover { background: var(--dark2); }
+  .item.checked {
+    background: #0a100a;
+    border-color: #8a9a6a22;
+  }
+
+  .checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid #3a2e18;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+    background: var(--dark2);
+  }
+  .item.checked .checkbox {
+    background: var(--green);
+    border-color: var(--green);
+  }
+  .checkmark {
+    color: #0a100a;
+    font-size: 11px;
+    font-weight: 700;
+    display: none;
+  }
+  .item.checked .checkmark { display: block; }
+
+  .item-body { flex: 1; }
+  .item-name {
+    font-size: 14px;
+    color: #d0be98;
+    line-height: 1.3;
+  }
+  .item.checked .item-name {
+    color: #4a5a3a;
+    text-decoration: line-through;
+    text-decoration-color: #3a4a2a;
+  }
+  .item-note {
+    font-size: 11px;
+    color: #5a4a2a;
+    margin-top: 3px;
+    line-height: 1.5;
+    font-style: italic;
+  }
+  .item.checked .item-note { color: #3a3020; }
+
+  .tag {
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding: 2px 7px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .tag-obrig { background: #e8956d22; color: #e8956d; border: 1px solid #e8956d33; }
+  .tag-rec { background: #c8a96e22; color: #c8a96e; border: 1px solid #c8a96e33; }
+  .tag-opt { background: #7eb8c922; color: #7eb8c9; border: 1px solid #7eb8c933; }
+
+  .reset-btn {
+    display: block;
+    margin: 24px auto 0;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: #4a3a1a;
+    padding: 8px 24px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .reset-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+  .alert {
+    background: #1a0e08;
+    border: 1px solid #e8956d44;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #8a6a3a;
+    line-height: 1.6;
+  }
+  .alert strong { color: #e8956d; }
+
+
+.vino-item {
+  display:flex;align-items:flex-start;gap:12px;padding:10px 12px;border-radius:4px;
+  cursor:pointer;transition:background 0.15s;margin-bottom:6px;
+  border:1px solid transparent;background:var(--dark2);
+}
+.vino-item:hover { background:#1a1408; }
+.vino-item.checked { background:#0a0e12;border-color:#c97eb822; }
+.vino-check {
+  width:18px;height:18px;border:1.5px solid #3a2e18;border-radius:3px;
+  flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;
+  transition:all 0.15s;background:var(--dark2);
+}
+.vino-item.checked .vino-check { background:#c97eb8;border-color:#c97eb8; }
+.vino-mark { color:#0a0e12;font-size:11px;font-weight:700;display:none; }
+.vino-item.checked .vino-mark { display:block; }
+.vino-body { flex:1; }
+.vino-name { font-size:14px;color:#d8c898;font-weight:500; }
+.vino-item.checked .vino-name { color:#4a4030;text-decoration:line-through;text-decoration-color:#3a3020; }
+.vino-meta { font-size:11px;color:#5a4a2a;margin-top:3px; }
+.vino-detail { font-size:11px;color:#4a3a1a;margin-top:3px;font-style:italic; }
+.vino-link {
+  display:inline-block;margin-top:6px;font-size:10px;color:#7eb8c9;
+  border:1px solid #7eb8c933;padding:2px 8px;border-radius:2px;text-decoration:none;letter-spacing:1px;
+}
+.vino-tag {
+  font-size:9px;letter-spacing:1px;padding:2px 7px;border-radius:2px;
+  text-transform:uppercase;flex-shrink:0;margin-top:2px;white-space:nowrap;
+}
+.vino-tag-tour { background:#c97eb822;color:#c97eb8;border:1px solid #c97eb833; }
+.vino-tag-rec { background:#c8a96e22;color:#c8a96e;border:1px solid #c8a96e33; }
+.vino-tag-walk { background:#8a9a6a22;color:#8a9a6a;border:1px solid #8a9a6a33; }
+
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+
+/* Nav — shorter labels on mobile */
+@media (max-width: 480px) {
+  .app-nav-brand { font-size: 12px; padding: 0 10px; }
+  .nav-btn { padding: 0 10px; font-size: 10px; gap: 4px; }
+  .nav-btn span { font-size: 13px; }
+}
+
+/* Timeline — tighter on mobile */
+@media (max-width: 480px) {
+  .timeline::before { left: 40px; }
+  .slot-time { width: 40px; font-size: 10px; padding-right: 10px; }
+  .slot-body { padding-left: 12px; }
+  .slot-card { padding: 10px 10px; }
+  .slot-name { font-size: 13px; }
+  .slot-desc { font-size: 11px; }
+  .slot-addr { font-size: 10px; }
+  .drive-bar { margin-left: 52px; font-size: 10px; padding: 6px 10px; }
+  .day-title { font-size: 20px; }
+  .day-badge-num { font-size: 26px; }
+}
+
+/* Day tabs — smaller on mobile */
+@media (max-width: 480px) {
+  .day-tab { min-width: 60px; padding: 10px 8px; }
+  .day-tab-date { font-size: 11px; }
+  .day-tab-city { font-size: 9px; }
+}
+
+/* Payment cards — stack on mobile */
+@media (max-width: 480px) {
+  .total-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Generic flex rows that might overflow */
+@media (max-width: 480px) {
+  /* Large Cormorant numbers in payment section */
+  [style*="font-size:36px"] { font-size: 28px !important; }
+  [style*="font-size:32px"] { font-size: 24px !important; }
+  [style*="font-size:28px"] { font-size: 22px !important; }
+
+  /* Payment rows with long text */
+  [style*="justify-content:space-between"][style*="align-items:center"] {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* Winery checklist items */
+  .vino-item { flex-wrap: wrap; }
+  .vino-tag { margin-top: 4px; }
+  .vino-link { font-size: 9px; }
+
+  /* Checklist items */
+  .item { flex-wrap: wrap; }
+  .tag { margin-top: 4px; }
+
+  /* Section headers in cronograma summary */
+  .section-header { flex-wrap: wrap; gap: 4px; }
+
+  /* Tips section */
+  .tips { padding: 16px !important; }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .slot-time { font-size: 10px; }
+  .day-header { gap: 12px; }
+  .legend { gap: 10px; padding: 10px 14px; }
+  .leg { font-size: 9px; }
+}
+
+/* Ensure no horizontal scroll */
+.app-page { overflow-x: hidden; }
+img, iframe { max-width: 100%; }
+
+
+@media (max-width: 360px) {
+  .nav-label { display: none; }
+  .nav-btn { padding: 0 14px; }
+}
+
+
+@media (max-width: 480px) {
+  .summary-container { padding: 16px 14px 0 !important; }
+  .total-card { padding: 14px !important; }
+  .total-title { font-size: 9px !important; }
+  .total-value { font-size: 22px !important; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="app-nav">
+  <div class="app-nav-brand">🇫🇷 França Jun 2026</div>
+  <button class="nav-btn active" onclick="showPage('custos',this)"><span>💰</span><span class="nav-label"> Custos</span></button>
+  <button class="nav-btn" onclick="showPage('roteiro',this)"><span>🗺️</span><span class="nav-label"> Roteiro</span></button>
+  <button class="nav-btn" onclick="showPage('vinicolas',this)"><span>🍷</span><span class="nav-label"> Vinícolas</span></button>
+  <button class="nav-btn" onclick="showPage('docs',this)"><span>✅</span><span class="nav-label"> Docs</span></button>
+</nav>
+
+<!-- PAGE 1: CUSTOS -->
+<div class="app-page active" id="page-custos">
+  
+<div style="background:linear-gradient(180deg,#1a1208 0%,#0c0a06 100%);border-bottom:1px solid #2a2010;padding:36px 24px 28px;text-align:center">
+  <div style="font-size:11px;letter-spacing:5px;color:#7a5a2a;text-transform:uppercase;margin-bottom:10px">road trip · junho 2026</div>
+  <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,5vw,38px);font-weight:300;color:#f0e6cc">Custos & Pagamentos</div>
+  <div style="font-size:12px;color:#5a4a2a;margin-top:8px;letter-spacing:1px">Daniel Henrique Frantz & Carla · GRU → CDG · 04 jun 2026</div>
+</div>
+<div style="max-width:500px;margin:0 auto;padding:24px 20px 0" class="summary-container">
+
+  <!-- TOTAIS -->
+<div class="total-bar">
+  <div class="total-card">
+    <div class="total-title">resumo da viagem</div>
+    <div class="total-grid">
+      <div class="total-item">
+        <div class="total-num" style="color:var(--flight)">13</div>
+        <div class="total-label">Noites fora</div>
+      </div>
+      <div class="total-item">
+        <div class="total-num" style="color:var(--paris)">3</div>
+        <div class="total-label">Dias Paris</div>
+      </div>
+      <div class="total-item">
+        <div class="total-num" style="color:var(--road)">9</div>
+        <div class="total-label">Dias carro</div>
+      </div>
+      <div class="total-item">
+        <div class="total-num" style="color:var(--gold)">4</div>
+        <div class="total-label">Regiões vinícolas</div>
+      </div>
+      <div class="total-item">
+        <div class="total-num" style="color:#c97eb8">~950</div>
+        <div class="total-label">km rodados</div>
+      </div>
+      <div class="total-item">
+        <div class="total-num" style="color:var(--rest)">+5h</div>
+        <div class="total-label">Fuso (SP→Paris)</div>
+      </div>
+    </div>
+
+    <!-- HOSPEDAGEM TOTAL -->
+    <div style="margin-top:20px;padding:20px;background:var(--dark);border:1px solid var(--border);border-radius:4px">
+      <div style="font-size:10px;letter-spacing:3px;color:#4a3a1a;text-transform:uppercase;margin-bottom:14px">✈️ Passagens Aéreas</div>
+      <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>GRU 14h40 → CDG 07h05 · ida (2 pessoas)</span><span style="color:#e8956d">R$ 6.664</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>CDG 23h35 → GRU 06h15 · volta (2 pessoas)</span><span style="color:#e8956d">R$ 6.664</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;color:#a08060;font-weight:500"><span>Subtotal passagens</span><span style="color:#e8956d">R$ 13.328</span></div>
+      </div>
+
+      <div style="height:1px;background:var(--border);margin:12px 0"></div>
+      <div style="font-size:10px;letter-spacing:3px;color:#4a3a1a;text-transform:uppercase;margin-bottom:14px">🏨 Hospedagem · 11 noites</div>
+      <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:4px">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+          <span>Paris · 3 noites · Hôtel Zora <a href="https://secure.booking.com/app_link/myreservations.en-us.html?stid=325542&bn=6968649555&aid=332731" target="_blank" style="color:#7eb8c966;font-size:10px;text-decoration:none">↗ reserva</a></span>
+          <span style="color:#7eb8c9">R$ 2.763,73</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Reims · 1 noite</span><span style="color:#7eb8c9">R$ 600</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Épernay · 1 noite</span><span style="color:#7eb8c9">R$ 450</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Troyes · 1 noite</span><span style="color:#7eb8c9">R$ 450</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Colmar · 3 noites</span><span style="color:#7eb8c9">R$ 2.300</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Beaune · 2 noites</span><span style="color:#7eb8c9">R$ 850</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;color:#a08060;font-weight:500"><span>Subtotal hospedagem</span><span style="color:#7eb8c9">R$ 7.413,73</span></div>
+      </div>
+
+      <div style="height:1px;background:var(--border);margin:12px 0"></div>
+      <div style="font-size:10px;letter-spacing:3px;color:#4a3a1a;text-transform:uppercase;margin-bottom:14px">🚗 Transporte terrestre <span style="font-size:9px;color:#3a2a10">€1 = R$6,35</span></div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+          <span>✅ Aluguel SIXT · BMW 4 Series · 8–16 jun · Voucher 9732137617</span>
+          <span style="color:var(--gold)">R$ 5.397,21</span>
+        </div>
+        <div style="font-size:10px;color:#3a2a10;padding-left:4px">Retirada: Gare Saint-Lazare 10h · Devolução: CDG Airport 18h30 · Seguro incluso · Km ilimitado</div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Pedágios Paris→Alsácia→Borgonha→Paris</span><span style="color:var(--gold)">R$ 603</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Gasolina (~950 km)</span><span style="color:var(--gold)">R$ 1.270</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>RER B CDG↔Paris (4 trajetos × 2 pessoas)</span><span style="color:var(--gold)">R$ 614</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;color:#a08060;font-weight:500"><span>Subtotal transporte</span><span style="color:var(--gold)">R$ 7.884,21</span></div>
+      </div>
+
+      <div style="height:1px;background:var(--border);margin:12px 0"></div>
+      <div style="font-size:10px;letter-spacing:3px;color:#4a3a1a;text-transform:uppercase;margin-bottom:14px">🍽️ Alimentação · 12 dias <span style="font-size:9px;color:#3a2a10">€1 = R$6,30</span></div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Paris · 3 dias (almoços simples + jantares)</span><span style="color:#8a9a6a">R$ 2.520</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Road trip · 9 dias (almoços + jantares)</span><span style="color:#8a9a6a">R$ 6.520</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;color:#a08060;font-weight:500"><span>Subtotal alimentação</span><span style="color:#8a9a6a">R$ 9.040</span></div>
+      </div>
+
+      <div style="height:1px;background:var(--border);margin:12px 0"></div>
+      <div style="font-size:10px;letter-spacing:3px;color:#4a3a1a;text-transform:uppercase;margin-bottom:14px">🍷 Vinícolas + 🎟️ Entradas <span style="font-size:9px;color:#3a2a10">€1 = R$6,30</span></div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Degustações Champagne (Taittinger, Moët, Hautvillers)</span><span style="color:#c97eb8">R$ 1.071</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Degustações Alsácia (Hugel, Trimbach, Eguisheim, Riquewihr)</span><span style="color:#c97eb8">R$ 655</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Degustações Borgonha (Marché aux Vins, Meursault)</span><span style="color:#c97eb8">R$ 718</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Compras de garrafas para levar</span><span style="color:#c97eb8">R$ 945</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a"><span>Entradas (Torre Eiffel, Sainte-Chapelle, Louvre, Hôtel-Dieu, Unterlinden)</span><span style="color:#c97eb8">R$ 712</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;color:#a08060;font-weight:500"><span>Subtotal vinícolas + entradas</span><span style="color:#c97eb8">R$ 4.101</span></div>
+      </div>
+
+      <div style="height:2px;background:var(--gold);opacity:0.3;margin:20px 0 16px"></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <div>
+          <div style="font-size:11px;letter-spacing:3px;color:#6a5a3a;text-transform:uppercase">Total geral · 2 pessoas</div>
+          <div style="font-size:11px;color:#3a2a10;margin-top:3px">Passagens + Hotéis + Carro + Alimentação + Vinícolas + Entradas</div>
+        </div>
+        <span style="font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--gold)">R$ 42.267,05</span>
+      </div>
+      <div style="display:flex;justify-content:flex-end;gap:24px;margin-top:8px">
+        <div style="text-align:right">
+          <div style="font-size:11px;color:#4a3a1a">Por pessoa</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#a08050">R$ 21.133,53</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:11px;color:#4a3a1a">Por dia (12 dias)</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#a08050">R$ 3.522,25</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTROLE DE PAGAMENTOS -->
+    <div style="margin-top:16px;padding:20px;background:var(--dark);border:1px solid var(--border);border-radius:4px">
+      <div style="font-size:10px;letter-spacing:3px;color:#4a3a1a;text-transform:uppercase;margin-bottom:16px">💳 Controle de Pagamentos</div>
+
+      <!-- Daniel -->
+      <div style="margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <div style="width:8px;height:8px;border-radius:50%;background:#8a9a6a;flex-shrink:0"></div>
+          <span style="font-size:12px;color:#a08060;font-weight:500;letter-spacing:1px">DANIEL</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px;padding-left:16px">
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+            <span>✅ Passagem aérea (ida + volta)</span>
+            <span style="color:#8a9a6a">R$ 6.664,00</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+            <span>✅ Hotel Zora Paris · total (pagou pelos dois)</span>
+            <span style="color:#8a9a6a">R$ 2.763,73</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+            <span>✅ Aluguel SIXT · por conta própria</span>
+            <span style="color:#8a9a6a">R$ 5.397,21</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+            <span>✅ Colmar · total (pagou pelos dois)</span>
+            <span style="color:#8a9a6a">R$ 1.335,63</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+            <span>⏳ Coto Hotel Beaune · R$ 422,00 a pagar quando cobrado</span>
+            <span style="color:#c8a96e">R$ 844,00 pendente</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;color:#a08060;font-weight:500;padding-top:4px;border-top:1px solid #2a2010;margin-top:4px">
+            <span>Total pago por Daniel</span>
+            <span style="color:#8a9a6a">R$ 16.160,57</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carla -->
+      <div style="margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <div style="width:8px;height:8px;border-radius:50%;background:#c97eb8;flex-shrink:0"></div>
+          <span style="font-size:12px;color:#a08060;font-weight:500;letter-spacing:1px">CARLA</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px;padding-left:16px">
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+            <span>✅ Passagem aérea (ida + volta)</span>
+            <span style="color:#8a9a6a">R$ 6.664,00</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+            <span>✅ Airbnb Troyes · total (pagou pelos dois)</span>
+            <span style="color:#8a9a6a">R$ 431,55</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+            <span>✅ Airbnb Épernay · total (pagou pelos dois)</span>
+            <span style="color:#8a9a6a">R$ 317,05</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#6a5a3a">
+            <span>✅ Airbnb Reims · total (pagou pelos dois)</span>
+            <span style="color:#8a9a6a">R$ 316,90</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;color:#a08060;font-weight:500;padding-top:4px;border-top:1px solid #2a2010;margin-top:4px">
+            <span>Total pago por Carla</span>
+            <span style="color:#8a9a6a">R$ 7.729,50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pendências -->
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+        <div style="background:#1a0e08;border:1px solid #e8956d44;border-radius:4px;padding:12px 16px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:11px;color:#e8956d;letter-spacing:2px;text-transform:uppercase">⏳ Carla → Daniel</div>
+              <div style="font-size:11px;color:#6a5a3a;margin-top:4px">Hotel Zora (metade): R$ 1.381,87</div>
+              <div style="font-size:11px;color:#6a5a3a">Colmar (metade): R$ 667,82</div>
+            </div>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:28px;color:#e8956d">R$ 2.049,69</span>
+          </div>
+        </div>
+        <div style="background:#08100a;border:1px solid #8a9a6a44;border-radius:4px;padding:12px 16px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:11px;color:#8a9a6a;letter-spacing:2px;text-transform:uppercase">⏳ Daniel → Carla</div>
+              <div style="font-size:11px;color:#6a5a3a;margin-top:4px">Airbnb Troyes (metade): R$ 215,78</div>
+              <div style="font-size:11px;color:#6a5a3a">Airbnb Épernay (metade): R$ 158,53</div>
+              <div style="font-size:11px;color:#6a5a3a">Airbnb Reims (metade): R$ 158,45</div>
+            </div>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:28px;color:#8a9a6a">R$ 532,76</span>
+          </div>
+        </div>
+        <div style="background:#141008;border:1px solid #c8a96e44;border-radius:4px;padding:12px 16px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:11px;color:var(--gold);letter-spacing:2px;text-transform:uppercase">💰 Saldo líquido · Carla → Daniel</div>
+              <div style="font-size:11px;color:#6a5a3a;margin-top:4px">R$ 2.049,69 − R$ 532,76</div>
+            </div>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold)">R$ 1.516,93</span>
+          </div>
+        </div>
+        <div style="background:#0e0c04;border:1px solid #c8a96e33;border-radius:4px;padding:10px 16px">
+          <div style="font-size:11px;color:#7a6030">⏳ Beaune R$844,00 ainda não cobrado — quando pago, acertar R$422,00/pessoa</div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;font-size:10px;color:#3a2a10;font-style:italic">
+        * Hotel Zora R$2.763,73 ÷ 2 = R$1.381,87 · Colmar R$1.335,63 ÷ 2 = R$667,82 · Beaune R$844,00 ÷ 2 = R$422,00 · Airbnb Troyes R$431,55 ÷ 2 = R$215,78 · Airbnb Épernay R$317,05 ÷ 2 = R$158,53 · Airbnb Reims R$316,90 ÷ 2 = R$158,45 · Carro por conta do Daniel
+      </div>
+    </div>
+
+    </div>
+
+    <!-- CHECKLIST DE RESERVAS -->
+    <div style="margin-top:16px;padding:20px;background:var(--dark);border:1px solid var(--border);border-radius:4px">
+      <div style="font-size:10px;letter-spacing:3px;color:#4a3a1a;text-transform:uppercase;margin-bottom:16px">📋 Checklist de Reservas</div>
+
+      <!-- Confirmado -->
+      <div style="margin-bottom:16px">
+        <div style="font-size:10px;letter-spacing:2px;color:#8a9a6a;text-transform:uppercase;margin-bottom:8px">✅ Confirmado</div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#6a7a5a">
+            <span style="color:#8a9a6a;font-size:14px">✅</span>
+            <span>Passagens aéreas · Daniel + Carla · GOL/Air France</span>
+            <span style="font-size:10px;color:#3a4a2a;margin-left:auto">G3 5000 / G3 5003</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#6a7a5a">
+            <span style="color:#8a9a6a;font-size:14px">✅</span>
+            <span>Hotel Paris · Hôtel Zora · 5–8 jun</span>
+            <span style="font-size:10px;color:#3a4a2a;margin-left:auto">BN 6968649555</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#6a7a5a">
+            <span style="color:#8a9a6a;font-size:14px">✅</span>
+            <span>Aluguel de carro · SIXT BMW 4 Series · 8–16 jun</span>
+            <span style="font-size:10px;color:#3a4a2a;margin-left:auto">Voucher 9732137617</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#6a7a5a">
+            <span style="color:#8a9a6a;font-size:14px">✅</span>
+            <div>
+              <div>Airbnb Troyes · 10 jun (1 noite) · pago por Carla</div>
+              <div style="font-size:10px;color:#3a4a2a">R$ 431,55 · Daniel deve R$ 215,78 à Carla</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#6a7a5a">
+            <span style="color:#8a9a6a;font-size:14px">✅</span>
+            <div>
+              <div>Airbnb Épernay · 9 jun (1 noite) · pago por Carla</div>
+              <div style="font-size:10px;color:#3a4a2a">R$ 317,05 · Daniel deve R$ 158,53 à Carla</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#6a7a5a">
+            <span style="color:#8a9a6a;font-size:14px">✅</span>
+            <div>
+              <div>Airbnb Reims · 8 jun (1 noite) · pago por Carla</div>
+              <div style="font-size:10px;color:#3a4a2a">R$ 316,90 · Daniel deve R$ 158,45 à Carla</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#6a7a5a">
+            <span style="color:#8a9a6a;font-size:14px">✅</span>
+            <div>
+              <div>Colmar · 11–14 jun (3 noites) · pago por Daniel</div>
+              <div style="font-size:10px;color:#3a4a2a">R$ 1.335,63 · Carla deve R$ 667,82 a Daniel</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#6a7a5a">
+            <span style="color:#c8a96e;font-size:14px">⏳</span>
+            <div>
+              <div>Coto Hotel Beaune · 14–16 jun (2 noites) · reservado por Carla · aguardando cobrança</div>
+              <div style="font-size:10px;color:#3a4a2a">R$ 844,00 total · R$ 422,00/pessoa · PIN 3155 · <a href="https://secure.booking.com/app_link/myreservations.pt-br.html?stid=325542&bn=5971835953&aid=332731" target="_blank" style="color:#7eb8c966;text-decoration:none">↗ ver reserva</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Falta reservar — Hotéis -->
+      <div style="margin-bottom:16px">
+        <div style="font-size:10px;letter-spacing:2px;color:#8a9a6a;text-transform:uppercase;margin-bottom:8px">✅ Todos os hotéis reservados!</div>
+      </div>
+
+      <!-- Falta reservar — Atrações -->
+      <div>
+        <div style="font-size:10px;letter-spacing:2px;color:#c8a96e;text-transform:uppercase;margin-bottom:8px">🎫 Atrações — reserva online obrigatória</div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#7a6a3a">
+            <span style="color:#c8a96e;font-size:14px">⚠️</span>
+            <div>
+              <div>Torre Eiffel · 2° andar · 5 jun à tarde</div>
+              <div style="font-size:10px;color:#4a3a1a">toureiffel.paris · esgota semanas antes em junho</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#7a6a3a">
+            <span style="color:#c8a96e;font-size:14px">⚠️</span>
+            <div>
+              <div>Sainte-Chapelle · 6 jun manhã (8h30)</div>
+              <div style="font-size:10px;color:#4a3a1a">sainte-chapelle.fr · fila grande sem reserva</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#7a6a3a">
+            <span style="color:#c8a96e;font-size:14px">⚠️</span>
+            <div>
+              <div>Louvre · 6 jun (10h)</div>
+              <div style="font-size:10px;color:#4a3a1a">ticketlouvre.fr · entrada obrigatória com hora marcada</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#7a6a3a">
+            <span style="color:#c8a96e;font-size:14px">⚠️</span>
+            <div>
+              <div>Marché aux Vins · Beaune · 15 jun</div>
+              <div style="font-size:10px;color:#4a3a1a">marcheauxvins.com · recomendado reservar com antecedência</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips">
+      <div class="tip"><span class="tip-icon">✈️</span><div><strong>Voo direto GRU→CDG:</strong> Air France (AF453/AF459) e LATAM (LA8068) — ~11h20. Decolagem noturna de SP, chegada matinal em Paris. Reserve com 3–4 meses de antecedência para junho.</div></div>
+      <div class="tip"><span class="tip-icon">⏰</span><div><strong>Jet lag:</strong> Paris está +5h no horário de São Paulo. Chegando de manhã, mantenha-se acordado até às 21h locais no primeiro dia — resolve o jet lag rapidinho.</div></div>
+      <div class="tip"><span class="tip-icon">🎫</span><div><strong>Reserve com antecedência:</strong> Torre Eiffel, Sainte-Chapelle, Louvre — todos exigem reserva online. Em junho lotam. Faça com 30–60 dias de antecedência.</div></div>
+      <div class="tip"><span class="tip-icon">🚗</span><div><strong>Carro:</strong> Retire no final do Dia 3 em Paris ou na manhã do Dia 4. Devolva em Paris no Dia 13 — mesma cidade, sem taxa extra.</div></div>
+      <div class="tip"><span class="tip-icon">🌤️</span><div><strong>Junho em Paris e Alsácia:</strong> dias longos (pôr do sol às 21h45!), temperatura média 20–25°C. A melhor época do ano para essa viagem.</div></div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<!-- PAGE 2: ROTEIRO DETALHADO -->
+<div class="app-page" id="page-roteiro">
+
+
+<div class="header">
+  <h1>Roteiro Detalhado · Road Trip França</h1>
+  <div class="header-sub">08–16 junho 2026 · Daniel &amp; Carla · acordar ~9h · improviso nos jantares</div>
+</div>
+
+<div class="day-tabs" id="tabs"></div>
+
+<div class="legend">
+  <div class="leg"><div class="leg-dot" style="background:var(--wine)"></div> Vinícola</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--photo)"></div> Fotografia</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--food)"></div> Refeição</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--walk)"></div> Passeio</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--drive)"></div> Deslocamento</div>
+</div>
+
+<div class="content" id="panels"></div>
+
+<script>
+const days = [
+  {
+    date: "08", month: "JUN", week: "SEG", city: "Reims",
+    title: "Paris → Reims",
+    subtitle: "Primeiro dia de estrada. Retirada do BMW na Gare Saint-Lazare e direto para o Champagne — Veuve Clicquot + Taittinger no mesmo dia.",
+    tags: [{label:"Veuve Clicquot", color:"var(--wine)"},{label:"Taittinger", color:"var(--wine)"},{label:"Catedral", color:"var(--photo)"}],
+    slots: [
+      { time:"09:30", type:"drive", name:"Retirada do carro — SIXT Gare Saint-Lazare", desc:"Plataforma 27, atrás do Relay Store. Voucher 9732137617. Fazer vistoria completa e fotografar qualquer arranhão antes de sair.", addr:"13 Rue d'Amsterdam, Paris 08" },
+      { time:"10:30", type:"drive", name:"Paris → Reims", desc:"A4 em direção leste. 1h30 de autoestrada.", isDrive: true, driveInfo:"1h30 · 145 km · A4" },
+      { time:"12:00", type:"wine", name:"🍾 Veuve Clicquot — Tour + Degustação", desc:"As caves mais extensas de Reims — 18km de galerias subterrâneas escavadas em calcário. A história da Veuve Clicquot começa em 1772 — a 'grande dame do Champagne' que inventou o riddling (girar as garrafas para clarificar). Tour de 1h + degustação de 2 cuvées: Yellow Label e Rosé.", addr:"1 Place des Droits de l'Homme, Reims · veuveclicquot.com", tip:"💡 Reservar online com antecedência. ~€25/pessoa. Pedir o slot de 12h ou 12h30." },
+      { time:"13:30", type:"food", name:"Almoço rápido em Reims", desc:"Brasserie du Boulingrin — art déco de 1925. Prato do dia rápido: pâté champenois ou croque-monsieur com uma taça de Champagne rosé.", addr:"48 Rue de Mars, Reims" },
+      { time:"14:30", type:"wine", name:"🍾 Taittinger — Tour + Degustação", desc:"As galerias mais bonitas de Reims — escavadas pelos monges beneditinos no séc. IV d.C., 4 andares subterrâneos a 18m de profundidade. Completamente diferente da Veuve: aqui o foco é elegância e Chardonnay. Tour de 1h + degustação de 3 cuvées incluindo o Comtes de Champagne Blanc de Blancs.", addr:"9 Place Saint-Nicaise, Reims · taittinger.com", tip:"💡 Reservar slot de 14h30 ou 15h. ~€28/pessoa. O Comtes de Champagne é um dos maiores Champagnes do mundo." },
+      { time:"16:30", type:"photo", name:"📸 Catedral Notre-Dame de Reims", desc:"Onde 33 reis da França foram coroados. À luz do fim de tarde o arenito dourado fica espetacular. Entrar para ver os vitrais de Chagall no ábside — 20 minutos bastam.", addr:"Place du Cardinal Luçon, Reims · gratuito" },
+      { time:"17:15", type:"walk", name:"Place Royale + Porte de Mars", desc:"Praça real do séc. XVIII e o maior arco triunfal romano da França (séc. III). 20 min a pé do centro.", addr:"Rue du Mars, Reims" },
+      { time:"18:00", type:"sleep", name:"Check-in Airbnb Reims", desc:"Pernoite em Reims conforme reserva." },
+      { time:"20:00", type:"food", name:"Jantar em Reims", desc:"Brasserie Le Boulingrin — art déco de 1925, o mais histórico de Reims. Pedir pâté champenois e tarte à la crème. Ou Le Foch para algo mais refinado com harmonização de Champagne.", addr:"48 Rue de Mars, Reims" }
+    ]
+  },
+  {
+    date: "09", month: "JUN", week: "TER", city: "Épernay",
+    title: "Épernay — Capital do Champagne",
+    subtitle: "O dia mais espumante da viagem. Avenue de Champagne, caves de Moët e produtores artesanais em Hautvillers.",
+    tags: [{label:"Champagne", color:"var(--wine)"},{label:"Hautvillers", color:"var(--photo)"},{label:"Moët", color:"var(--wine)"}],
+    slots: [
+      { time:"09:00", type:"photo", name:"📸 Avenue de Champagne — manhã cedo", desc:"A rua mais rica do mundo por km². De manhã está vazia de turistas. Fotografar as grandes maisons com luz lateral. 1,8 km de fachadas históricas.", addr:"Avenue de Champagne, Épernay" },
+      { time:"10:00", type:"wine", name:"🍾 Moët & Chandon — visita e degustação", desc:"A maior maison do mundo, fundada em 1743. Cave subterrânea com 28 km de galerias. Tour de 1h com guia + degustação de 2 cuvées. Pedir o Brut Impérial e o Rosé.", addr:"20 Avenue de Champagne, Épernay · moet.com", tip:"💡 Reservar online obrigatório. ~€30/pessoa para o tour clássico." },
+      { time:"11:30", type:"wine", name:"🥂 Perrier-Jouët — fachada e loja", desc:"Não precisa de tour — a fachada art nouveau com flores esmaltadas é uma das mais fotografadas de Épernay. Entrar na boutique para ver as garrafas Belle Époque originais e fazer uma degustação rápida no balcão (~€15).", addr:"28 Avenue de Champagne, Épernay" },
+      { time:"12:30", type:"food", name:"Almoço — Le Théâtre", desc:"Restaurante na Place de la République, cozinha alsaciana-champenoise. Pedir a andouillette gratinée ou o foie gras local. Mesa do lado de fora na praça se o tempo estiver bom.", addr:"Place de la République, Épernay" },
+      { time:"13:30", type:"drive", name:"Épernay → Aÿ", desc:"10 min ao leste.", isDrive:true, driveInfo:"10 min · 5 km" },
+      { time:"13:45", type:"wine", name:"🍾 Bollinger — Maison Icônica de Pinot Noir", desc:"Uma das grandes maisons de Champagne, fundada em 1829, especializada em Pinot Noir — produz Champagnes mais encorpados, com mais estrutura e profundidade que os baseados em Chardonnay. Tour de 45 min nas caves históricas + degustação do Special Cuvée e do Blanc de Noirs. Favorita de James Bond nos filmes.", addr:"16 Rue Chanoine Gosset, Aÿ · champagne-bollinger.com", tip:"💡 Reserve com antecedência — tours privados apenas. ~€30/pessoa. Ótimo momento para comparar o estilo Pinot Noir (Bollinger) com o estilo Chardonnay (Taittinger de ontem)." },
+      { time:"14:45", type:"drive", name:"Aÿ → Hautvillers", desc:"10 min subindo as vinhas.", isDrive:true, driveInfo:"10 min · 8 km · estrada de vinha" },
+      { time:"14:30", type:"photo", name:"📸 Hautvillers — Dom Pérignon", desc:"O vilarejo mais bonito da região, em terraço entre as vinhas. Ruas de paralelepípedo, casas com ornamentos de ferro forjado nas portas, abadia beneditina onde Dom Pérignon trabalhou. Vista panorâmica do Vale do Marne.", addr:"Village de Hautvillers, 51160" },
+      { time:"15:00", type:"wine", name:"🍾 Récoltant-Manipulant artesanal — Hautvillers", desc:"Visite um produtor independente — eles cultivam as próprias uvas e fazem Champagne de parcela única, sem blending industrial. Recomendar: Champagne Tarlant (família há 13 gerações) ou Champagne Francis Boulard. Champagne de terroir completamente diferente das grandes maisons. Degustação livre, €10-15/pessoa.", addr:"Pergunta ao anfitrião do Airbnb o produtor local preferido", tip:"💡 Estes produtores artesanais são a grande revelação da visita ao Champagne. Guarda uma garrafa para levar." },
+      { time:"16:30", type:"drive", name:"Volta Épernay / Reims", desc:"Retorno ao hotel.", isDrive:true, driveInfo:"15 min" },
+      { time:"17:00", type:"walk", name:"Musée du Vin de Champagne", desc:"Palácio do séc. XVIII com história completa do Champagne, de Dom Pérignon aos dias atuais. 1h de visita tranquila.", addr:"13 Avenue de Champagne, Épernay · €7/pessoa" },
+      { time:"20:00", type:"food", name:"Jantar — improviso em Épernay", desc:"A própria Avenue de Champagne tem bistrôs bons. Les Cépages é uma boa opção — prato do dia com harmonização de Champagne local incluída no menu." }
+    ]
+  },
+  {
+    date: "10", month: "JUN", week: "QUA", city: "Troyes",
+    title: "Troyes — A Cidade Rolha",
+    subtitle: "Cidade medieval em formato de rolha de Champagne. Manhã no centro histórico, tarde de deslocamento para Colmar.",
+    tags: [{label:"Medieval", color:"var(--photo)"},{label:"Vitrais", color:"var(--photo)"},{label:"Gastronomia", color:"var(--food)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Épernay → Troyes", desc:"Saída após café da manhã.", isDrive:true, driveInfo:"1h · 90 km · A26" },
+      { time:"10:00", type:"photo", name:"📸 Ruelle des Chats + Centro Medieval", desc:"A ruela dos Gatos — 100m de casas medievais tão próximas que os gatos pulavam de telhado em telhado. Depois explorar a Rue Emile Zola, Rue de la Monnaie e Rue Champeaux: as ruas mais preservadas do séc. XV-XVI da França.", addr:"Ruelle des Chats, Troyes · gratuito" },
+      { time:"11:00", type:"photo", name:"⛪ Catedral Saint-Pierre-et-Saint-Paul", desc:"Os vitrais do séc. XIII ao XIX são considerados os mais completos da França — 1.800m² de vitrais originais intactos. A luz da manhã atravessando o rosáceo norte é espetacular. 30-45 min.", addr:"Place Saint-Pierre, Troyes · gratuito" },
+      { time:"12:00", type:"food", name:"Almoço — Le Valentino ou Bistrot Dupont", desc:"Troyes é a capital da andouillette (linguiça de tripa) — prato divisivo mas autêntico. Se não for a cara, pedir o chaource (queijo local) com jambon. Le Valentino é o bistrô mais tradicional da cidade.", addr:"Centre Historique, Troyes" },
+      { time:"13:30", type:"walk", name:"Basilique Saint-Urbain", desc:"Joia do gótico radiante do séc. XIII, com vitrais do séc. XIII e XVII. Menor que a catedral mas mais delicada. 20 min.", addr:"Place Vernier, Troyes · gratuito" },
+      { time:"14:15", type:"walk", name:"Hôtel-Dieu-le-Comte", desc:"Antiga farmácia do hospital do séc. XVIII com frascos e instrumentos médicos medievais intactos. Curioso e fotogênico.", addr:"Quai des Comtes de Champagne · €3" },
+      { time:"15:00", type:"drive", name:"Troyes → Colmar", desc:"O trecho mais longo do road trip. Atravessa a Champagne e entra na Alsácia.", isDrive:true, driveInfo:"2h30 · 220 km · A5 + A35" },
+      { time:"17:30", type:"photo", name:"📸 Primeira chegada em Colmar — Petite Venise", desc:"Deixar as malas no Airbnb e ir direto à Petite Venise. À tarde a luz já é lateral e dourada. Primeira exploração do canal, bairro dos Tanneurs e Grand Rue.", addr:"Quartier de la Petite Venise, Colmar" },
+      { time:"20:00", type:"food", name:"Jantar — Winstub alsaciana", desc:"Winstub é o bistrô tradicional alsaciano — madeira escura, menus escritos à mão, vinho local. Winstub de la Petite Venise é o mais charmoso. Pedir choucroute garnie (chucrute com carnes) e um Riesling local.", addr:"Quartier de la Petite Venise, Colmar" }
+    ]
+  },
+  {
+    date: "11", month: "JUN", week: "QUI", city: "Colmar",
+    title: "Colmar — Dia Inteiro",
+    subtitle: "O dia mais fotogênico da viagem. Petite Venise ao amanhecer, museu de classe mundial e a Maison Hugel para o Riesling.",
+    tags: [{label:"Fotografia", color:"var(--photo)"},{label:"Riesling", color:"var(--wine)"},{label:"Museu", color:"var(--walk)"}],
+    slots: [
+      { time:"07:30", type:"photo", name:"📸 Petite Venise — GOLDEN HOUR (não pule!)", desc:"Este é o horário. Às 7h30 não há ninguém. Os canais refletem as casas coloridas com luz suave, flores nas janelas, silêncio. Em 30 minutos chegam os primeiros turistas. Ir direto ao Pont de la Poissonnerie — a ponte mais fotografada de Colmar.", addr:"Pont de la Poissonnerie, Colmar", tip:"💡 Melhor foto da viagem inteira. Câmera, não smartphone — a luz é fraca e os reflexos nos canais precisam de exposição correta." },
+      { time:"08:30", type:"food", name:"Café da manhã alsaciano", desc:"Patisserie Schmitt na Grand Rue — croissant, bretzel fresco e café. Sentar na calçada enquanto a cidade acorda.", addr:"Grand Rue, Colmar" },
+      { time:"09:30", type:"photo", name:"📸 Bairro dos Tanneurs + Quartier des Tanneurs", desc:"O bairro dos curtidores — casas do séc. XVII com estruturas de secagem de couro nas fachadas, pintadas em tons pastel. Completamente diferente da Petite Venise. Ótimas fotos de arquitetura.", addr:"Rue des Tanneurs, Colmar" },
+      { time:"10:30", type:"walk", name:"Maison Pfister + Koïfhus", desc:"Maison Pfister (1537) — a fachada renascentista mais bonita de Colmar, com pinturas, loggia e torre de esquina. Koïfhus — antiga alfândega medieval do séc. XIV. Ambas em 15 min a pé.", addr:"Rue des Marchands, Colmar · exterior gratuito" },
+      { time:"11:15", type:"wine", name:"🍷 Maison Hugel & Fils — TOUR COMPLETO DO DIA", desc:"A maison mais histórica de Colmar, fundada em 1639. 13 gerações de vinificadores. Tour nas caves medievais com barris de carvalho de 1715 ainda ativos. Degustação de 4-5 vinhos incluindo Riesling Jubilee (Grand Cru) e Gewürztraminer Vendanges Tardives. ~1h30.", addr:"3 Rue de la Première Armée, Riquewihr (20 min de Colmar) · hugel.com", tip:"💡 Reserve por e-mail em advance@hugel.com. €20/pessoa. O Riesling Jubilee é um dos maiores brancos do mundo." },
+      { time:"13:00", type:"food", name:"Almoço em Riquewihr", desc:"Após a Hugel, almoçar em Riquewihr — a 5 min a pé. Restaurant du Dolder, dentro das muralhas medievais do séc. XVI. Flamenkuche (tarte flambée) com Pinot Gris local.", addr:"Riquewihr, Alsace" },
+      { time:"14:30", type:"photo", name:"📸 Riquewihr — vilarejo do séc. XVI", desc:"Um dos vilarejos mais preservados da França — cercado de vinhas, sem carros no centro, ruas de paralelepípedo. Portão medieval Dolder (1291), Maison Preiss-Zimmer. 45 min de exploração.", addr:"Riquewihr, 68340" },
+      { time:"15:30", type:"walk", name:"Musée Unterlinden — Retábulo de Isenheim", desc:"Uma das 10 maiores obras de arte do mundo — o Retábulo de Isenheim (1515) de Matthias Grünewald. Pintura em 9 painéis retráteis sobre a Paixão de Cristo, de uma intensidade emocional perturbadora. 1h.", addr:"1 Rue des Unterlinden, Colmar · €13" },
+      { time:"17:00", type:"wine", name:"🍷 Dopff au Moulin — Crémant d'Alsace", desc:"Degustação rápida no balcão (30 min). Pioneiros do Crémant d'Alsace (espumante alsaciano método tradicional). Provar o Brut Blanc de Blancs e o Blanc de Noirs. Excelente custo-benefício ~€12/pessoa.", addr:"2 Avenue Jacques Preiss, Riquewihr" },
+      { time:"20:00", type:"food", name:"Jantar em Colmar", desc:"JY'S ou La Maison des Têtes brasserie. JY'S é o melhor restaurante da cidade (1 estrela Michelin) mas caro — reservar antes se quiser ir. A Brasserie da Maison des Têtes é mais acessível e igualmente boa, com choucroute de Riesling e foie gras local.", addr:"Centre Historique, Colmar" }
+    ]
+  },
+  {
+    date: "12", month: "JUN", week: "SEX", city: "Colmar",
+    title: "Rota dos Vilarejos Alsacianos",
+    subtitle: "Eguisheim, Ribeauvillé e Kaysersberg — os 3 vilarejos mais fotogênicos da Alsácia num único dia.",
+    tags: [{label:"Eguisheim", color:"var(--photo)"},{label:"Pinot Gris", color:"var(--wine)"},{label:"Ribeauvillé", color:"var(--photo)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Colmar → Eguisheim", desc:"8 min ao sul de Colmar.", isDrive:true, driveInfo:"8 min · 6 km" },
+      { time:"09:15", type:"photo", name:"📸 Eguisheim — O Mais Bonito da França", desc:"Eleito o mais belo vilarejo da França. Única rua circular concêntrica, casas do séc. XV pintadas em cores vivas, flores em cada janela. Praça central com a Fontaine Saint-Léon. Andar no sentido horário para seguir a rua principal.", addr:"Eguisheim, 68420 · gratuito" },
+      { time:"09:45", type:"wine", name:"🍷 Cave Viticole d'Eguisheim — Grand Cru", desc:"Degustação rápida (30 min). Provar o Pinot Gris Grand Cru Eichberg e o Gewürztraminer Grand Cru Pfersigberg — dois dos maiores Grand Crus da Alsácia, produzidos aqui em solo vulcânico único. ~€10/pessoa.", addr:"6 Grand Rue, Eguisheim", tip:"💡 O Pinot Gris daqui é fumado, denso e mineral. Completamente diferente de qualquer Pinot Gris que você já provou." },
+      { time:"10:30", type:"drive", name:"Eguisheim → Ribeauvillé", desc:"18 min pela Route des Vins — estrada mais bonita do trecho.", isDrive:true, driveInfo:"18 min · 15 km · Route des Vins" },
+      { time:"11:00", type:"photo", name:"📸 Ribeauvillé — 3 Castelos no Alto", desc:"Três castelos medievais em ruínas no topo da montanha atrás do vilarejo: Girsberg, Saint-Ulrich e Haut-Ribeaupierre. O vilarejo embaixo é medieval intacto com fontanelas e casas do séc. XIII. Subir pela Rue du Château para vista panorâmica (20 min de caminhada leve).", addr:"Ribeauvillé, 68150" },
+      { time:"12:00", type:"wine", name:"🍷 Cave Trimbach — Riesling Clos Sainte Hune", desc:"Degustação rápida no balcão. Trimbach é a maison de referência mundial para Riesling seco. O Clos Sainte Hune é considerado um dos 10 maiores vinhos brancos do planeta. Provar o Riesling Réserve e o Riesling Frédéric Emile. ~€15/pessoa.", addr:"15 Route de Bergheim, Ribeauvillé · trimbach.fr", tip:"💡 Não compre o Clos Sainte Hune aqui — custa €150+ a garrafa. Mas provar €15 é o melhor custo-benefício da viagem." },
+      { time:"13:00", type:"food", name:"Almoço em Ribeauvillé", desc:"Winstub zum Pfifferhüs — o mais antigo de Ribeauvillé (séc. XVI), com teto de vigas e menu escrito no quadro negro. Tarte flambée au lard e um copo de Riesling Réserve Trimbach.", addr:"14 Grand Rue, Ribeauvillé" },
+      { time:"14:30", type:"drive", name:"Ribeauvillé → Kaysersberg", desc:"15 min pela Route des Vins, passando por Riquewihr.", isDrive:true, driveInfo:"15 min · 12 km" },
+      { time:"15:00", type:"photo", name:"📸 Kaysersberg — Ponte Medieval", desc:"A ponte medieval coberta sobre o rio Weiss, com torre de guarda do séc. XV e castelo em ruínas no morro atrás — a composição mais fotogênica da Alsácia. Centro histórico compacto com casas renascentistas do séc. XVI.", addr:"Kaysersberg, 68240" },
+      { time:"15:45", type:"wine", name:"🍷 Domaine Weinbach — Riesling Clos des Capucins", desc:"Uma das maiores domaines biodinâmicas da Alsácia, instalada num convento dos Capuchinhos do séc. XVII cercado por muros. O jardim de rosas na entrada é espetacular. Provar o Riesling Clos des Capucins (lendário, de parcela única dentro dos muros do convento) e o Gewürztraminer Altenbourg. Degustação ~€15/pessoa.", addr:"25 Route du Vin, Kaysersberg · weinbach.com", tip:"💡 Este é um dos endereços mais belos da Alsácia — o convento, o jardim, os muros cobertos de videiras. Reserve por e-mail com antecedência." },
+      { time:"16:45", type:"wine", name:"🍷 Albert Mann — Gewürztraminer Grand Cru Furstentum", desc:"Degustação rápida (30 min). Uma das melhores domaines biodinâmicas da Alsácia. O Gewürztraminer Grand Cru Furstentum é aromático, exuberante, com notas de lichia e rosa. Provar também o Pinot Noir — o melhor da Alsácia.", addr:"13 Rue du Château, Wettolsheim (10 min de Kaysersberg) · albert-mann.com" },
+      { time:"17:00", type:"drive", name:"Volta Colmar", desc:"20 min de volta para o Airbnb.", isDrive:true, driveInfo:"20 min · 13 km" },
+      { time:"20:00", type:"food", name:"Jantar improvisado em Colmar", desc:"Ao chegar, escolher um restaurante por intuição no centro histórico. Rue des Marchands e Place de la Cathédrale têm boas opções. Pedir um Gewürztraminer de Kaysersberg e uma flammkuche." }
+    ]
+  },
+  {
+    date: "13", month: "JUN", week: "SAB", city: "Strasbourg",
+    title: "Obernai + Strasbourg",
+    subtitle: "Última parada alsaciana — vilarejo medieval menos turístico e a capital europeia com La Petite France.",
+    tags: [{label:"Obernai", color:"var(--photo)"},{label:"Strasbourg", color:"var(--photo)"},{label:"Catedral Rosa", color:"var(--walk)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Colmar → Obernai", desc:"35 min ao norte pela D35 (estrada cênica pela vinha).", isDrive:true, driveInfo:"35 min · 40 km · D35 pela vinha" },
+      { time:"09:45", type:"photo", name:"📸 Obernai — Descoberta Local", desc:"Menos turístico que os outros vilarejos — aqui você vê a Alsácia como ela é. Place du Marché com o poço medieval de 1579, torre Kapellturm do séc. XIII e casas de meia-viga coloridas. Mercado ao ar livre sábados de manhã.", addr:"Obernai, 67210 · gratuito" },
+      { time:"10:30", type:"wine", name:"🍷 Cave d'Obernai — degustação rápida", desc:"Cooperativa local com Sylvaner, Pinot Blanc e Muscat d'Alsace. Provar o Muscat — vinho branco seco e aromático, raro de encontrar fora da Alsácia. ~€8/pessoa.", addr:"30 Rue du Général Gouraud, Obernai" },
+      { time:"11:15", type:"drive", name:"Obernai → Strasbourg", desc:"30 min pela A35.", isDrive:true, driveInfo:"30 min · 30 km · A35" },
+      { time:"11:45", type:"food", name:"Almoço em Strasbourg — Winstub S'Burjerstuewel", desc:"O winstub mais autêntico de Strasbourg, frequentado por locais. Baeckeoffe (cozido de carnes e batatas em terrina de barro) e Pinot Noir d'Alsace. Reservar por telefone ou chegar cedo.", addr:"1 Rue Pucelles, Strasbourg" },
+      { time:"13:30", type:"photo", name:"📸 La Petite France — O Melhor Bairro", desc:"O bairro mais fotografado da Europa. Casas de meia-viga dos sécs. XVI-XVII refletidas nos canais do rio Ill. Pont Couverts (pontes cobertas com 4 torres medievais) e Barrage Vauban (terraço com vista panorâmica — subir, é gratuito e a vista é incrível). 1h30 de exploração.", addr:"Quartier de la Petite France, Strasbourg · gratuito" },
+      { time:"15:00", type:"photo", name:"⛪ Catedral Notre-Dame de Strasbourg", desc:"Construída em arenito rosa dos Vosges — única no mundo com esta cor. A torre sul (142m) é uma das mais altas do mundo medieval. Subir a torre: 332 degraus, vista 360° da Alsácia e Alemanha. Interior: relógio astronômico do séc. XVI que 'funciona' às 12h30.", addr:"Place de la Cathédrale · torre €5" },
+      { time:"16:30", type:"walk", name:"Palácio Rohan + Place Gutenberg", desc:"Palácio episcopal do séc. XVIII com 3 museus internos. Fachada barroca impecável. Place Gutenberg com estátua do inventor da imprensa — a cidade onde Gutenberg desenvolveu a prensa tipográfica.", addr:"2 Place du Château, Strasbourg" },
+      { time:"17:30", type:"walk", name:"Grande Île — Passeio livre", desc:"A ilha histórica de Strasbourg é Patrimônio UNESCO. Explorar o bairro do Krutenau, Rue des Hallebardes, Place Kléber. Compras, sorvetes, aperitivo num café.", addr:"Grande Île, Strasbourg" },
+      { time:"19:30", type:"drive", name:"Strasbourg → Colmar", desc:"45 min de volta.", isDrive:true, driveInfo:"45 min · 70 km · A35" },
+      { time:"20:30", type:"food", name:"Último jantar em Colmar", desc:"Tarte flambée de despedida — Flam's na Rue des Tanneurs é rápido, informal, e faz as melhores flamenkuche da cidade com Crémant d'Alsace gelado." }
+    ]
+  },
+  {
+    date: "14", month: "JUN", week: "DOM", city: "Beaune",
+    title: "Colmar → Borgonha",
+    subtitle: "Grande travessia para a Borgonha. Gevrey-Chambertin pela Route des Grands Crus e Beaune medieval.",
+    tags: [{label:"Pinot Noir", color:"var(--wine)"},{label:"Hôtel-Dieu", color:"var(--photo)"},{label:"Borgonha", color:"var(--wine)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Colmar → Gevrey-Chambertin", desc:"2h15 pela A36 e N74 entrando na Côte de Nuits.", isDrive:true, driveInfo:"2h15 · 175 km · A36/N74" },
+      { time:"11:15", type:"photo", name:"📸 Gevrey-Chambertin — Route des Grands Crus", desc:"Entrar pela D122 ao invés da autoestrada — a Route des Grands Crus passa pelos maiores vinhedos do mundo: Chambertin, Clos de Bèze, Clos Saint-Jacques. Parar para fotografar as parcelas com placas dos Grand Crus.", addr:"D122, Gevrey-Chambertin" },
+      { time:"11:45", type:"wine", name:"🍷 Domaine Rossignol-Trapet — TOUR COMPLETO DO DIA", desc:"Domaine familiar em Gevrey há 5 gerações, pioneiros em biodinâmica na Borgonha. Tour nas caves medievais com barricas de Pinot Noir dos maiores Grand Crus do mundo (Chambertin, Latricières-Chambertin). Degustação de 4-5 vinhos incluindo Premier Cru e Grand Cru. Reserve por e-mail.", addr:"4 Rue Richebourg, Gevrey-Chambertin · rossignol-trapet.com", tip:"💡 Este é o momento de entender por que o Pinot Noir da Borgonha é diferente de qualquer outro. A diferença entre parcelas a 50m de distância é impressionante." },
+      { time:"13:30", type:"food", name:"Almoço em Gevrey-Chambertin", desc:"Le Bistrot Lucien — almoço simples mas com lista de vinhos locais notável. Pedir o boeuf bourguignon (o real, feito com Pinot Noir local) e uma taça de Gevrey Village.", addr:"Centre Village, Gevrey-Chambertin" },
+      { time:"14:30", type:"drive", name:"Gevrey → Beaune pela D122", desc:"A Route des Grands Crus passa pelos maiores vinhedos do mundo. Parar em 2 pontos obrigatórios no caminho.", isDrive:true, driveInfo:"40 min · 30 km · D122 cênica" },
+      { time:"15:00", type:"photo", name:"📸 Clos de Vougeot — Castelo Medieval nas Vinhas", desc:"O château medieval mais icônico da Borgonha, construído pelos monges de Cîteaux no séc. XII. Cercado pela maior parcela Grand Cru da Côte de Nuits (50 hectares). Tour interno com guia de 45 min mostrando os lagares medievais originais de pedra onde se pisava a uva. Vista das vinhas do alto das muralhas.", addr:"Clos de Vougeot, 21640 · closdevougeot.fr · €5" },
+      { time:"16:00", type:"photo", name:"📸 Vosne-Romanée — A Placa da Romanée-Conti", desc:"O vilarejo mais famoso do mundo do vinho. Na beira da estrada, uma placa discreta marca a entrada da vinha da Romanée-Conti — 1,8 hectares que produzem o vinho mais caro do planeta (€15.000–30.000 a garrafa). Parar 10 minutos para fotografar. A Domaine não recebe visitantes, mas caminhar ao redor da vinha é permitido.", addr:"Lieu-dit La Romanée-Conti, Vosne-Romanée", tip:"💡 Estão literalmente em cima da terra mais valorizada do mundo do vinho. Uma foto aqui é obrigatória para qualquer amante de vinho." },
+      { time:"15:30", type:"photo", name:"📸 Hôtel-Dieu de Beaune", desc:"Hospital medieval de 1443 — um dos edifícios mais bonitos da França. Telhado de telhas esmaltadas em padrão geométrico borgonhês (policromo, único no mundo). Pátio interno de tirar o fôlego. Entrar para ver as salas medievais, a farmácia do séc. XV e o polyptique de Rogier van der Weyden.", addr:"Rue de l'Hôtel Dieu, Beaune · €8" },
+      { time:"17:00", type:"walk", name:"Beaune Intramuros — muralhas medievais", desc:"Beaune tem as muralhas medievais mais intactas da Borgonha. Caminhar pelos bastiões e fossas. Rue de Lorraine, Rue Carnot e Place Carnot com o Hôtel de Ville. Muito fotogênico.", addr:"Intramuros, Beaune" },
+      { time:"18:00", type:"sleep", name:"Check-in Coto Hotel Beaune", desc:"2 noites. Conf. 5971835953 · PIN 3155.", addr:"Beaune" },
+      { time:"20:00", type:"food", name:"Jantar — Beaune", desc:"Bistrot Bourguignon — o mais clássico de Beaune, dentro das muralhas. Jambon persillé de Beaune, escargots à la bourguignonne e entrecôte com molho de Pinot Noir. Pedir uma garrafa de Beaune Villages.", addr:"8 Rue Monge, Beaune" }
+    ]
+  },
+  {
+    date: "15", month: "JUN", week: "SEG", city: "Beaune",
+    title: "Meursault · Puligny · Marché aux Vins",
+    subtitle: "O grande dia dos Chardonnays. Os 2 maiores brancos do mundo num único dia, mais o Marché aux Vins de tarde.",
+    tags: [{label:"Meursault", color:"var(--wine)"},{label:"Montrachet", color:"var(--wine)"},{label:"Grand Cru", color:"var(--wine)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Beaune → Meursault", desc:"10 min ao sul pela N74.", isDrive:true, driveInfo:"10 min · 8 km" },
+      { time:"09:15", type:"photo", name:"📸 Meursault — Vilarejo e Torre Medieval", desc:"Vilarejo pequeno e tranquilo — muito menos turístico que Beaune. Torre da igreja medieval gótica no centro, ruas de paralelepípedo, casas de pedra dourada. Caminhar 20 min pelas ruas principais.", addr:"Meursault, 21190" },
+      { time:"09:45", type:"wine", name:"🍷 Domaine des Comtes Lafon — Meursault", desc:"Uma das referências absolutas do Chardonnay mundial. Provar o Meursault Village e o Meursault 1er Cru Perrières — rico, amanteigado, mineral, com notas de amêndoa torrada. Completamente diferente do Chablis. Degustação ~€20/pessoa.", addr:"Clos de la Barre, Meursault · comtes-lafon.com", tip:"💡 Este é o 2° dos 3 grandes Chardonnays da viagem. Chablis é austero e mineral; Meursault é rico e amanteigado. Lembrar do contraste quando chegar em Chablis amanhã." },
+      { time:"11:00", type:"drive", name:"Meursault → Puligny-Montrachet", desc:"5 min ao sul.", isDrive:true, driveInfo:"5 min · 4 km" },
+      { time:"11:15", type:"photo", name:"📸 Vinha de Montrachet — caminhada", desc:"A vinha Grand Cru mais famosa do planeta. Caminhar pelo caminho entre Puligny-Montrachet e Chassagne-Montrachet — a vinha fica na borda da estrada, com apenas uma placa discreta. 20 min de caminhada tranquila entre as videiras.", addr:"Lieu-dit Montrachet, entre Puligny e Chassagne", tip:"💡 O vinho branco mais caro do mundo nasce exatamente nestas videiras. Uma garrafa Domaine de la Romanée-Conti Montrachet custa €15.000+." },
+      { time:"12:00", type:"wine", name:"🍷 Domaine Leflaive — Puligny-Montrachet", desc:"A domaine de referência de Puligny, biodinâmica desde 1990. Degustação de Puligny-Montrachet Village e Premier Cru Les Pucelles (~€25/pessoa). O Chardonnay mais elegante do mundo — ao mesmo tempo mineral, fresco e profundo.", addr:"Place des Marronniers, Puligny-Montrachet · leflaive.fr" },
+      { time:"13:30", type:"food", name:"Almoço em Beaune", desc:"Ma Cuisine — o favorito dos winemakers locais. Balcão de mármore, vinhos ao preço de importação, cozinha lionesa clássica. Pedir o poulet à la crème e uma taça de Meursault com o almoço.", addr:"Passage Sainte-Hélène, Beaune" },
+      { time:"15:00", type:"wine", name:"🍷 Marché aux Vins — Beaune", desc:"8 vinhos borgonheses em caves medievais do séc. XV, autoconduzido com taça de prata e mapa das parcelas. Inclui 3 Premiers Crus e às vezes um Grand Cru. ~€17/pessoa. Demora 1h30 no ritmo certo.", addr:"2 Rue Nicolas Rollin, Beaune · marcheauxvins.com", tip:"💡 Beber devagar — 8 vinhos em sequência. Cuspir é permitido e recomendado nos primeiros. Guardar o paladar para os Premiers Crus no final." },
+      { time:"17:00", type:"walk", name:"Caves da Patriarche Père et Fils", desc:"As maiores caves de Beaune — 5 km de galerias subterrâneas. Tour independente com taça incluída. Mais espetacular visualmente que o Marché aux Vins mas vinhos menos interessantes. Opcional — só se tiver energia.", addr:"7 Rue du Collège, Beaune · €15" },
+      { time:"19:00", type:"walk", name:"Ramparts de Beaune + aperitivo", desc:"Golden hour nas muralhas medievais — a luz do sol poente no arenito é linda. Aperitivo no Caves Madeleine (cave-bar dentro das muralhas) com uma taça de Aligoté local.", addr:"Ramparts, Beaune" },
+      { time:"20:30", type:"food", name:"Jantar — último na Borgonha", desc:"Le Bénaton — chef criativo com produtos locais, menu-degustação com harmonização opcional. Reservar com 1-2 dias de antecedência se possível. Alternativa: La Ciboulette, mais simples mas também excelente.", addr:"25 Rue du Faubourg Bretonnière, Beaune" }
+    ]
+  },
+  {
+    date: "16", month: "JUN", week: "TER", city: "Chablis + Paris",
+    title: "Chablis → Paris → Voo",
+    subtitle: "O terceiro Chardonnay e o encerramento perfeito. Tarde em Paris antes do voo noturno.",
+    tags: [{label:"Chablis", color:"var(--wine)"},{label:"Chardonnay", color:"var(--wine)"},{label:"Voo 23h35", color:"var(--drive)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Beaune → Chablis", desc:"1h pela A6. Check-out antes.", isDrive:true, driveInfo:"1h · 115 km · A6" },
+      { time:"10:15", type:"photo", name:"📸 Chablis — Vilarejo às margens do Serein", desc:"O menor dos três vilarejos vinícolas da viagem — quase ninguém vem até aqui. Igreja Saint-Martin do séc. XII, Pont du Serein, vielas de paralelepípedo. 20 min de caminhada tranquila.", addr:"Chablis, 89800" },
+      { time:"10:45", type:"wine", name:"🍷 William Fèvre ou Domaine Raveneau — O 3° Chardonnay", desc:"O encerramento da trilogia: Chablis é o Chardonnay mais austero e mineral do mundo — sem carvalho, sem manteiga, puro calcário e mar. Completamente diferente de Meursault. Provar o Chablis Premier Cru Montée de Tonnerre (Fèvre) ou Chablis 1er Cru Montée de Tonnerre (Raveneau). ~€15-20/pessoa.", addr:"Chablis · williamfevre.com", tip:"💡 A trilogia completa: Chablis (mineral/austero) → Meursault (rico/amanteigado) → Puligny (elegante/floral). Três expressões do mesmo Chardonnay, totalmente diferentes." },
+      { time:"12:00", type:"food", name:"Almoço de despedida em Chablis", desc:"Au Fil du Zinc — o melhor bistrô de Chablis. Jambon au Chablis (presunto braseado no próprio vinho) com batatas ao murro. Uma taça de Chablis Premier Cru para fechar.", addr:"18 Rue des Moulins, Chablis" },
+      { time:"13:30", type:"drive", name:"Chablis → Paris", desc:"1h45 pela A6. Devolver o carro no CDG ou na cidade.", isDrive:true, driveInfo:"1h45 · 180 km · A6" },
+      { time:"15:30", type:"walk", name:"Tarde livre em Paris", desc:"Dependendo do cansaço — um café em Saint-Germain, última caminhada pelo Sena, ou simplesmente sentar num banco da Île Saint-Louis com um gelato Berthillon. Sem pressa.", addr:"Paris" },
+      { time:"18:00", type:"food", name:"Jantar de encerramento em Paris", desc:"Qualquer bistrô de bairro. Steak frites com um Beaujolais ou Bordeaux. Simples, sem cerimônia. A viagem foi grande o suficiente.", addr:"Paris" },
+      { time:"20:00", type:"drive", name:"Paris → CDG · RER B ou táxi", desc:"Sair com 3h30 de antecedência para ter margem. RER B linha direta (35 min) ou táxi (~€55). Não usar Uber às 20h — trânsito pesado.", addr:"Gare du Nord ou Châtelet → CDG Terminal 2E" },
+      { time:"23:35", type:"drive", name:"✈️ Decolagem CDG → GRU", desc:"G3 5003 · Air France · Terminal 2E · Pouso GRU 17 jun às 06h15.", addr:"CDG Terminal 2E, Aerogare 2" }
+    ]
+  }
+];
+
+// BUILD UI
+const tabsEl = document.getElementById('tabs');
+const panelsEl = document.getElementById('panels');
+
+days.forEach((day, i) => {
+  // Tab
+  const tab = document.createElement('div');
+  tab.className = 'day-tab' + (i === 0 ? ' active' : '');
+  tab.innerHTML = `<div class="day-tab-num">DIA ${i+1}</div><div class="day-tab-date">${day.date} ${day.month}</div><div class="day-tab-city">${day.city}</div>`;
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('panel-' + i).classList.add('active');
+    tab.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+  });
+  tabsEl.appendChild(tab);
+
+  // Panel
+  const panel = document.createElement('div');
+  panel.className = 'day-panel' + (i === 0 ? ' active' : '');
+  panel.id = 'panel-' + i;
+
+  const tagsHtml = day.tags.map(t => `<span class="day-tag" style="background:${t.color}22;color:${t.color};border:1px solid ${t.color}44">${t.label}</span>`).join('');
+
+  let html = `
+    <div class="day-header">
+      <div class="day-badge">
+        <div class="day-badge-num">${day.date}</div>
+        <div class="day-badge-month">${day.month}</div>
+        <div class="day-badge-week">${day.week}</div>
+      </div>
+      <div class="day-info">
+        <div class="day-title">${day.title}</div>
+        <div class="day-subtitle">${day.subtitle}</div>
+        <div class="day-tags">${tagsHtml}</div>
+      </div>
+    </div>
+    <div class="timeline">`;
+
+  day.slots.forEach(slot => {
+    if (slot.isDrive) {
+      html += `
+        <div class="drive-bar">
+          🚗 <span>${slot.driveInfo}</span> — ${slot.desc}
+        </div>`;
+      return;
+    }
+    const typeMap = {wine:'type-wine',photo:'type-photo',food:'type-food',walk:'type-walk',drive:'type-drive',sleep:'type-sleep'};
+    const typeLabel = {wine:'🍷 Vinícola',photo:'📸 Fotografia',food:'🍽️ Refeição',walk:'🚶 Passeio',drive:'🚗 Deslocamento',sleep:'🏨 Hotel'};
+    const cls = typeMap[slot.type] || '';
+    const lbl = typeLabel[slot.type] || slot.type;
+
+    html += `
+      <div class="slot ${cls}">
+        <div class="slot-time">${slot.time}</div>
+        <div class="slot-dot"></div>
+        <div class="slot-body">
+          <div class="slot-card">
+            <div class="slot-type">${lbl}</div>
+            <div class="slot-name">${slot.name}</div>
+            <div class="slot-desc">${slot.desc}</div>
+            ${slot.addr ? `<div class="slot-addr">📍 ${slot.addr}</div>` : ''}
+            ${slot.tip ? `<div class="slot-tip">${slot.tip}</div>` : ''}
+          </div>
+        </div>
+      </div>`;
+  });
+
+  html += `</div>`;
+  panel.innerHTML = html;
+  panelsEl.appendChild(panel);
+});
+</script>
+
+</div>
+
+<!-- PAGE 3: VINÍCOLAS -->
+<div class="app-page" id="page-vinicolas">
+
+<div style="background:var(--dark);min-height:100vh;padding-bottom:60px">
+
+<div style="background:linear-gradient(180deg,#1a1208 0%,#0c0a06 100%);border-bottom:1px solid #2a2010;padding:36px 24px 28px;text-align:center">
+  <div style="font-size:11px;letter-spacing:5px;color:#7a5a2a;text-transform:uppercase;margin-bottom:10px">road trip · junho 2026</div>
+  <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,5vw,38px);font-weight:300;color:#f0e6cc">Reservas de Vinícolas & Caves</div>
+  <div style="font-size:12px;color:#5a4a2a;margin-top:8px;letter-spacing:1px">Contato e reserva antecipada obrigatória para tours guiados</div>
+</div>
+
+<div style="max-width:600px;margin:0 auto;padding:24px 20px 0">
+
+<!-- PROGRESS -->
+<div id="vino-progress" style="margin-bottom:24px">
+  <div style="background:#2a2010;border-radius:10px;height:6px;overflow:hidden">
+    <div id="vino-fill" style="height:100%;background:#c97eb8;border-radius:10px;width:0%;transition:width 0.3s"></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:#5a4a2a;margin-top:6px;letter-spacing:1px">
+    <span id="vino-text">0 de 0 reservas feitas</span>
+    <span id="vino-pct">0%</span>
+  </div>
+</div>
+
+<!-- ALERTA -->
+<div style="background:#1a0e08;border:1px solid #e8956d44;border-radius:4px;padding:12px 16px;margin-bottom:20px;font-size:12px;color:#8a6a3a;line-height:1.6">
+  <strong style="color:#e8956d">⚠️ Tours guiados precisam de reserva antecipada.</strong> Especialmente em junho (alta temporada). Veuve Clicquot, Taittinger, Moët, Hugel e Rossignol-Trapet — reservar com pelo menos 2-3 semanas de antecedência.
+</div>
+
+<!-- CHAMPAGNE -->
+<div style="margin-bottom:20px">
+  <div style="font-size:10px;letter-spacing:3px;color:#c8a96e;text-transform:uppercase;border-bottom:1px solid #2a2010;padding-bottom:8px;margin-bottom:10px">
+    🍾 Champagne · Dias 1 e 2
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="https://veuveclicquot.com/en-row/visites-et-evenements">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Veuve Clicquot</div>
+      <div class="vino-meta">Dia 1 · Reims · 12h00 · Tour 1h30 · ~€25/pessoa</div>
+      <div class="vino-detail">18km de galerias · Yellow Label + Rosé · TOUR — reserva obrigatória</div>
+      <a href="https://veuveclicquot.com/en-row/visites-et-evenements" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
+    </div>
+    <span class="vino-tag vino-tag-tour">TOUR</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="https://taittinger.com/en/visites/">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Taittinger</div>
+      <div class="vino-meta">Dia 1 · Reims · 14h30 · Tour 1h · ~€28/pessoa</div>
+      <div class="vino-detail">Galerias romanas séc. IV · Comtes de Champagne · TOUR — reserva obrigatória</div>
+      <a href="https://taittinger.com/en/visites/" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
+    </div>
+    <span class="vino-tag vino-tag-tour">TOUR</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="https://www.moet.com/en-us/visits">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Moët & Chandon</div>
+      <div class="vino-meta">Dia 2 · Épernay · 10h00 · Tour 1h · ~€30/pessoa</div>
+      <div class="vino-detail">28km de galerias · Brut Impérial + Rosé · TOUR — reserva obrigatória</div>
+      <a href="https://www.moet.com/en-us/visits" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
+    </div>
+    <span class="vino-tag vino-tag-tour">TOUR</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Perrier-Jouët</div>
+      <div class="vino-meta">Dia 2 · Épernay · 11h30 · Degustação balcão · ~€15/pessoa</div>
+      <div class="vino-detail">Boutique Belle Époque · entrada livre, sem reserva necessária</div>
+    </div>
+    <span class="vino-tag vino-tag-walk">LIVRE</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="mailto:contact@champagne-bollinger.fr">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Bollinger</div>
+      <div class="vino-meta">Dia 2 · Aÿ · 13h45 · Tour 45min · ~€30/pessoa</div>
+      <div class="vino-detail">Pinot Noir · Special Cuvée + Blanc de Noirs · TOUR privado — reservar por e-mail</div>
+      <a href="mailto:contact@champagne-bollinger.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">E-mail →</a>
+    </div>
+    <span class="vino-tag vino-tag-tour">TOUR</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Récoltant artesanal em Hautvillers</div>
+      <div class="vino-meta">Dia 2 · Hautvillers · 15h00 · Degustação livre · ~€10-15/pessoa</div>
+      <div class="vino-detail">Perguntar ao anfitrião do Airbnb o produtor local preferido · sem reserva</div>
+    </div>
+    <span class="vino-tag vino-tag-walk">LIVRE</span>
+  </div>
+</div>
+
+<!-- ALSÁCIA -->
+<div style="margin-bottom:20px">
+  <div style="font-size:10px;letter-spacing:3px;color:#c8a96e;text-transform:uppercase;border-bottom:1px solid #2a2010;padding-bottom:8px;margin-bottom:10px">
+    🍷 Alsácia · Dias 4, 5 e 6
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="mailto:advance@hugel.com">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Maison Hugel & Fils</div>
+      <div class="vino-meta">Dia 4 · Riquewihr · 11h15 · Tour 1h30 · ~€20/pessoa</div>
+      <div class="vino-detail">Fundada 1639 · Riesling Jubilee Grand Cru · TOUR — reservar por e-mail</div>
+      <a href="mailto:advance@hugel.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">advance@hugel.com →</a>
+    </div>
+    <span class="vino-tag vino-tag-tour">TOUR</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Dopff au Moulin — Crémant d'Alsace</div>
+      <div class="vino-meta">Dia 4 · Riquewihr · 17h00 · Degustação balcão · ~€12/pessoa</div>
+      <div class="vino-detail">Crémant Brut Blanc de Blancs + Blanc de Noirs · sem reserva</div>
+    </div>
+    <span class="vino-tag vino-tag-walk">LIVRE</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Cave Viticole d'Eguisheim</div>
+      <div class="vino-meta">Dia 5 · Eguisheim · 09h45 · Degustação · ~€10/pessoa</div>
+      <div class="vino-detail">Pinot Gris Grand Cru Eichberg + Gewürztraminer Grand Cru · sem reserva</div>
+    </div>
+    <span class="vino-tag vino-tag-walk">LIVRE</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Cave Trimbach</div>
+      <div class="vino-meta">Dia 5 · Ribeauvillé · 12h00 · Degustação balcão · ~€15/pessoa</div>
+      <div class="vino-detail">Riesling Réserve + Frédéric Emile · recomendável ligar antes</div>
+      <a href="https://trimbach.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">trimbach.fr →</a>
+    </div>
+    <span class="vino-tag vino-tag-rec">LIGAR</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="mailto:contact@weinbach.com">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Domaine Weinbach</div>
+      <div class="vino-meta">Dia 5 · Kaysersberg · 15h45 · Degustação · ~€15/pessoa</div>
+      <div class="vino-detail">Convento Capuchinhos séc. XVII · Riesling Clos des Capucins · reservar por e-mail</div>
+      <a href="mailto:contact@weinbach.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">contact@weinbach.com →</a>
+    </div>
+    <span class="vino-tag vino-tag-rec">E-MAIL</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Albert Mann</div>
+      <div class="vino-meta">Dia 5 · Wettolsheim · 16h45 · Degustação · ~€12/pessoa</div>
+      <div class="vino-detail">Gewürztraminer Grand Cru Furstentum + Pinot Noir · sem reserva</div>
+      <a href="https://albert-mann.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">albert-mann.com →</a>
+    </div>
+    <span class="vino-tag vino-tag-walk">LIVRE</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Cave d'Obernai — Muscat</div>
+      <div class="vino-meta">Dia 6 · Obernai · 10h30 · Degustação balcão · ~€8/pessoa</div>
+      <div class="vino-detail">Sylvaner + Pinot Blanc + Muscat d'Alsace · sem reserva</div>
+    </div>
+    <span class="vino-tag vino-tag-walk">LIVRE</span>
+  </div>
+</div>
+
+<!-- BORGONHA -->
+<div style="margin-bottom:20px">
+  <div style="font-size:10px;letter-spacing:3px;color:#c8a96e;text-transform:uppercase;border-bottom:1px solid #2a2010;padding-bottom:8px;margin-bottom:10px">
+    🍷 Borgonha · Dias 7 e 8
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="mailto:contact@rossignol-trapet.com">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Domaine Rossignol-Trapet</div>
+      <div class="vino-meta">Dia 7 · Gevrey-Chambertin · 11h45 · Tour 1h30 · ~€25/pessoa</div>
+      <div class="vino-detail">Chambertin Grand Cru · biodinâmica · TOUR — reservar por e-mail com antecedência</div>
+      <a href="mailto:contact@rossignol-trapet.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">rossignol-trapet.com →</a>
+    </div>
+    <span class="vino-tag vino-tag-tour">TOUR</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="https://closdevougeot.fr">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Clos de Vougeot</div>
+      <div class="vino-meta">Dia 7 · Vougeot · 15h00 · Tour 45min · €5/pessoa</div>
+      <div class="vino-detail">Castelo medieval séc. XII · lagares medievais de pedra · comprar ticket online</div>
+      <a href="https://closdevougeot.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">closdevougeot.fr →</a>
+    </div>
+    <span class="vino-tag vino-tag-rec">TICKET</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="mailto:contact@comtes-lafon.com">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Domaine des Comtes Lafon</div>
+      <div class="vino-meta">Dia 8 · Meursault · 09h45 · Degustação · ~€20/pessoa</div>
+      <div class="vino-detail">Meursault 1er Cru Perrières · amanteigado e mineral · reservar por e-mail</div>
+      <a href="mailto:contact@comtes-lafon.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">comtes-lafon.com →</a>
+    </div>
+    <span class="vino-tag vino-tag-rec">E-MAIL</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="https://leflaive.fr">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Domaine Leflaive</div>
+      <div class="vino-meta">Dia 8 · Puligny-Montrachet · 12h00 · Degustação · ~€25/pessoa</div>
+      <div class="vino-detail">Puligny-Montrachet 1er Cru Les Pucelles · o mais elegante da Borgonha · reservar</div>
+      <a href="https://leflaive.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">leflaive.fr →</a>
+    </div>
+    <span class="vino-tag vino-tag-rec">E-MAIL</span>
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="https://marcheauxvins.com">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">Marché aux Vins — Beaune</div>
+      <div class="vino-meta">Dia 8 · Beaune · 15h00 · Autoconduzido · €17/pessoa</div>
+      <div class="vino-detail">8 vinhos em caves medievais séc. XV · 3 Premiers Crus incluídos · comprar online</div>
+      <a href="https://marcheauxvins.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">marcheauxvins.com →</a>
+    </div>
+    <span class="vino-tag vino-tag-rec">TICKET</span>
+  </div>
+</div>
+
+<!-- CHABLIS -->
+<div style="margin-bottom:20px">
+  <div style="font-size:10px;letter-spacing:3px;color:#c8a96e;text-transform:uppercase;border-bottom:1px solid #2a2010;padding-bottom:8px;margin-bottom:10px">
+    🍷 Chablis · Dia 9
+  </div>
+
+  <div class="vino-item" onclick="toggleVino(this)" data-url="https://williamfevre.com">
+    <div class="vino-check"><span class="vino-mark">✓</span></div>
+    <div class="vino-body">
+      <div class="vino-name">William Fèvre ou Domaine Raveneau</div>
+      <div class="vino-meta">Dia 9 · Chablis · 10h45 · Degustação · ~€15-20/pessoa</div>
+      <div class="vino-detail">Chablis 1er Cru Montée de Tonnerre · mineral e austero · ligar antes</div>
+      <a href="https://williamfevre.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">williamfevre.com →</a>
+    </div>
+    <span class="vino-tag vino-tag-rec">LIGAR</span>
+  </div>
+</div>
+
+<!-- CUSTO ESTIMADO -->
+<div style="background:#141008;border:1px solid #2a2010;border-radius:4px;padding:16px;margin-bottom:24px">
+  <div style="font-size:10px;letter-spacing:3px;color:#7a5a2a;text-transform:uppercase;margin-bottom:12px">💰 Custo estimado · vinícolas</div>
+  <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;color:#6a5a3a">
+    <div style="display:flex;justify-content:space-between"><span>Tours guiados (Veuve + Taittinger + Moët + Bollinger + Hugel + Rossignol)</span><span style="color:#c97eb8">~€161/pessoa</span></div>
+    <div style="display:flex;justify-content:space-between"><span>Degustações rápidas (todas as demais)</span><span style="color:#c97eb8">~€100/pessoa</span></div>
+    <div style="display:flex;justify-content:space-between"><span>Marché aux Vins + Clos de Vougeot</span><span style="color:#c97eb8">~€22/pessoa</span></div>
+    <div style="height:1px;background:#2a2010;margin:4px 0"></div>
+    <div style="display:flex;justify-content:space-between;font-size:13px"><span style="color:#a08060">Total estimado</span><span style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#c8a96e">~€283/pessoa</span></div>
+    <div style="text-align:right;font-size:11px;color:#4a3a1a">≈ R$ 1.783/pessoa · €1 = R$6,30</div>
+  </div>
+</div>
+
+<button onclick="resetVino()" style="display:block;margin:0 auto 24px;background:transparent;border:1px solid #2a2010;color:#4a3a1a;padding:8px 24px;border-radius:3px;cursor:pointer;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase">↺ Resetar checklist</button>
+
+</div>
+</div>
+
+</div>
+
+<!-- PAGE 4: DOCUMENTOS -->
+<div class="app-page" id="page-docs">
+
+
+<div class="header">
+  <div class="header-eyebrow">Viagem França · Junho 2026</div>
+  <h1>Checklist de Documentos</h1>
+  <div class="header-sub">Daniel Henrique Frantz · GRU → CDG · 04 jun</div>
+</div>
+
+<div class="progress-bar">
+  <div class="progress-track">
+    <div class="progress-fill" id="progressFill" style="width:0%"></div>
+  </div>
+  <div class="progress-label">
+    <span id="progressText">0 de 0 itens</span>
+    <span id="progressPct">0%</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert">
+    <strong>⚠️ Brasil → França (Schengen):</strong> brasileiros não precisam de visto para estadias de até 90 dias. Passaporte válido é suficiente. Porém desde 2025 é necessário o <strong>ETIAS</strong> (autorização eletrônica prévia, similar ao ESTA americano) — verificar prazo de implementação próximo à viagem.
+  </div>
+
+  <!-- OBRIGATÓRIOS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔴</span>
+      <span class="section-title">Obrigatórios — não viaja sem</span>
+      <span class="section-count" id="count-obrig"></span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="obrig">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Passaporte físico</div>
+        <div class="item-note">Válido por pelo menos 6 meses após a data de retorno (17 jun 2026). Verificar vencimento agora.</div>
+      </div>
+      <span class="tag tag-obrig">obrig.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="obrig">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">CNH válida (Carteira Nacional de Habilitação)</div>
+        <div class="item-note">Obrigatória para retirar o carro na SIXT. Verificar vencimento. Leve o original — não aceitam cópia.</div>
+      </div>
+      <span class="tag tag-obrig">obrig.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="obrig">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">CNH Internacional (PID)</div>
+        <div class="item-note">Permissão Internacional para Dirigir — obrigatória na França para alugar carro com CNH brasileira. Emitida pelo DETRAN. Prazo: até 30 dias úteis. Faça com antecedência!</div>
+      </div>
+      <span class="tag tag-obrig">obrig.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="obrig">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Cartão de crédito internacional (chip + débito)</div>
+        <div class="item-note">A SIXT bloqueia um depósito de segurança no cartão — precisa ter limite disponível. Leve ao menos 2 cartões de bandeiras diferentes (Visa + Mastercard).</div>
+      </div>
+      <span class="tag tag-obrig">obrig.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="obrig">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Voucher do aluguel de carro (SIXT)</div>
+        <div class="item-note">Nº 9732137617 · Imprimir ou ter offline no celular. Gare Saint-Lazare, 8 jun às 10h.</div>
+      </div>
+      <span class="tag tag-obrig">obrig.</span>
+    </div>
+  </div>
+
+  <!-- RECOMENDADOS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🟡</span>
+      <span class="section-title">Recomendados — leve sempre</span>
+      <span class="section-count" id="count-rec"></span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="rec">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Seguro viagem (apólice impressa ou digital)</div>
+        <div class="item-note">Não é obrigatório para Schengen com passaporte brasileiro, mas altamente recomendado. Cobre cancelamentos, bagagem, saúde e emergências.</div>
+      </div>
+      <span class="tag tag-rec">recom.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="rec">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Cópia digitalizada do passaporte</div>
+        <div class="item-note">Salvar no Google Drive ou e-mail. Em caso de perda, facilita o processo no consulado.</div>
+      </div>
+      <span class="tag tag-rec">recom.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="rec">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Confirmações de reserva (hotéis e Airbnbs)</div>
+        <div class="item-note">Hotel Zora · Airbnb Reims · Airbnb Épernay · Airbnb Troyes · Colmar · Beaune. Ter offline ou impresso.</div>
+      </div>
+      <span class="tag tag-rec">recom.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="rec">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Confirmações dos voos (GOL/Air France)</div>
+        <div class="item-note">G3 5000 (ida) e G3 5003 (volta). Código de reserva HRIFIC. Fazer check-in online 30h antes.</div>
+      </div>
+      <span class="tag tag-rec">recom.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="rec">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Cartão de débito/conta internacional (Wise, Nomad ou C6)</div>
+        <div class="item-note">Para saques em euros sem IOF abusivo. A Wise é a opção de menor custo — abra a conta antes de viajar.</div>
+      </div>
+      <span class="tag tag-rec">recom.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="rec">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Endereço do primeiro hotel anotado</div>
+        <div class="item-note">Hôtel Zora · 4 Rue Léopold Bellan, 75002 Paris. Imigração pode pedir endereço de hospedagem.</div>
+      </div>
+      <span class="tag tag-rec">recom.</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="rec">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Chip internacional ou eSIM europeu</div>
+        <div class="item-note">Ativar antes de embarcar. Airalo ou eSIM da operadora local. Fundamental para o GPS no carro.</div>
+      </div>
+      <span class="tag tag-rec">recom.</span>
+    </div>
+  </div>
+
+  <!-- OPCIONAIS / ÚTEIS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔵</span>
+      <span class="section-title">Opcionais — mas úteis</span>
+      <span class="section-count" id="count-opt"></span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="opt">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">RG (documento de identidade nacional)</div>
+        <div class="item-note">Não substitui o passaporte na Europa, mas útil como backup em território nacional.</div>
+      </div>
+      <span class="tag tag-opt">opcional</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="opt">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Cartão de vacinação (febre amarela)</div>
+        <div class="item-note">Não exigido na França, mas boa prática carregar. Pode ser solicitado no retorno ao Brasil dependendo da rota.</div>
+      </div>
+      <span class="tag tag-opt">opcional</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="opt">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">Contatos de emergência anotados no papel</div>
+        <div class="item-note">Consulado brasileiro em Paris: +33 1 45 61 63 45. Cartão da seguradora de saúde. Número do seguro viagem.</div>
+      </div>
+      <span class="tag tag-opt">opcional</span>
+    </div>
+
+    <div class="item" onclick="toggle(this)" data-group="opt">
+      <div class="checkbox"><span class="checkmark">✓</span></div>
+      <div class="item-body">
+        <div class="item-name">ETIAS (quando disponível)</div>
+        <div class="item-note">Autorização eletrônica para entrada no espaço Schengen. Previsto para 2025/2026 — verificar status próximo à viagem em travel-europe.europa.eu.</div>
+      </div>
+      <span class="tag tag-opt">verificar</span>
+    </div>
+  </div>
+
+  <!-- ATENÇÃO ESPECIAL -->
+  <div style="background:#0e0808;border:1px solid #c8a96e33;border-radius:4px;padding:16px;margin-bottom:24px">
+    <div style="font-size:10px;letter-spacing:3px;color:#7a5a2a;text-transform:uppercase;margin-bottom:10px">⚠️ Atenção especial</div>
+    <div style="display:flex;flex-direction:column;gap:8px;font-size:12px;color:#6a5a3a;line-height:1.6">
+      <div>🪪 <strong style="color:#c8a96e">CNH Internacional (PID)</strong> — este é o item mais esquecido e o mais crítico. Sem ela a SIXT pode recusar a entrega do carro. Emita no DETRAN com pelo menos 45 dias de antecedência.</div>
+      <div>💳 <strong style="color:#c8a96e">Cartão para depósito SIXT</strong> — o depósito de segurança varia de €500 a €2.000 dependendo do carro. O valor é bloqueado (não debitado) mas precisa ter limite disponível no cartão.</div>
+      <div>📋 <strong style="color:#c8a96e">Voucher da SIXT offline</strong> — salvar em PDF no celular E imprimir uma cópia. Sem internet na hora de retirar o carro pode ser problema.</div>
+    </div>
+  </div>
+
+  <button class="reset-btn" onclick="resetAll()">↺ Resetar checklist</button>
+
+</div>
+
+<script>
+function toggle(el) {
+  el.classList.toggle('checked');
+  updateProgress();
+  saveState();
+}
+
+function updateProgress() {
+  const all = document.querySelectorAll('.item');
+  const checked = document.querySelectorAll('.item.checked');
+  const pct = all.length ? Math.round(checked.length / all.length * 100) : 0;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = `${checked.length} de ${all.length} itens`;
+  document.getElementById('progressPct').textContent = pct + '%';
+
+  // group counts
+  ['obrig','rec','opt'].forEach(g => {
+    const el = document.getElementById('count-' + g);
+    if (!el) return;
+    const total = document.querySelectorAll(`[data-group="${g}"]`).length;
+    const done = document.querySelectorAll(`[data-group="${g}"].checked`).length;
+    el.textContent = `${done}/${total}`;
+  });
+}
+
+function saveState() {
+  const items = document.querySelectorAll('.item');
+  const state = Array.from(items).map(el => el.classList.contains('checked'));
+  localStorage.setItem('checklist_docs_franca', JSON.stringify(state));
+}
+
+function loadState() {
+  try {
+    const state = JSON.parse(localStorage.getItem('checklist_docs_franca') || '[]');
+    const items = document.querySelectorAll('.item');
+    items.forEach((el, i) => {
+      if (state[i]) el.classList.add('checked');
+    });
+  } catch(e) {}
+  updateProgress();
+}
+
+function resetAll() {
+  document.querySelectorAll('.item').forEach(el => el.classList.remove('checked'));
+  localStorage.removeItem('checklist_docs_franca');
+  updateProgress();
+}
+
+loadState();
+</script>
+
+</div>
+
+<script>
+function showPage(name, btn) {
+  document.querySelectorAll('.app-page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  if(btn) btn.classList.add('active');
+  window.scrollTo(0,0);
+}
+</script>
+<script>
+const days = [
+  {
+    date: "08", month: "JUN", week: "SEG", city: "Reims",
+    title: "Paris → Reims",
+    subtitle: "Primeiro dia de estrada. Retirada do BMW na Gare Saint-Lazare e direto para o Champagne — Veuve Clicquot + Taittinger no mesmo dia.",
+    tags: [{label:"Veuve Clicquot", color:"var(--wine)"},{label:"Taittinger", color:"var(--wine)"},{label:"Catedral", color:"var(--photo)"}],
+    slots: [
+      { time:"09:30", type:"drive", name:"Retirada do carro — SIXT Gare Saint-Lazare", desc:"Plataforma 27, atrás do Relay Store. Voucher 9732137617. Fazer vistoria completa e fotografar qualquer arranhão antes de sair.", addr:"13 Rue d'Amsterdam, Paris 08" },
+      { time:"10:30", type:"drive", name:"Paris → Reims", desc:"A4 em direção leste. 1h30 de autoestrada.", isDrive: true, driveInfo:"1h30 · 145 km · A4" },
+      { time:"12:00", type:"wine", name:"🍾 Veuve Clicquot — Tour + Degustação", desc:"As caves mais extensas de Reims — 18km de galerias subterrâneas escavadas em calcário. A história da Veuve Clicquot começa em 1772 — a 'grande dame do Champagne' que inventou o riddling (girar as garrafas para clarificar). Tour de 1h + degustação de 2 cuvées: Yellow Label e Rosé.", addr:"1 Place des Droits de l'Homme, Reims · veuveclicquot.com", tip:"💡 Reservar online com antecedência. ~€25/pessoa. Pedir o slot de 12h ou 12h30." },
+      { time:"13:30", type:"food", name:"Almoço rápido em Reims", desc:"Brasserie du Boulingrin — art déco de 1925. Prato do dia rápido: pâté champenois ou croque-monsieur com uma taça de Champagne rosé.", addr:"48 Rue de Mars, Reims" },
+      { time:"14:30", type:"wine", name:"🍾 Taittinger — Tour + Degustação", desc:"As galerias mais bonitas de Reims — escavadas pelos monges beneditinos no séc. IV d.C., 4 andares subterrâneos a 18m de profundidade. Completamente diferente da Veuve: aqui o foco é elegância e Chardonnay. Tour de 1h + degustação de 3 cuvées incluindo o Comtes de Champagne Blanc de Blancs.", addr:"9 Place Saint-Nicaise, Reims · taittinger.com", tip:"💡 Reservar slot de 14h30 ou 15h. ~€28/pessoa. O Comtes de Champagne é um dos maiores Champagnes do mundo." },
+      { time:"16:30", type:"photo", name:"📸 Catedral Notre-Dame de Reims", desc:"Onde 33 reis da França foram coroados. À luz do fim de tarde o arenito dourado fica espetacular. Entrar para ver os vitrais de Chagall no ábside — 20 minutos bastam.", addr:"Place du Cardinal Luçon, Reims · gratuito" },
+      { time:"17:15", type:"walk", name:"Place Royale + Porte de Mars", desc:"Praça real do séc. XVIII e o maior arco triunfal romano da França (séc. III). 20 min a pé do centro.", addr:"Rue du Mars, Reims" },
+      { time:"18:00", type:"sleep", name:"Check-in Airbnb Reims", desc:"Pernoite em Reims conforme reserva." },
+      { time:"20:00", type:"food", name:"Jantar em Reims", desc:"Brasserie Le Boulingrin — art déco de 1925, o mais histórico de Reims. Pedir pâté champenois e tarte à la crème. Ou Le Foch para algo mais refinado com harmonização de Champagne.", addr:"48 Rue de Mars, Reims" }
+    ]
+  },
+  {
+    date: "09", month: "JUN", week: "TER", city: "Épernay",
+    title: "Épernay — Capital do Champagne",
+    subtitle: "O dia mais espumante da viagem. Avenue de Champagne, caves de Moët e produtores artesanais em Hautvillers.",
+    tags: [{label:"Champagne", color:"var(--wine)"},{label:"Hautvillers", color:"var(--photo)"},{label:"Moët", color:"var(--wine)"}],
+    slots: [
+      { time:"09:00", type:"photo", name:"📸 Avenue de Champagne — manhã cedo", desc:"A rua mais rica do mundo por km². De manhã está vazia de turistas. Fotografar as grandes maisons com luz lateral. 1,8 km de fachadas históricas.", addr:"Avenue de Champagne, Épernay" },
+      { time:"10:00", type:"wine", name:"🍾 Moët & Chandon — visita e degustação", desc:"A maior maison do mundo, fundada em 1743. Cave subterrânea com 28 km de galerias. Tour de 1h com guia + degustação de 2 cuvées. Pedir o Brut Impérial e o Rosé.", addr:"20 Avenue de Champagne, Épernay · moet.com", tip:"💡 Reservar online obrigatório. ~€30/pessoa para o tour clássico." },
+      { time:"11:30", type:"wine", name:"🥂 Perrier-Jouët — fachada e loja", desc:"Não precisa de tour — a fachada art nouveau com flores esmaltadas é uma das mais fotografadas de Épernay. Entrar na boutique para ver as garrafas Belle Époque originais e fazer uma degustação rápida no balcão (~€15).", addr:"28 Avenue de Champagne, Épernay" },
+      { time:"12:30", type:"food", name:"Almoço — Le Théâtre", desc:"Restaurante na Place de la République, cozinha alsaciana-champenoise. Pedir a andouillette gratinée ou o foie gras local. Mesa do lado de fora na praça se o tempo estiver bom.", addr:"Place de la République, Épernay" },
+      { time:"13:30", type:"drive", name:"Épernay → Aÿ", desc:"10 min ao leste.", isDrive:true, driveInfo:"10 min · 5 km" },
+      { time:"13:45", type:"wine", name:"🍾 Bollinger — Maison Icônica de Pinot Noir", desc:"Uma das grandes maisons de Champagne, fundada em 1829, especializada em Pinot Noir — produz Champagnes mais encorpados, com mais estrutura e profundidade que os baseados em Chardonnay. Tour de 45 min nas caves históricas + degustação do Special Cuvée e do Blanc de Noirs. Favorita de James Bond nos filmes.", addr:"16 Rue Chanoine Gosset, Aÿ · champagne-bollinger.com", tip:"💡 Reserve com antecedência — tours privados apenas. ~€30/pessoa. Ótimo momento para comparar o estilo Pinot Noir (Bollinger) com o estilo Chardonnay (Taittinger de ontem)." },
+      { time:"14:45", type:"drive", name:"Aÿ → Hautvillers", desc:"10 min subindo as vinhas.", isDrive:true, driveInfo:"10 min · 8 km · estrada de vinha" },
+      { time:"14:30", type:"photo", name:"📸 Hautvillers — Dom Pérignon", desc:"O vilarejo mais bonito da região, em terraço entre as vinhas. Ruas de paralelepípedo, casas com ornamentos de ferro forjado nas portas, abadia beneditina onde Dom Pérignon trabalhou. Vista panorâmica do Vale do Marne.", addr:"Village de Hautvillers, 51160" },
+      { time:"15:00", type:"wine", name:"🍾 Récoltant-Manipulant artesanal — Hautvillers", desc:"Visite um produtor independente — eles cultivam as próprias uvas e fazem Champagne de parcela única, sem blending industrial. Recomendar: Champagne Tarlant (família há 13 gerações) ou Champagne Francis Boulard. Champagne de terroir completamente diferente das grandes maisons. Degustação livre, €10-15/pessoa.", addr:"Pergunta ao anfitrião do Airbnb o produtor local preferido", tip:"💡 Estes produtores artesanais são a grande revelação da visita ao Champagne. Guarda uma garrafa para levar." },
+      { time:"16:30", type:"drive", name:"Volta Épernay / Reims", desc:"Retorno ao hotel.", isDrive:true, driveInfo:"15 min" },
+      { time:"17:00", type:"walk", name:"Musée du Vin de Champagne", desc:"Palácio do séc. XVIII com história completa do Champagne, de Dom Pérignon aos dias atuais. 1h de visita tranquila.", addr:"13 Avenue de Champagne, Épernay · €7/pessoa" },
+      { time:"20:00", type:"food", name:"Jantar — improviso em Épernay", desc:"A própria Avenue de Champagne tem bistrôs bons. Les Cépages é uma boa opção — prato do dia com harmonização de Champagne local incluída no menu." }
+    ]
+  },
+  {
+    date: "10", month: "JUN", week: "QUA", city: "Troyes",
+    title: "Troyes — A Cidade Rolha",
+    subtitle: "Cidade medieval em formato de rolha de Champagne. Manhã no centro histórico, tarde de deslocamento para Colmar.",
+    tags: [{label:"Medieval", color:"var(--photo)"},{label:"Vitrais", color:"var(--photo)"},{label:"Gastronomia", color:"var(--food)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Épernay → Troyes", desc:"Saída após café da manhã.", isDrive:true, driveInfo:"1h · 90 km · A26" },
+      { time:"10:00", type:"photo", name:"📸 Ruelle des Chats + Centro Medieval", desc:"A ruela dos Gatos — 100m de casas medievais tão próximas que os gatos pulavam de telhado em telhado. Depois explorar a Rue Emile Zola, Rue de la Monnaie e Rue Champeaux: as ruas mais preservadas do séc. XV-XVI da França.", addr:"Ruelle des Chats, Troyes · gratuito" },
+      { time:"11:00", type:"photo", name:"⛪ Catedral Saint-Pierre-et-Saint-Paul", desc:"Os vitrais do séc. XIII ao XIX são considerados os mais completos da França — 1.800m² de vitrais originais intactos. A luz da manhã atravessando o rosáceo norte é espetacular. 30-45 min.", addr:"Place Saint-Pierre, Troyes · gratuito" },
+      { time:"12:00", type:"food", name:"Almoço — Le Valentino ou Bistrot Dupont", desc:"Troyes é a capital da andouillette (linguiça de tripa) — prato divisivo mas autêntico. Se não for a cara, pedir o chaource (queijo local) com jambon. Le Valentino é o bistrô mais tradicional da cidade.", addr:"Centre Historique, Troyes" },
+      { time:"13:30", type:"walk", name:"Basilique Saint-Urbain", desc:"Joia do gótico radiante do séc. XIII, com vitrais do séc. XIII e XVII. Menor que a catedral mas mais delicada. 20 min.", addr:"Place Vernier, Troyes · gratuito" },
+      { time:"14:15", type:"walk", name:"Hôtel-Dieu-le-Comte", desc:"Antiga farmácia do hospital do séc. XVIII com frascos e instrumentos médicos medievais intactos. Curioso e fotogênico.", addr:"Quai des Comtes de Champagne · €3" },
+      { time:"15:00", type:"drive", name:"Troyes → Colmar", desc:"O trecho mais longo do road trip. Atravessa a Champagne e entra na Alsácia.", isDrive:true, driveInfo:"2h30 · 220 km · A5 + A35" },
+      { time:"17:30", type:"photo", name:"📸 Primeira chegada em Colmar — Petite Venise", desc:"Deixar as malas no Airbnb e ir direto à Petite Venise. À tarde a luz já é lateral e dourada. Primeira exploração do canal, bairro dos Tanneurs e Grand Rue.", addr:"Quartier de la Petite Venise, Colmar" },
+      { time:"20:00", type:"food", name:"Jantar — Winstub alsaciana", desc:"Winstub é o bistrô tradicional alsaciano — madeira escura, menus escritos à mão, vinho local. Winstub de la Petite Venise é o mais charmoso. Pedir choucroute garnie (chucrute com carnes) e um Riesling local.", addr:"Quartier de la Petite Venise, Colmar" }
+    ]
+  },
+  {
+    date: "11", month: "JUN", week: "QUI", city: "Colmar",
+    title: "Colmar — Dia Inteiro",
+    subtitle: "O dia mais fotogênico da viagem. Petite Venise ao amanhecer, museu de classe mundial e a Maison Hugel para o Riesling.",
+    tags: [{label:"Fotografia", color:"var(--photo)"},{label:"Riesling", color:"var(--wine)"},{label:"Museu", color:"var(--walk)"}],
+    slots: [
+      { time:"07:30", type:"photo", name:"📸 Petite Venise — GOLDEN HOUR (não pule!)", desc:"Este é o horário. Às 7h30 não há ninguém. Os canais refletem as casas coloridas com luz suave, flores nas janelas, silêncio. Em 30 minutos chegam os primeiros turistas. Ir direto ao Pont de la Poissonnerie — a ponte mais fotografada de Colmar.", addr:"Pont de la Poissonnerie, Colmar", tip:"💡 Melhor foto da viagem inteira. Câmera, não smartphone — a luz é fraca e os reflexos nos canais precisam de exposição correta." },
+      { time:"08:30", type:"food", name:"Café da manhã alsaciano", desc:"Patisserie Schmitt na Grand Rue — croissant, bretzel fresco e café. Sentar na calçada enquanto a cidade acorda.", addr:"Grand Rue, Colmar" },
+      { time:"09:30", type:"photo", name:"📸 Bairro dos Tanneurs + Quartier des Tanneurs", desc:"O bairro dos curtidores — casas do séc. XVII com estruturas de secagem de couro nas fachadas, pintadas em tons pastel. Completamente diferente da Petite Venise. Ótimas fotos de arquitetura.", addr:"Rue des Tanneurs, Colmar" },
+      { time:"10:30", type:"walk", name:"Maison Pfister + Koïfhus", desc:"Maison Pfister (1537) — a fachada renascentista mais bonita de Colmar, com pinturas, loggia e torre de esquina. Koïfhus — antiga alfândega medieval do séc. XIV. Ambas em 15 min a pé.", addr:"Rue des Marchands, Colmar · exterior gratuito" },
+      { time:"11:15", type:"wine", name:"🍷 Maison Hugel & Fils — TOUR COMPLETO DO DIA", desc:"A maison mais histórica de Colmar, fundada em 1639. 13 gerações de vinificadores. Tour nas caves medievais com barris de carvalho de 1715 ainda ativos. Degustação de 4-5 vinhos incluindo Riesling Jubilee (Grand Cru) e Gewürztraminer Vendanges Tardives. ~1h30.", addr:"3 Rue de la Première Armée, Riquewihr (20 min de Colmar) · hugel.com", tip:"💡 Reserve por e-mail em advance@hugel.com. €20/pessoa. O Riesling Jubilee é um dos maiores brancos do mundo." },
+      { time:"13:00", type:"food", name:"Almoço em Riquewihr", desc:"Após a Hugel, almoçar em Riquewihr — a 5 min a pé. Restaurant du Dolder, dentro das muralhas medievais do séc. XVI. Flamenkuche (tarte flambée) com Pinot Gris local.", addr:"Riquewihr, Alsace" },
+      { time:"14:30", type:"photo", name:"📸 Riquewihr — vilarejo do séc. XVI", desc:"Um dos vilarejos mais preservados da França — cercado de vinhas, sem carros no centro, ruas de paralelepípedo. Portão medieval Dolder (1291), Maison Preiss-Zimmer. 45 min de exploração.", addr:"Riquewihr, 68340" },
+      { time:"15:30", type:"walk", name:"Musée Unterlinden — Retábulo de Isenheim", desc:"Uma das 10 maiores obras de arte do mundo — o Retábulo de Isenheim (1515) de Matthias Grünewald. Pintura em 9 painéis retráteis sobre a Paixão de Cristo, de uma intensidade emocional perturbadora. 1h.", addr:"1 Rue des Unterlinden, Colmar · €13" },
+      { time:"17:00", type:"wine", name:"🍷 Dopff au Moulin — Crémant d'Alsace", desc:"Degustação rápida no balcão (30 min). Pioneiros do Crémant d'Alsace (espumante alsaciano método tradicional). Provar o Brut Blanc de Blancs e o Blanc de Noirs. Excelente custo-benefício ~€12/pessoa.", addr:"2 Avenue Jacques Preiss, Riquewihr" },
+      { time:"20:00", type:"food", name:"Jantar em Colmar", desc:"JY'S ou La Maison des Têtes brasserie. JY'S é o melhor restaurante da cidade (1 estrela Michelin) mas caro — reservar antes se quiser ir. A Brasserie da Maison des Têtes é mais acessível e igualmente boa, com choucroute de Riesling e foie gras local.", addr:"Centre Historique, Colmar" }
+    ]
+  },
+  {
+    date: "12", month: "JUN", week: "SEX", city: "Colmar",
+    title: "Rota dos Vilarejos Alsacianos",
+    subtitle: "Eguisheim, Ribeauvillé e Kaysersberg — os 3 vilarejos mais fotogênicos da Alsácia num único dia.",
+    tags: [{label:"Eguisheim", color:"var(--photo)"},{label:"Pinot Gris", color:"var(--wine)"},{label:"Ribeauvillé", color:"var(--photo)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Colmar → Eguisheim", desc:"8 min ao sul de Colmar.", isDrive:true, driveInfo:"8 min · 6 km" },
+      { time:"09:15", type:"photo", name:"📸 Eguisheim — O Mais Bonito da França", desc:"Eleito o mais belo vilarejo da França. Única rua circular concêntrica, casas do séc. XV pintadas em cores vivas, flores em cada janela. Praça central com a Fontaine Saint-Léon. Andar no sentido horário para seguir a rua principal.", addr:"Eguisheim, 68420 · gratuito" },
+      { time:"09:45", type:"wine", name:"🍷 Cave Viticole d'Eguisheim — Grand Cru", desc:"Degustação rápida (30 min). Provar o Pinot Gris Grand Cru Eichberg e o Gewürztraminer Grand Cru Pfersigberg — dois dos maiores Grand Crus da Alsácia, produzidos aqui em solo vulcânico único. ~€10/pessoa.", addr:"6 Grand Rue, Eguisheim", tip:"💡 O Pinot Gris daqui é fumado, denso e mineral. Completamente diferente de qualquer Pinot Gris que você já provou." },
+      { time:"10:30", type:"drive", name:"Eguisheim → Ribeauvillé", desc:"18 min pela Route des Vins — estrada mais bonita do trecho.", isDrive:true, driveInfo:"18 min · 15 km · Route des Vins" },
+      { time:"11:00", type:"photo", name:"📸 Ribeauvillé — 3 Castelos no Alto", desc:"Três castelos medievais em ruínas no topo da montanha atrás do vilarejo: Girsberg, Saint-Ulrich e Haut-Ribeaupierre. O vilarejo embaixo é medieval intacto com fontanelas e casas do séc. XIII. Subir pela Rue du Château para vista panorâmica (20 min de caminhada leve).", addr:"Ribeauvillé, 68150" },
+      { time:"12:00", type:"wine", name:"🍷 Cave Trimbach — Riesling Clos Sainte Hune", desc:"Degustação rápida no balcão. Trimbach é a maison de referência mundial para Riesling seco. O Clos Sainte Hune é considerado um dos 10 maiores vinhos brancos do planeta. Provar o Riesling Réserve e o Riesling Frédéric Emile. ~€15/pessoa.", addr:"15 Route de Bergheim, Ribeauvillé · trimbach.fr", tip:"💡 Não compre o Clos Sainte Hune aqui — custa €150+ a garrafa. Mas provar €15 é o melhor custo-benefício da viagem." },
+      { time:"13:00", type:"food", name:"Almoço em Ribeauvillé", desc:"Winstub zum Pfifferhüs — o mais antigo de Ribeauvillé (séc. XVI), com teto de vigas e menu escrito no quadro negro. Tarte flambée au lard e um copo de Riesling Réserve Trimbach.", addr:"14 Grand Rue, Ribeauvillé" },
+      { time:"14:30", type:"drive", name:"Ribeauvillé → Kaysersberg", desc:"15 min pela Route des Vins, passando por Riquewihr.", isDrive:true, driveInfo:"15 min · 12 km" },
+      { time:"15:00", type:"photo", name:"📸 Kaysersberg — Ponte Medieval", desc:"A ponte medieval coberta sobre o rio Weiss, com torre de guarda do séc. XV e castelo em ruínas no morro atrás — a composição mais fotogênica da Alsácia. Centro histórico compacto com casas renascentistas do séc. XVI.", addr:"Kaysersberg, 68240" },
+      { time:"15:45", type:"wine", name:"🍷 Domaine Weinbach — Riesling Clos des Capucins", desc:"Uma das maiores domaines biodinâmicas da Alsácia, instalada num convento dos Capuchinhos do séc. XVII cercado por muros. O jardim de rosas na entrada é espetacular. Provar o Riesling Clos des Capucins (lendário, de parcela única dentro dos muros do convento) e o Gewürztraminer Altenbourg. Degustação ~€15/pessoa.", addr:"25 Route du Vin, Kaysersberg · weinbach.com", tip:"💡 Este é um dos endereços mais belos da Alsácia — o convento, o jardim, os muros cobertos de videiras. Reserve por e-mail com antecedência." },
+      { time:"16:45", type:"wine", name:"🍷 Albert Mann — Gewürztraminer Grand Cru Furstentum", desc:"Degustação rápida (30 min). Uma das melhores domaines biodinâmicas da Alsácia. O Gewürztraminer Grand Cru Furstentum é aromático, exuberante, com notas de lichia e rosa. Provar também o Pinot Noir — o melhor da Alsácia.", addr:"13 Rue du Château, Wettolsheim (10 min de Kaysersberg) · albert-mann.com" },
+      { time:"17:00", type:"drive", name:"Volta Colmar", desc:"20 min de volta para o Airbnb.", isDrive:true, driveInfo:"20 min · 13 km" },
+      { time:"20:00", type:"food", name:"Jantar improvisado em Colmar", desc:"Ao chegar, escolher um restaurante por intuição no centro histórico. Rue des Marchands e Place de la Cathédrale têm boas opções. Pedir um Gewürztraminer de Kaysersberg e uma flammkuche." }
+    ]
+  },
+  {
+    date: "13", month: "JUN", week: "SAB", city: "Strasbourg",
+    title: "Obernai + Strasbourg",
+    subtitle: "Última parada alsaciana — vilarejo medieval menos turístico e a capital europeia com La Petite France.",
+    tags: [{label:"Obernai", color:"var(--photo)"},{label:"Strasbourg", color:"var(--photo)"},{label:"Catedral Rosa", color:"var(--walk)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Colmar → Obernai", desc:"35 min ao norte pela D35 (estrada cênica pela vinha).", isDrive:true, driveInfo:"35 min · 40 km · D35 pela vinha" },
+      { time:"09:45", type:"photo", name:"📸 Obernai — Descoberta Local", desc:"Menos turístico que os outros vilarejos — aqui você vê a Alsácia como ela é. Place du Marché com o poço medieval de 1579, torre Kapellturm do séc. XIII e casas de meia-viga coloridas. Mercado ao ar livre sábados de manhã.", addr:"Obernai, 67210 · gratuito" },
+      { time:"10:30", type:"wine", name:"🍷 Cave d'Obernai — degustação rápida", desc:"Cooperativa local com Sylvaner, Pinot Blanc e Muscat d'Alsace. Provar o Muscat — vinho branco seco e aromático, raro de encontrar fora da Alsácia. ~€8/pessoa.", addr:"30 Rue du Général Gouraud, Obernai" },
+      { time:"11:15", type:"drive", name:"Obernai → Strasbourg", desc:"30 min pela A35.", isDrive:true, driveInfo:"30 min · 30 km · A35" },
+      { time:"11:45", type:"food", name:"Almoço em Strasbourg — Winstub S'Burjerstuewel", desc:"O winstub mais autêntico de Strasbourg, frequentado por locais. Baeckeoffe (cozido de carnes e batatas em terrina de barro) e Pinot Noir d'Alsace. Reservar por telefone ou chegar cedo.", addr:"1 Rue Pucelles, Strasbourg" },
+      { time:"13:30", type:"photo", name:"📸 La Petite France — O Melhor Bairro", desc:"O bairro mais fotografado da Europa. Casas de meia-viga dos sécs. XVI-XVII refletidas nos canais do rio Ill. Pont Couverts (pontes cobertas com 4 torres medievais) e Barrage Vauban (terraço com vista panorâmica — subir, é gratuito e a vista é incrível). 1h30 de exploração.", addr:"Quartier de la Petite France, Strasbourg · gratuito" },
+      { time:"15:00", type:"photo", name:"⛪ Catedral Notre-Dame de Strasbourg", desc:"Construída em arenito rosa dos Vosges — única no mundo com esta cor. A torre sul (142m) é uma das mais altas do mundo medieval. Subir a torre: 332 degraus, vista 360° da Alsácia e Alemanha. Interior: relógio astronômico do séc. XVI que 'funciona' às 12h30.", addr:"Place de la Cathédrale · torre €5" },
+      { time:"16:30", type:"walk", name:"Palácio Rohan + Place Gutenberg", desc:"Palácio episcopal do séc. XVIII com 3 museus internos. Fachada barroca impecável. Place Gutenberg com estátua do inventor da imprensa — a cidade onde Gutenberg desenvolveu a prensa tipográfica.", addr:"2 Place du Château, Strasbourg" },
+      { time:"17:30", type:"walk", name:"Grande Île — Passeio livre", desc:"A ilha histórica de Strasbourg é Patrimônio UNESCO. Explorar o bairro do Krutenau, Rue des Hallebardes, Place Kléber. Compras, sorvetes, aperitivo num café.", addr:"Grande Île, Strasbourg" },
+      { time:"19:30", type:"drive", name:"Strasbourg → Colmar", desc:"45 min de volta.", isDrive:true, driveInfo:"45 min · 70 km · A35" },
+      { time:"20:30", type:"food", name:"Último jantar em Colmar", desc:"Tarte flambée de despedida — Flam's na Rue des Tanneurs é rápido, informal, e faz as melhores flamenkuche da cidade com Crémant d'Alsace gelado." }
+    ]
+  },
+  {
+    date: "14", month: "JUN", week: "DOM", city: "Beaune",
+    title: "Colmar → Borgonha",
+    subtitle: "Grande travessia para a Borgonha. Gevrey-Chambertin pela Route des Grands Crus e Beaune medieval.",
+    tags: [{label:"Pinot Noir", color:"var(--wine)"},{label:"Hôtel-Dieu", color:"var(--photo)"},{label:"Borgonha", color:"var(--wine)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Colmar → Gevrey-Chambertin", desc:"2h15 pela A36 e N74 entrando na Côte de Nuits.", isDrive:true, driveInfo:"2h15 · 175 km · A36/N74" },
+      { time:"11:15", type:"photo", name:"📸 Gevrey-Chambertin — Route des Grands Crus", desc:"Entrar pela D122 ao invés da autoestrada — a Route des Grands Crus passa pelos maiores vinhedos do mundo: Chambertin, Clos de Bèze, Clos Saint-Jacques. Parar para fotografar as parcelas com placas dos Grand Crus.", addr:"D122, Gevrey-Chambertin" },
+      { time:"11:45", type:"wine", name:"🍷 Domaine Rossignol-Trapet — TOUR COMPLETO DO DIA", desc:"Domaine familiar em Gevrey há 5 gerações, pioneiros em biodinâmica na Borgonha. Tour nas caves medievais com barricas de Pinot Noir dos maiores Grand Crus do mundo (Chambertin, Latricières-Chambertin). Degustação de 4-5 vinhos incluindo Premier Cru e Grand Cru. Reserve por e-mail.", addr:"4 Rue Richebourg, Gevrey-Chambertin · rossignol-trapet.com", tip:"💡 Este é o momento de entender por que o Pinot Noir da Borgonha é diferente de qualquer outro. A diferença entre parcelas a 50m de distância é impressionante." },
+      { time:"13:30", type:"food", name:"Almoço em Gevrey-Chambertin", desc:"Le Bistrot Lucien — almoço simples mas com lista de vinhos locais notável. Pedir o boeuf bourguignon (o real, feito com Pinot Noir local) e uma taça de Gevrey Village.", addr:"Centre Village, Gevrey-Chambertin" },
+      { time:"14:30", type:"drive", name:"Gevrey → Beaune pela D122", desc:"A Route des Grands Crus passa pelos maiores vinhedos do mundo. Parar em 2 pontos obrigatórios no caminho.", isDrive:true, driveInfo:"40 min · 30 km · D122 cênica" },
+      { time:"15:00", type:"photo", name:"📸 Clos de Vougeot — Castelo Medieval nas Vinhas", desc:"O château medieval mais icônico da Borgonha, construído pelos monges de Cîteaux no séc. XII. Cercado pela maior parcela Grand Cru da Côte de Nuits (50 hectares). Tour interno com guia de 45 min mostrando os lagares medievais originais de pedra onde se pisava a uva. Vista das vinhas do alto das muralhas.", addr:"Clos de Vougeot, 21640 · closdevougeot.fr · €5" },
+      { time:"16:00", type:"photo", name:"📸 Vosne-Romanée — A Placa da Romanée-Conti", desc:"O vilarejo mais famoso do mundo do vinho. Na beira da estrada, uma placa discreta marca a entrada da vinha da Romanée-Conti — 1,8 hectares que produzem o vinho mais caro do planeta (€15.000–30.000 a garrafa). Parar 10 minutos para fotografar. A Domaine não recebe visitantes, mas caminhar ao redor da vinha é permitido.", addr:"Lieu-dit La Romanée-Conti, Vosne-Romanée", tip:"💡 Estão literalmente em cima da terra mais valorizada do mundo do vinho. Uma foto aqui é obrigatória para qualquer amante de vinho." },
+      { time:"15:30", type:"photo", name:"📸 Hôtel-Dieu de Beaune", desc:"Hospital medieval de 1443 — um dos edifícios mais bonitos da França. Telhado de telhas esmaltadas em padrão geométrico borgonhês (policromo, único no mundo). Pátio interno de tirar o fôlego. Entrar para ver as salas medievais, a farmácia do séc. XV e o polyptique de Rogier van der Weyden.", addr:"Rue de l'Hôtel Dieu, Beaune · €8" },
+      { time:"17:00", type:"walk", name:"Beaune Intramuros — muralhas medievais", desc:"Beaune tem as muralhas medievais mais intactas da Borgonha. Caminhar pelos bastiões e fossas. Rue de Lorraine, Rue Carnot e Place Carnot com o Hôtel de Ville. Muito fotogênico.", addr:"Intramuros, Beaune" },
+      { time:"18:00", type:"sleep", name:"Check-in Coto Hotel Beaune", desc:"2 noites. Conf. 5971835953 · PIN 3155.", addr:"Beaune" },
+      { time:"20:00", type:"food", name:"Jantar — Beaune", desc:"Bistrot Bourguignon — o mais clássico de Beaune, dentro das muralhas. Jambon persillé de Beaune, escargots à la bourguignonne e entrecôte com molho de Pinot Noir. Pedir uma garrafa de Beaune Villages.", addr:"8 Rue Monge, Beaune" }
+    ]
+  },
+  {
+    date: "15", month: "JUN", week: "SEG", city: "Beaune",
+    title: "Meursault · Puligny · Marché aux Vins",
+    subtitle: "O grande dia dos Chardonnays. Os 2 maiores brancos do mundo num único dia, mais o Marché aux Vins de tarde.",
+    tags: [{label:"Meursault", color:"var(--wine)"},{label:"Montrachet", color:"var(--wine)"},{label:"Grand Cru", color:"var(--wine)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Beaune → Meursault", desc:"10 min ao sul pela N74.", isDrive:true, driveInfo:"10 min · 8 km" },
+      { time:"09:15", type:"photo", name:"📸 Meursault — Vilarejo e Torre Medieval", desc:"Vilarejo pequeno e tranquilo — muito menos turístico que Beaune. Torre da igreja medieval gótica no centro, ruas de paralelepípedo, casas de pedra dourada. Caminhar 20 min pelas ruas principais.", addr:"Meursault, 21190" },
+      { time:"09:45", type:"wine", name:"🍷 Domaine des Comtes Lafon — Meursault", desc:"Uma das referências absolutas do Chardonnay mundial. Provar o Meursault Village e o Meursault 1er Cru Perrières — rico, amanteigado, mineral, com notas de amêndoa torrada. Completamente diferente do Chablis. Degustação ~€20/pessoa.", addr:"Clos de la Barre, Meursault · comtes-lafon.com", tip:"💡 Este é o 2° dos 3 grandes Chardonnays da viagem. Chablis é austero e mineral; Meursault é rico e amanteigado. Lembrar do contraste quando chegar em Chablis amanhã." },
+      { time:"11:00", type:"drive", name:"Meursault → Puligny-Montrachet", desc:"5 min ao sul.", isDrive:true, driveInfo:"5 min · 4 km" },
+      { time:"11:15", type:"photo", name:"📸 Vinha de Montrachet — caminhada", desc:"A vinha Grand Cru mais famosa do planeta. Caminhar pelo caminho entre Puligny-Montrachet e Chassagne-Montrachet — a vinha fica na borda da estrada, com apenas uma placa discreta. 20 min de caminhada tranquila entre as videiras.", addr:"Lieu-dit Montrachet, entre Puligny e Chassagne", tip:"💡 O vinho branco mais caro do mundo nasce exatamente nestas videiras. Uma garrafa Domaine de la Romanée-Conti Montrachet custa €15.000+." },
+      { time:"12:00", type:"wine", name:"🍷 Domaine Leflaive — Puligny-Montrachet", desc:"A domaine de referência de Puligny, biodinâmica desde 1990. Degustação de Puligny-Montrachet Village e Premier Cru Les Pucelles (~€25/pessoa). O Chardonnay mais elegante do mundo — ao mesmo tempo mineral, fresco e profundo.", addr:"Place des Marronniers, Puligny-Montrachet · leflaive.fr" },
+      { time:"13:30", type:"food", name:"Almoço em Beaune", desc:"Ma Cuisine — o favorito dos winemakers locais. Balcão de mármore, vinhos ao preço de importação, cozinha lionesa clássica. Pedir o poulet à la crème e uma taça de Meursault com o almoço.", addr:"Passage Sainte-Hélène, Beaune" },
+      { time:"15:00", type:"wine", name:"🍷 Marché aux Vins — Beaune", desc:"8 vinhos borgonheses em caves medievais do séc. XV, autoconduzido com taça de prata e mapa das parcelas. Inclui 3 Premiers Crus e às vezes um Grand Cru. ~€17/pessoa. Demora 1h30 no ritmo certo.", addr:"2 Rue Nicolas Rollin, Beaune · marcheauxvins.com", tip:"💡 Beber devagar — 8 vinhos em sequência. Cuspir é permitido e recomendado nos primeiros. Guardar o paladar para os Premiers Crus no final." },
+      { time:"17:00", type:"walk", name:"Caves da Patriarche Père et Fils", desc:"As maiores caves de Beaune — 5 km de galerias subterrâneas. Tour independente com taça incluída. Mais espetacular visualmente que o Marché aux Vins mas vinhos menos interessantes. Opcional — só se tiver energia.", addr:"7 Rue du Collège, Beaune · €15" },
+      { time:"19:00", type:"walk", name:"Ramparts de Beaune + aperitivo", desc:"Golden hour nas muralhas medievais — a luz do sol poente no arenito é linda. Aperitivo no Caves Madeleine (cave-bar dentro das muralhas) com uma taça de Aligoté local.", addr:"Ramparts, Beaune" },
+      { time:"20:30", type:"food", name:"Jantar — último na Borgonha", desc:"Le Bénaton — chef criativo com produtos locais, menu-degustação com harmonização opcional. Reservar com 1-2 dias de antecedência se possível. Alternativa: La Ciboulette, mais simples mas também excelente.", addr:"25 Rue du Faubourg Bretonnière, Beaune" }
+    ]
+  },
+  {
+    date: "16", month: "JUN", week: "TER", city: "Chablis + Paris",
+    title: "Chablis → Paris → Voo",
+    subtitle: "O terceiro Chardonnay e o encerramento perfeito. Tarde em Paris antes do voo noturno.",
+    tags: [{label:"Chablis", color:"var(--wine)"},{label:"Chardonnay", color:"var(--wine)"},{label:"Voo 23h35", color:"var(--drive)"}],
+    slots: [
+      { time:"09:00", type:"drive", name:"Beaune → Chablis", desc:"1h pela A6. Check-out antes.", isDrive:true, driveInfo:"1h · 115 km · A6" },
+      { time:"10:15", type:"photo", name:"📸 Chablis — Vilarejo às margens do Serein", desc:"O menor dos três vilarejos vinícolas da viagem — quase ninguém vem até aqui. Igreja Saint-Martin do séc. XII, Pont du Serein, vielas de paralelepípedo. 20 min de caminhada tranquila.", addr:"Chablis, 89800" },
+      { time:"10:45", type:"wine", name:"🍷 William Fèvre ou Domaine Raveneau — O 3° Chardonnay", desc:"O encerramento da trilogia: Chablis é o Chardonnay mais austero e mineral do mundo — sem carvalho, sem manteiga, puro calcário e mar. Completamente diferente de Meursault. Provar o Chablis Premier Cru Montée de Tonnerre (Fèvre) ou Chablis 1er Cru Montée de Tonnerre (Raveneau). ~€15-20/pessoa.", addr:"Chablis · williamfevre.com", tip:"💡 A trilogia completa: Chablis (mineral/austero) → Meursault (rico/amanteigado) → Puligny (elegante/floral). Três expressões do mesmo Chardonnay, totalmente diferentes." },
+      { time:"12:00", type:"food", name:"Almoço de despedida em Chablis", desc:"Au Fil du Zinc — o melhor bistrô de Chablis. Jambon au Chablis (presunto braseado no próprio vinho) com batatas ao murro. Uma taça de Chablis Premier Cru para fechar.", addr:"18 Rue des Moulins, Chablis" },
+      { time:"13:30", type:"drive", name:"Chablis → Paris", desc:"1h45 pela A6. Devolver o carro no CDG ou na cidade.", isDrive:true, driveInfo:"1h45 · 180 km · A6" },
+      { time:"15:30", type:"walk", name:"Tarde livre em Paris", desc:"Dependendo do cansaço — um café em Saint-Germain, última caminhada pelo Sena, ou simplesmente sentar num banco da Île Saint-Louis com um gelato Berthillon. Sem pressa.", addr:"Paris" },
+      { time:"18:00", type:"food", name:"Jantar de encerramento em Paris", desc:"Qualquer bistrô de bairro. Steak frites com um Beaujolais ou Bordeaux. Simples, sem cerimônia. A viagem foi grande o suficiente.", addr:"Paris" },
+      { time:"20:00", type:"drive", name:"Paris → CDG · RER B ou táxi", desc:"Sair com 3h30 de antecedência para ter margem. RER B linha direta (35 min) ou táxi (~€55). Não usar Uber às 20h — trânsito pesado.", addr:"Gare du Nord ou Châtelet → CDG Terminal 2E" },
+      { time:"23:35", type:"drive", name:"✈️ Decolagem CDG → GRU", desc:"G3 5003 · Air France · Terminal 2E · Pouso GRU 17 jun às 06h15.", addr:"CDG Terminal 2E, Aerogare 2" }
+    ]
+  }
+];
+
+// BUILD UI
+const tabsEl = document.getElementById('tabs');
+const panelsEl = document.getElementById('panels');
+
+days.forEach((day, i) => {
+  // Tab
+  const tab = document.createElement('div');
+  tab.className = 'day-tab' + (i === 0 ? ' active' : '');
+  tab.innerHTML = `<div class="day-tab-num">DIA ${i+1}</div><div class="day-tab-date">${day.date} ${day.month}</div><div class="day-tab-city">${day.city}</div>`;
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('panel-' + i).classList.add('active');
+    tab.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+  });
+  tabsEl.appendChild(tab);
+
+  // Panel
+  const panel = document.createElement('div');
+  panel.className = 'day-panel' + (i === 0 ? ' active' : '');
+  panel.id = 'panel-' + i;
+
+  const tagsHtml = day.tags.map(t => `<span class="day-tag" style="background:${t.color}22;color:${t.color};border:1px solid ${t.color}44">${t.label}</span>`).join('');
+
+  let html = `
+    <div class="day-header">
+      <div class="day-badge">
+        <div class="day-badge-num">${day.date}</div>
+        <div class="day-badge-month">${day.month}</div>
+        <div class="day-badge-week">${day.week}</div>
+      </div>
+      <div class="day-info">
+        <div class="day-title">${day.title}</div>
+        <div class="day-subtitle">${day.subtitle}</div>
+        <div class="day-tags">${tagsHtml}</div>
+      </div>
+    </div>
+    <div class="timeline">`;
+
+  day.slots.forEach(slot => {
+    if (slot.isDrive) {
+      html += `
+        <div class="drive-bar">
+          🚗 <span>${slot.driveInfo}</span> — ${slot.desc}
+        </div>`;
+      return;
+    }
+    const typeMap = {wine:'type-wine',photo:'type-photo',food:'type-food',walk:'type-walk',drive:'type-drive',sleep:'type-sleep'};
+    const typeLabel = {wine:'🍷 Vinícola',photo:'📸 Fotografia',food:'🍽️ Refeição',walk:'🚶 Passeio',drive:'🚗 Deslocamento',sleep:'🏨 Hotel'};
+    const cls = typeMap[slot.type] || '';
+    const lbl = typeLabel[slot.type] || slot.type;
+
+    html += `
+      <div class="slot ${cls}">
+        <div class="slot-time">${slot.time}</div>
+        <div class="slot-dot"></div>
+        <div class="slot-body">
+          <div class="slot-card">
+            <div class="slot-type">${lbl}</div>
+            <div class="slot-name">${slot.name}</div>
+            <div class="slot-desc">${slot.desc}</div>
+            ${slot.addr ? `<div class="slot-addr">📍 ${slot.addr}</div>` : ''}
+            ${slot.tip ? `<div class="slot-tip">${slot.tip}</div>` : ''}
+          </div>
+        </div>
+      </div>`;
+  });
+
+  html += `</div>`;
+  panel.innerHTML = html;
+  panelsEl.appendChild(panel);
+});
+</script>
+<script>
+function toggle(el) {
+  el.classList.toggle('checked');
+  updateProgress();
+  saveState();
+}
+
+function updateProgress() {
+  const all = document.querySelectorAll('.item');
+  const checked = document.querySelectorAll('.item.checked');
+  const pct = all.length ? Math.round(checked.length / all.length * 100) : 0;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = `${checked.length} de ${all.length} itens`;
+  document.getElementById('progressPct').textContent = pct + '%';
+
+  // group counts
+  ['obrig','rec','opt'].forEach(g => {
+    const el = document.getElementById('count-' + g);
+    if (!el) return;
+    const total = document.querySelectorAll(`[data-group="${g}"]`).length;
+    const done = document.querySelectorAll(`[data-group="${g}"].checked`).length;
+    el.textContent = `${done}/${total}`;
+  });
+}
+
+function saveState() {
+  const items = document.querySelectorAll('.item');
+  const state = Array.from(items).map(el => el.classList.contains('checked'));
+  localStorage.setItem('checklist_docs_franca', JSON.stringify(state));
+}
+
+function loadState() {
+  try {
+    const state = JSON.parse(localStorage.getItem('checklist_docs_franca') || '[]');
+    const items = document.querySelectorAll('.item');
+    items.forEach((el, i) => {
+      if (state[i]) el.classList.add('checked');
+    });
+  } catch(e) {}
+  updateProgress();
+}
+
+function resetAll() {
+  document.querySelectorAll('.item').forEach(el => el.classList.remove('checked'));
+  localStorage.removeItem('checklist_docs_franca');
+  updateProgress();
+}
+
+loadState();
+</script>
+<script>
+function toggleVino(el) {
+  el.classList.toggle('checked');
+  updateVino();
+  saveVino();
+}
+function updateVino() {
+  const all = document.querySelectorAll('.vino-item');
+  const done = document.querySelectorAll('.vino-item.checked');
+  const pct = all.length ? Math.round(done.length / all.length * 100) : 0;
+  const fill = document.getElementById('vino-fill');
+  const text = document.getElementById('vino-text');
+  const pctEl = document.getElementById('vino-pct');
+  if(fill) fill.style.width = pct + '%';
+  if(text) text.textContent = done.length + ' de ' + all.length + ' reservas feitas';
+  if(pctEl) pctEl.textContent = pct + '%';
+}
+function saveVino() {
+  const state = Array.from(document.querySelectorAll('.vino-item')).map(el => el.classList.contains('checked'));
+  try { localStorage.setItem('checklist_vinicolas', JSON.stringify(state)); } catch(e){}
+}
+function loadVino() {
+  try {
+    const state = JSON.parse(localStorage.getItem('checklist_vinicolas') || '[]');
+    document.querySelectorAll('.vino-item').forEach((el,i) => { if(state[i]) el.classList.add('checked'); });
+  } catch(e) {}
+  updateVino();
+}
+function resetVino() {
+  document.querySelectorAll('.vino-item').forEach(el => el.classList.remove('checked'));
+  try { localStorage.removeItem('checklist_vinicolas'); } catch(e){}
+  updateVino();
+}
+loadVino();
+</script>
+</body>
+</html>
