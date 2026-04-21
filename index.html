@@ -1469,14 +1469,15 @@ const days = [
     subtitle: "Primeiro dia de estrada sem pressa. Saída de Paris, cidade de Reims e Taittinger às 15h.",
     tags: [{label:"Taittinger", color:"var(--wine)"},{label:"Catedral", color:"var(--photo)"},{label:"Reims", color:"var(--walk)"}],
     slots: [
-      { time:"09:30", type:"drive", name:"Retirada do carro — SIXT Gare Saint-Lazare", desc:"Plataforma 27, atrás do Relay Store. Voucher 9732137617. Fazer vistoria completa e fotografar qualquer arranhão antes de sair. Sem pressa — o dia está tranquilo.", addr:"13 Rue d'Amsterdam, Paris 08" },
-      { time:"10:30", type:"drive", name:"Paris → Reims", desc:"A4 em direção leste. 1h30 de autoestrada.", isDrive:true, driveInfo:"1h30 · 145 km · A4" },
-      { time:"12:00", type:"food", name:"🍽️ Almoço em Reims", desc:"Brasserie Le Boulingrin — art déco de 1925, o mais histórico de Reims. Pedir pâté champenois e tarte à la crème.", addr:"48 Rue de Mars, Reims" },
-      { time:"13:30", type:"photo", name:"📸 Catedral Notre-Dame de Reims", desc:"Onde 33 reis da França foram coroados. Fachada gótica com mais de 2.300 estátuas. Entrar para ver os vitrais de Chagall no ábside. Luz da tarde perfeita para fotos.", addr:"Place du Cardinal Luçon, Reims · gratuito" },
-      { time:"14:30", type:"walk", name:"Place Royale + Porte de Mars", desc:"Praça real do séc. XVIII e o maior arco triunfal romano ainda de pé na França (séc. III). 20 min a pé do centro.", addr:"Rue du Mars, Reims" },
+      { time:"10:00", type:"drive", name:"Retirada do carro — SIXT Gare Saint-Lazare", desc:"Plataforma 27, atrás do Relay Store. Voucher 9732137617. Fazer vistoria completa e fotografar qualquer arranhão antes de sair. Sem pressa — o dia está tranquilo.", addr:"13 Rue d'Amsterdam, Paris 08" },
+      { time:"11:00", type:"drive", name:"Paris → Reims", desc:"A4 em direção leste. 1h30 de autoestrada.", isDrive:true, driveInfo:"1h30 · 145 km · A4" },
+      { time:"12:30", type:"food", name:"🍽️ Almoço em Reims", desc:"Brasserie Le Boulingrin — art déco de 1925, o mais histórico de Reims. Pedir pâté champenois e tarte à la crème.", addr:"48 Rue de Mars, Reims" },
+      { time:"14:00", type:"photo", name:"📸 Catedral Notre-Dame de Reims", desc:"Onde 33 reis da França foram coroados. Fachada gótica com mais de 2.300 estátuas. Entrar para ver os vitrais de Chagall no ábside. Luz da tarde perfeita para fotos.", addr:"Place du Cardinal Luçon, Reims · gratuito" },
+      { time:"14:45", type:"walk", name:"Place Royale + Porte de Mars", desc:"Praça real do séc. XVIII e o maior arco triunfal romano ainda de pé na França (séc. III). 20 min a pé do centro.", addr:"Rue du Mars, Reims" },
+      { time:"15:30", type:"walk", name:"Passeio pelo centro de Reims", desc:"Explorar Rue de Vesle e Place Drouet d'Erlon antes do tour. Tomar um café num terraço.", addr:"Centre-ville, Reims" },
       { time:"16:00", type:"wine", name:"🍾 Taittinger — Tour Completo + Degustação", desc:"As galerias mais bonitas de Reims — escavadas pelos monges beneditinos no séc. IV d.C., 4 andares subterrâneos a 18m de profundidade. Tour 1h + degustação de 3 cuvées incluindo o lendário Comtes de Champagne Blanc de Blancs.", addr:"9 Place Saint-Nicaise, Reims · taittinger.com", tip:"💡 Reservar slot das 16h. ~€28/pessoa. As galerias romanas são as mais impressionantes de Reims." },
-      { time:"16:30", type:"walk", name:"Passeio livre em Reims", desc:"Explorar o centro histórico, Rue de Vesle, lojas locais. Sem pressa — é o primeiro dia!", addr:"Centre-ville, Reims" },
-      { time:"18:00", type:"sleep", name:"🏨 Check-in Airbnb Reims", desc:"Reims · pago por Carla · R$316,90", addr:"Reims" },
+      { time:"17:45", type:"walk", name:"Aperitivo em Reims", desc:"Depois do tour, uma taça de Champagne num dos bistrôs da Place Drouet d'Erlon. Fim de tarde sem pressa.", addr:"Place Drouet d'Erlon, Reims" },
+      { time:"18:30", type:"sleep", name:"🏨 Check-in Airbnb Reims", desc:"Reims · pago por Carla · R$316,90", addr:"Reims" },
       { time:"20:00", type:"food", name:"🍽️ Jantar em Reims", desc:"Le Foch para algo refinado com harmonização de Champagne, ou bistrô informal no centro.", addr:"Centre-ville, Reims" }
     ]
   },
@@ -1520,30 +1521,33 @@ const days = [
   },
   {
     date: "11", month: "JUN", week: "QUI", city: "Colmar",
-    title: "Colmar — Dia Inteiro",
-    subtitle: "O dia mais fotogênico da viagem. Petite Venise ao amanhecer, museu de classe mundial e a Maison Hugel para o Riesling.",
-    tags: [{label:"Fotografia", color:"var(--photo)"},{label:"Riesling", color:"var(--wine)"},{label:"Museu", color:"var(--walk)"}],
+    title: "Colmar + Riquewihr / Hugel",
+    subtitle: "Chegada em Colmar pela manhã, primeiro contato com a cidade e dia completo em Riquewihr com a Hugel — encerrando com o Retábulo de Isenheim no fim da tarde.",
+    tags: [{label:"Riesling", color:"var(--wine)"},{label:"Riquewihr", color:"var(--photo)"},{label:"Museu", color:"var(--walk)"}],
     slots: [
-      { time:"07:00", type:"drive", name:"Troyes → Colmar", desc:"Saída cedo para chegar em Colmar a tempo da golden hour na Petite Venise. Check-out do Airbnb Troyes antes de partir.", isDrive:true, driveInfo:"2h30 · 220 km · A5 + A35" },
-      { time:"07:30", type:"photo", name:"📸 Petite Venise — GOLDEN HOUR (não pule!)", desc:"Este é o horário. Às 7h30 não há ninguém. Os canais refletem as casas coloridas com luz suave, flores nas janelas, silêncio. Em 30 minutos chegam os primeiros turistas. Ir direto ao Pont de la Poissonnerie — a ponte mais fotografada de Colmar.", addr:"Pont de la Poissonnerie, Colmar", tip:"💡 Melhor foto da viagem inteira. Câmera, não smartphone — a luz é fraca e os reflexos nos canais precisam de exposição correta." },
-      { time:"08:30", type:"food", name:"Café da manhã alsaciano", desc:"Patisserie Schmitt na Grand Rue — croissant, bretzel fresco e café. Sentar na calçada enquanto a cidade acorda.", addr:"Grand Rue, Colmar" },
-      { time:"09:30", type:"photo", name:"📸 Bairro dos Tanneurs + Quartier des Tanneurs", desc:"O bairro dos curtidores — casas do séc. XVII com estruturas de secagem de couro nas fachadas, pintadas em tons pastel. Completamente diferente da Petite Venise. Ótimas fotos de arquitetura.", addr:"Rue des Tanneurs, Colmar" },
-      { time:"10:30", type:"walk", name:"Maison Pfister + Koïfhus", desc:"Maison Pfister (1537) — a fachada renascentista mais bonita de Colmar, com pinturas, loggia e torre de esquina. Koïfhus — antiga alfândega medieval do séc. XIV. Ambas em 15 min a pé.", addr:"Rue des Marchands, Colmar · exterior gratuito" },
-      { time:"11:15", type:"wine", name:"🍷 Maison Hugel & Fils — TOUR COMPLETO DO DIA", desc:"A maison mais histórica de Colmar, fundada em 1639. 13 gerações de vinificadores. Tour nas caves medievais com barris de carvalho de 1715 ainda ativos. Degustação de 4-5 vinhos incluindo Riesling Jubilee (Grand Cru) e Gewürztraminer Vendanges Tardives. ~1h30.", addr:"3 Rue de la Première Armée, Riquewihr (20 min de Colmar) · hugel.com", tip:"💡 Reserve por e-mail em advance@hugel.com. €20/pessoa. O Riesling Jubilee é um dos maiores brancos do mundo." },
-      { time:"13:00", type:"food", name:"Almoço em Riquewihr", desc:"Após a Hugel, almoçar em Riquewihr — a 5 min a pé. Restaurant du Dolder, dentro das muralhas medievais do séc. XVI. Flamenkuche (tarte flambée) com Pinot Gris local.", addr:"Riquewihr, Alsace" },
-      { time:"14:30", type:"photo", name:"📸 Riquewihr — vilarejo do séc. XVI", desc:"Um dos vilarejos mais preservados da França — cercado de vinhas, sem carros no centro, ruas de paralelepípedo. Portão medieval Dolder (1291), Maison Preiss-Zimmer. 45 min de exploração.", addr:"Riquewihr, 68340" },
-      { time:"15:30", type:"walk", name:"Musée Unterlinden — Retábulo de Isenheim", desc:"Uma das 10 maiores obras de arte do mundo — o Retábulo de Isenheim (1515) de Matthias Grünewald. Pintura em 9 painéis retráteis sobre a Paixão de Cristo, de uma intensidade emocional perturbadora. 1h.", addr:"1 Rue des Unterlinden, Colmar · €13" },
-      { time:"17:00", type:"wine", name:"🍷 Dopff au Moulin — Crémant d'Alsace", desc:"Degustação rápida no balcão (30 min). Pioneiros do Crémant d'Alsace (espumante alsaciano método tradicional). Provar o Brut Blanc de Blancs e o Blanc de Noirs. Excelente custo-benefício ~€12/pessoa.", addr:"2 Avenue Jacques Preiss, Riquewihr" },
+      { time:"07:00", type:"drive", name:"Troyes → Colmar", desc:"Saída cedo. Check-out do Airbnb Troyes antes de partir. Parada para café no caminho.", isDrive:true, driveInfo:"2h30 · 220 km · A5 + A35" },
+      { time:"09:30", type:"sleep", name:"Chegada em Colmar — deixar bagagem", desc:"Check-in só à tarde; deixar as malas com o anfitrião. Alongar as pernas depois da viagem.", addr:"Colmar" },
+      { time:"10:00", type:"photo", name:"📸 Bairro dos Tanneurs (primeiro contato)", desc:"O bairro dos curtidores — casas do séc. XVII com estruturas de secagem de couro nas fachadas, pintadas em tons pastel. Boa introdução antes de sair para Riquewihr.", addr:"Rue des Tanneurs, Colmar" },
+      { time:"10:30", type:"drive", name:"Colmar → Riquewihr", desc:"20 min pela D4 subindo para a vinha.", isDrive:true, driveInfo:"20 min · 15 km · D4" },
+      { time:"11:15", type:"wine", name:"🍷 Maison Hugel & Fils — TOUR COMPLETO DO DIA", desc:"A maison mais histórica da Alsácia, fundada em 1639. 13 gerações de vinificadores. Tour nas caves medievais com barris de carvalho de 1715 ainda ativos. Degustação de 4-5 vinhos incluindo Riesling Jubilee (Grand Cru) e Gewürztraminer Vendanges Tardives. ~1h30.", addr:"3 Rue de la Première Armée, Riquewihr · hugel.com", tip:"💡 Reserve por e-mail em advance@hugel.com. €20/pessoa. O Riesling Jubilee é um dos maiores brancos do mundo." },
+      { time:"13:00", type:"food", name:"Almoço em Riquewihr", desc:"A 5 min a pé da Hugel. Restaurant du Dolder, dentro das muralhas medievais do séc. XVI. Flamenkuche (tarte flambée) com Pinot Gris local.", addr:"Riquewihr, Alsace" },
+      { time:"14:30", type:"wine", name:"🍷 Dopff au Moulin — Crémant d'Alsace", desc:"Ainda em Riquewihr, a 3 min da Hugel. Degustação rápida no balcão (30 min). Pioneiros do Crémant d'Alsace (espumante alsaciano método tradicional). Provar o Brut Blanc de Blancs e o Blanc de Noirs. Excelente custo-benefício ~€12/pessoa.", addr:"2 Avenue Jacques Preiss, Riquewihr" },
+      { time:"15:15", type:"photo", name:"📸 Riquewihr — vilarejo do séc. XVI", desc:"Um dos vilarejos mais preservados da França — cercado de vinhas, sem carros no centro, ruas de paralelepípedo. Portão medieval Dolder (1291), Maison Preiss-Zimmer. 45 min de exploração tranquila.", addr:"Riquewihr, 68340" },
+      { time:"16:00", type:"drive", name:"Riquewihr → Colmar", desc:"20 min de volta.", isDrive:true, driveInfo:"20 min · 15 km · D4" },
+      { time:"16:30", type:"walk", name:"Maison Pfister + Koïfhus", desc:"Maison Pfister (1537) — a fachada renascentista mais bonita de Colmar, com pinturas, loggia e torre de esquina. Koïfhus — antiga alfândega medieval do séc. XIV. 20 min a pé.", addr:"Rue des Marchands, Colmar · exterior gratuito" },
+      { time:"17:00", type:"walk", name:"Musée Unterlinden — Retábulo de Isenheim", desc:"Uma das 10 maiores obras de arte do mundo — o Retábulo de Isenheim (1515) de Matthias Grünewald. Pintura em 9 painéis retráteis sobre a Paixão de Cristo, de uma intensidade emocional perturbadora. 1h30. Museu fecha às 18h (verificar).", addr:"1 Rue des Unterlinden, Colmar · €13", tip:"💡 Verificar horário de fechamento em junho (costuma fechar 18h, última entrada 17h15)." },
       { time:"20:00", type:"food", name:"Jantar em Colmar", desc:"JY'S ou La Maison des Têtes brasserie. JY'S é o melhor restaurante da cidade (1 estrela Michelin) mas caro — reservar antes se quiser ir. A Brasserie da Maison des Têtes é mais acessível e igualmente boa, com choucroute de Riesling e foie gras local.", addr:"Centre Historique, Colmar" },
       { time:"—", type:"sleep", name:"🏨 Colmar", desc:"Colmar · 3 noites · pago por Daniel · R$1.335,63", addr:"" }
     ]
   },
   {
     date: "12", month: "JUN", week: "SEX", city: "Colmar",
-    title: "Rota dos Vilarejos Alsacianos",
-    subtitle: "Eguisheim, Ribeauvillé e Kaysersberg — os 3 vilarejos mais fotogênicos da Alsácia num único dia.",
-    tags: [{label:"Eguisheim", color:"var(--photo)"},{label:"Pinot Gris", color:"var(--wine)"},{label:"Ribeauvillé", color:"var(--photo)"}],
+    title: "Petite Venise + Rota dos Vilarejos",
+    subtitle: "Golden hour na Petite Venise antes dos turistas acordarem. Depois Eguisheim, Ribeauvillé e Kaysersberg — os 3 vilarejos mais fotogênicos da Alsácia.",
+    tags: [{label:"Petite Venise", color:"var(--photo)"},{label:"Eguisheim", color:"var(--photo)"},{label:"Pinot Gris", color:"var(--wine)"}],
     slots: [
+      { time:"07:30", type:"photo", name:"📸 Petite Venise — GOLDEN HOUR (não pule!)", desc:"Este é o horário. Às 7h30 não há ninguém. Os canais refletem as casas coloridas com luz suave, flores nas janelas, silêncio. Em 30 minutos chegam os primeiros turistas. Ir direto ao Pont de la Poissonnerie — a ponte mais fotografada de Colmar.", addr:"Pont de la Poissonnerie, Colmar", tip:"💡 Melhor foto da viagem inteira. Câmera, não smartphone — a luz é fraca e os reflexos nos canais precisam de exposição correta. Em junho o sol nasce ~05:45; às 07:30 a luz já é suave mas presente." },
+      { time:"08:30", type:"food", name:"Café da manhã alsaciano", desc:"Patisserie Schmitt na Grand Rue — croissant, bretzel fresco e café. Sentar na calçada enquanto a cidade acorda.", addr:"Grand Rue, Colmar" },
       { time:"09:00", type:"drive", name:"Colmar → Eguisheim", desc:"8 min ao sul de Colmar.", isDrive:true, driveInfo:"8 min · 6 km" },
       { time:"09:15", type:"photo", name:"📸 Eguisheim — O Mais Bonito da França", desc:"Eleito o mais belo vilarejo da França. Única rua circular concêntrica, casas do séc. XV pintadas em cores vivas, flores em cada janela. Praça central com a Fontaine Saint-Léon. Andar no sentido horário para seguir a rua principal.", addr:"Eguisheim, 68420 · gratuito" },
       { time:"09:45", type:"wine", name:"🍷 Cave Viticole d'Eguisheim — Grand Cru", desc:"Degustação rápida (30 min). Provar o Pinot Gris Grand Cru Eichberg e o Gewürztraminer Grand Cru Pfersigberg — dois dos maiores Grand Crus da Alsácia, produzidos aqui em solo vulcânico único. ~€10/pessoa.", addr:"6 Grand Rue, Eguisheim", tip:"💡 O Pinot Gris daqui é fumado, denso e mineral. Completamente diferente de qualquer Pinot Gris que você já provou." },
@@ -1555,7 +1559,7 @@ const days = [
       { time:"15:00", type:"photo", name:"📸 Kaysersberg — Ponte Medieval", desc:"A ponte medieval coberta sobre o rio Weiss, com torre de guarda do séc. XV e castelo em ruínas no morro atrás — a composição mais fotogênica da Alsácia. Centro histórico compacto com casas renascentistas do séc. XVI.", addr:"Kaysersberg, 68240" },
       { time:"15:45", type:"wine", name:"🍷 Domaine Weinbach — Riesling Clos des Capucins", desc:"Uma das maiores domaines biodinâmicas da Alsácia, instalada num convento dos Capuchinhos do séc. XVII cercado por muros. O jardim de rosas na entrada é espetacular. Provar o Riesling Clos des Capucins (lendário, de parcela única dentro dos muros do convento) e o Gewürztraminer Altenbourg. Degustação ~€15/pessoa.", addr:"25 Route du Vin, Kaysersberg · weinbach.com", tip:"💡 Este é um dos endereços mais belos da Alsácia — o convento, o jardim, os muros cobertos de videiras. Reserve por e-mail com antecedência." },
       { time:"16:45", type:"wine", name:"🍷 Albert Mann — Gewürztraminer Grand Cru Furstentum", desc:"Degustação rápida (30 min). Uma das melhores domaines biodinâmicas da Alsácia. O Gewürztraminer Grand Cru Furstentum é aromático, exuberante, com notas de lichia e rosa. Provar também o Pinot Noir — o melhor da Alsácia.", addr:"13 Rue du Château, Wettolsheim (10 min de Kaysersberg) · albert-mann.com" },
-      { time:"17:00", type:"drive", name:"Volta Colmar", desc:"20 min de volta para o Airbnb.", isDrive:true, driveInfo:"20 min · 13 km" },
+      { time:"17:20", type:"drive", name:"Volta Colmar", desc:"10 min de volta para o Airbnb.", isDrive:true, driveInfo:"10 min · 7 km" },
       { time:"20:00", type:"food", name:"Jantar improvisado em Colmar", desc:"Ao chegar, escolher um restaurante por intuição no centro histórico. Rue des Marchands e Place de la Cathédrale têm boas opções. Pedir um Gewürztraminer de Kaysersberg e uma flammkuche." },
       { time:"—", type:"sleep", name:"🏨 Colmar", desc:"Colmar · 3 noites · pago por Daniel", addr:"" }
     ]
@@ -1592,10 +1596,11 @@ const days = [
       { time:"13:30", type:"food", name:"Almoço em Gevrey-Chambertin", desc:"Le Bistrot Lucien — almoço simples mas com lista de vinhos locais notável. Pedir o boeuf bourguignon (o real, feito com Pinot Noir local) e uma taça de Gevrey Village.", addr:"Centre Village, Gevrey-Chambertin" },
       { time:"14:30", type:"drive", name:"Gevrey → Beaune pela D122", desc:"A Route des Grands Crus passa pelos maiores vinhedos do mundo. Parar em 2 pontos obrigatórios no caminho.", isDrive:true, driveInfo:"40 min · 30 km · D122 cênica" },
       { time:"15:00", type:"photo", name:"📸 Clos de Vougeot — Castelo Medieval nas Vinhas", desc:"O château medieval mais icônico da Borgonha, construído pelos monges de Cîteaux no séc. XII. Cercado pela maior parcela Grand Cru da Côte de Nuits (50 hectares). Tour interno com guia de 45 min mostrando os lagares medievais originais de pedra onde se pisava a uva. Vista das vinhas do alto das muralhas.", addr:"Clos de Vougeot, 21640 · closdevougeot.fr · €5" },
-      { time:"16:00", type:"photo", name:"📸 Vosne-Romanée — A Placa da Romanée-Conti", desc:"O vilarejo mais famoso do mundo do vinho. Na beira da estrada, uma placa discreta marca a entrada da vinha da Romanée-Conti — 1,8 hectares que produzem o vinho mais caro do planeta (€15.000–30.000 a garrafa). Parar 10 minutos para fotografar. A Domaine não recebe visitantes, mas caminhar ao redor da vinha é permitido.", addr:"Lieu-dit La Romanée-Conti, Vosne-Romanée", tip:"💡 Estão literalmente em cima da terra mais valorizada do mundo do vinho. Uma foto aqui é obrigatória para qualquer amante de vinho." },
-      { time:"15:30", type:"photo", name:"📸 Hôtel-Dieu de Beaune", desc:"Hospital medieval de 1443 — um dos edifícios mais bonitos da França. Telhado de telhas esmaltadas em padrão geométrico borgonhês (policromo, único no mundo). Pátio interno de tirar o fôlego. Entrar para ver as salas medievais, a farmácia do séc. XV e o polyptique de Rogier van der Weyden.", addr:"Rue de l'Hôtel Dieu, Beaune · €8" },
-      { time:"17:00", type:"walk", name:"Beaune Intramuros — muralhas medievais", desc:"Beaune tem as muralhas medievais mais intactas da Borgonha. Caminhar pelos bastiões e fossas. Rue de Lorraine, Rue Carnot e Place Carnot com o Hôtel de Ville. Muito fotogênico.", addr:"Intramuros, Beaune" },
-      { time:"18:00", type:"sleep", name:"Check-in Coto Hotel Beaune", desc:"2 noites. Conf. 5971835953 · PIN 3155.", addr:"Beaune" },
+      { time:"15:45", type:"photo", name:"📸 Vosne-Romanée — A Placa da Romanée-Conti", desc:"O vilarejo mais famoso do mundo do vinho. Na beira da estrada, uma placa discreta marca a entrada da vinha da Romanée-Conti — 1,8 hectares que produzem o vinho mais caro do planeta (€15.000–30.000 a garrafa). Parar 10 minutos para fotografar. A Domaine não recebe visitantes, mas caminhar ao redor da vinha é permitido.", addr:"Lieu-dit La Romanée-Conti, Vosne-Romanée", tip:"💡 Estão literalmente em cima da terra mais valorizada do mundo do vinho. Uma foto aqui é obrigatória para qualquer amante de vinho." },
+      { time:"16:15", type:"drive", name:"Vosne-Romanée → Beaune", desc:"25 min pela N74, coração da Côte de Nuits.", isDrive:true, driveInfo:"25 min · 20 km · N74" },
+      { time:"16:45", type:"photo", name:"📸 Hôtel-Dieu de Beaune", desc:"Hospital medieval de 1443 — um dos edifícios mais bonitos da França. Telhado de telhas esmaltadas em padrão geométrico borgonhês (policromo, único no mundo). Pátio interno de tirar o fôlego. Entrar para ver as salas medievais, a farmácia do séc. XV e o polyptique de Rogier van der Weyden.", addr:"Rue de l'Hôtel Dieu, Beaune · €8" },
+      { time:"18:00", type:"walk", name:"Beaune Intramuros — muralhas medievais", desc:"Beaune tem as muralhas medievais mais intactas da Borgonha. Caminhar pelos bastiões e fossas. Rue de Lorraine, Rue Carnot e Place Carnot com o Hôtel de Ville. Muito fotogênico.", addr:"Intramuros, Beaune" },
+      { time:"19:00", type:"sleep", name:"Check-in Coto Hotel Beaune", desc:"2 noites. Conf. 5971835953 · PIN 3155.", addr:"Beaune" },
       { time:"20:00", type:"food", name:"Jantar — Beaune", desc:"Bistrot Bourguignon — o mais clássico de Beaune, dentro das muralhas. Jambon persillé de Beaune, escargots à la bourguignonne e entrecôte com molho de Pinot Noir. Pedir uma garrafa de Beaune Villages.", addr:"8 Rue Monge, Beaune" }
     ]
   },
@@ -1629,10 +1634,11 @@ const days = [
       { time:"10:15", type:"photo", name:"📸 Chablis — Vilarejo às margens do Serein", desc:"O menor dos três vilarejos vinícolas da viagem — quase ninguém vem até aqui. Igreja Saint-Martin do séc. XII, Pont du Serein, vielas de paralelepípedo. 20 min de caminhada tranquila.", addr:"Chablis, 89800" },
       { time:"10:45", type:"wine", name:"🍷 William Fèvre ou Domaine Raveneau — O 3° Chardonnay", desc:"O encerramento da trilogia: Chablis é o Chardonnay mais austero e mineral do mundo — sem carvalho, sem manteiga, puro calcário e mar. Completamente diferente de Meursault. Provar o Chablis Premier Cru Montée de Tonnerre (Fèvre) ou Chablis 1er Cru Montée de Tonnerre (Raveneau). ~€15-20/pessoa.", addr:"Chablis · williamfevre.com", tip:"💡 A trilogia completa: Chablis (mineral/austero) → Meursault (rico/amanteigado) → Puligny (elegante/floral). Três expressões do mesmo Chardonnay, totalmente diferentes." },
       { time:"12:00", type:"food", name:"Almoço de despedida em Chablis", desc:"Au Fil du Zinc — o melhor bistrô de Chablis. Jambon au Chablis (presunto braseado no próprio vinho) com batatas ao murro. Uma taça de Chablis Premier Cru para fechar.", addr:"18 Rue des Moulins, Chablis" },
-      { time:"13:30", type:"drive", name:"Chablis → Paris", desc:"1h45 pela A6. Devolver o carro no CDG ou na cidade.", isDrive:true, driveInfo:"1h45 · 180 km · A6" },
-      { time:"15:30", type:"walk", name:"Tarde livre em Paris", desc:"Dependendo do cansaço — um café em Saint-Germain, última caminhada pelo Sena, ou simplesmente sentar num banco da Île Saint-Louis com um gelato Berthillon. Sem pressa.", addr:"Paris" },
-      { time:"18:00", type:"food", name:"Jantar de encerramento em Paris", desc:"Qualquer bistrô de bairro. Steak frites com um Beaujolais ou Bordeaux. Simples, sem cerimônia. A viagem foi grande o suficiente.", addr:"Paris" },
-      { time:"20:00", type:"drive", name:"Paris → CDG · RER B ou táxi", desc:"Sair com 3h30 de antecedência para ter margem. RER B linha direta (35 min) ou táxi (~€55). Não usar Uber às 20h — trânsito pesado.", addr:"Gare du Nord ou Châtelet → CDG Terminal 2E" },
+      { time:"13:30", type:"drive", name:"Chablis → Paris (para tarde livre)", desc:"1h45 pela A6. Deixar o carro num estacionamento público próximo ao Sena (ex: Parking Saint-Germain ou Q-Park Louvre) — a devolução SIXT é no CDG, então guardamos o carro e pegamos de volta ~17h para seguir ao aeroporto.", isDrive:true, driveInfo:"1h45 · 180 km · A6" },
+      { time:"15:30", type:"walk", name:"Tarde livre em Paris", desc:"Duas horas tranquilas. Um café em Saint-Germain, última caminhada pelo Sena, ou sentar num banco da Île Saint-Louis com um gelato Berthillon. Sem pressa — mas de olho no relógio.", addr:"Paris" },
+      { time:"17:30", type:"drive", name:"Paris → CDG (devolução SIXT)", desc:"Voltar ao estacionamento, pegar o carro e seguir para o Terminal 2. 1h de trajeto com trânsito típico de fim de tarde. Devolução SIXT no CDG Airport.", isDrive:true, driveInfo:"1h · 35 km · A1" },
+      { time:"18:30", type:"drive", name:"Devolução SIXT — CDG Airport", desc:"Retornar o BMW no balcão SIXT do CDG. Voucher 9732137617. Inspeção final, fotos, assinatura. Dali seguir para o Terminal 2E para check-in.", addr:"SIXT CDG Airport Terminal 2" },
+      { time:"19:30", type:"food", name:"Jantar de encerramento — CDG", desc:"Check-in Air France no Terminal 2E (fazer online 30h antes para agilizar). Depois jantar pós-segurança — há boas opções no terminal, incluindo brasseries. Sem pressa; o voo é 23h35.", addr:"CDG Terminal 2E" },
       { time:"23:35", type:"drive", name:"✈️ Decolagem CDG → GRU", desc:"G3 5003 · Air France · Terminal 2E · Pouso GRU 17 jun às 06h15.", addr:"CDG Terminal 2E, Aerogare 2" },
       { time:"—", type:"sleep", name:"🏨 ✈️ Voo retorno", desc:"CDG 23h35 → GRU 06h15 · G3 5003", addr:"" }
     ]
@@ -1757,7 +1763,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Veuve Clicquot</div>
-      <div class="vino-meta">Dia 9 · Reims · 11h00 · Tour 1h30 · ~€60/pessoa</div>
+      <div class="vino-meta">Dia 2 (09 jun) · Reims · 11h00 · Tour 1h30 · ~€60/pessoa</div>
       <div class="vino-detail">18km de galerias · Yellow Label + Rosé · TOUR — reserva obrigatória</div>
       <a href="https://veuveclicquot.com/en-row/visites-et-evenements" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
     </div>
@@ -1768,7 +1774,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Taittinger</div>
-      <div class="vino-meta">Dia 8 · Reims · 16h00 · Tour 1h · ~€28/pessoa</div>
+      <div class="vino-meta">Dia 1 (08 jun) · Reims · 16h00 · Tour 1h · ~€28/pessoa</div>
       <div class="vino-detail">Galerias romanas séc. IV · Comtes de Champagne · TOUR — reserva obrigatória</div>
       <a href="https://taittinger.com/en/visites/" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
     </div>
@@ -1781,7 +1787,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Perrier-Jouët</div>
-      <div class="vino-meta">Dia 9 · Épernay · Avenue de Champagne · Degustação balcão · ~€15/pessoa</div>
+      <div class="vino-meta">Dia 2 (09 jun) · Épernay · Avenue de Champagne · Degustação balcão · ~€15/pessoa</div>
       <div class="vino-detail">Boutique Belle Époque · entrada livre, sem reserva necessária · visitar durante passeio pela Avenue</div>
     </div>
     <span class="vino-tag vino-tag-walk">LIVRE</span>
@@ -1791,7 +1797,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Moët & Chandon</div>
-      <div class="vino-meta">Dia 9 · Épernay · 15h40 · Tour 1h30 · ~€30/pessoa</div>
+      <div class="vino-meta">Dia 2 (09 jun) · Épernay · 15h40 · Tour 1h30 · ~€30/pessoa</div>
       <div class="vino-detail">28km de galerias · Brut Impérial + Rosé · TOUR — reserva obrigatória online</div>
       <a href="https://www.moet.com/en-us/visits" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
     </div>
@@ -1808,7 +1814,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Maison Hugel & Fils</div>
-      <div class="vino-meta">Dia 4 · Riquewihr · 11h15 · Tour 1h30 · ~€20/pessoa</div>
+      <div class="vino-meta">Dia 4 (11 jun) · Riquewihr · 11h15 · Tour 1h30 · ~€20/pessoa</div>
       <div class="vino-detail">Fundada 1639 · Riesling Jubilee Grand Cru · TOUR — reservar por e-mail</div>
       <a href="mailto:advance@hugel.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">advance@hugel.com →</a>
     </div>
@@ -1819,7 +1825,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Dopff au Moulin — Crémant d'Alsace</div>
-      <div class="vino-meta">Dia 4 · Riquewihr · 17h00 · Degustação balcão · ~€12/pessoa</div>
+      <div class="vino-meta">Dia 4 (11 jun) · Riquewihr · 14h30 · Degustação balcão · ~€12/pessoa</div>
       <div class="vino-detail">Crémant Brut Blanc de Blancs + Blanc de Noirs · sem reserva</div>
     </div>
     <span class="vino-tag vino-tag-walk">LIVRE</span>
@@ -1829,7 +1835,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Cave Viticole d'Eguisheim</div>
-      <div class="vino-meta">Dia 5 · Eguisheim · 09h45 · Degustação · ~€10/pessoa</div>
+      <div class="vino-meta">Dia 5 (12 jun) · Eguisheim · 09h45 · Degustação · ~€10/pessoa</div>
       <div class="vino-detail">Pinot Gris Grand Cru Eichberg + Gewürztraminer Grand Cru · sem reserva</div>
     </div>
     <span class="vino-tag vino-tag-walk">LIVRE</span>
@@ -1839,7 +1845,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Cave Trimbach</div>
-      <div class="vino-meta">Dia 5 · Ribeauvillé · 12h00 · Degustação balcão · ~€15/pessoa</div>
+      <div class="vino-meta">Dia 5 (12 jun) · Ribeauvillé · 12h00 · Degustação balcão · ~€15/pessoa</div>
       <div class="vino-detail">Riesling Réserve + Frédéric Emile · recomendável ligar antes</div>
       <a href="https://trimbach.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">trimbach.fr →</a>
     </div>
@@ -1850,7 +1856,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Domaine Weinbach</div>
-      <div class="vino-meta">Dia 5 · Kaysersberg · 15h45 · Degustação · ~€15/pessoa</div>
+      <div class="vino-meta">Dia 5 (12 jun) · Kaysersberg · 15h45 · Degustação · ~€15/pessoa</div>
       <div class="vino-detail">Convento Capuchinhos séc. XVII · Riesling Clos des Capucins · reservar por e-mail</div>
       <a href="mailto:contact@weinbach.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">contact@weinbach.com →</a>
     </div>
@@ -1861,7 +1867,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Albert Mann</div>
-      <div class="vino-meta">Dia 5 · Wettolsheim · 16h45 · Degustação · ~€12/pessoa</div>
+      <div class="vino-meta">Dia 5 (12 jun) · Wettolsheim · 16h45 · Degustação · ~€12/pessoa</div>
       <div class="vino-detail">Gewürztraminer Grand Cru Furstentum + Pinot Noir · sem reserva</div>
       <a href="https://albert-mann.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">albert-mann.com →</a>
     </div>
@@ -1872,7 +1878,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Cave d'Obernai — Muscat</div>
-      <div class="vino-meta">Dia 6 · Obernai · 10h30 · Degustação balcão · ~€8/pessoa</div>
+      <div class="vino-meta">Dia 6 (13 jun) · Obernai · 10h30 · Degustação balcão · ~€8/pessoa</div>
       <div class="vino-detail">Sylvaner + Pinot Blanc + Muscat d'Alsace · sem reserva</div>
     </div>
     <span class="vino-tag vino-tag-walk">LIVRE</span>
@@ -1889,7 +1895,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Domaine Rossignol-Trapet</div>
-      <div class="vino-meta">Dia 7 · Gevrey-Chambertin · 11h45 · Tour 1h30 · ~€25/pessoa</div>
+      <div class="vino-meta">Dia 7 (14 jun) · Gevrey-Chambertin · 11h45 · Tour 1h30 · ~€25/pessoa</div>
       <div class="vino-detail">Chambertin Grand Cru · biodinâmica · TOUR — reservar por e-mail com antecedência</div>
       <a href="mailto:contact@rossignol-trapet.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">rossignol-trapet.com →</a>
     </div>
@@ -1911,7 +1917,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Domaine des Comtes Lafon</div>
-      <div class="vino-meta">Dia 8 · Meursault · 09h45 · Degustação · ~€20/pessoa</div>
+      <div class="vino-meta">Dia 8 (15 jun) · Meursault · 09h45 · Degustação · ~€20/pessoa</div>
       <div class="vino-detail">Meursault 1er Cru Perrières · amanteigado e mineral · reservar por e-mail</div>
       <a href="mailto:contact@comtes-lafon.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">comtes-lafon.com →</a>
     </div>
@@ -1922,7 +1928,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Domaine Leflaive</div>
-      <div class="vino-meta">Dia 8 · Puligny-Montrachet · 12h00 · Degustação · ~€25/pessoa</div>
+      <div class="vino-meta">Dia 8 (15 jun) · Puligny-Montrachet · 12h00 · Degustação · ~€25/pessoa</div>
       <div class="vino-detail">Puligny-Montrachet 1er Cru Les Pucelles · o mais elegante da Borgonha · reservar</div>
       <a href="https://leflaive.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">leflaive.fr →</a>
     </div>
@@ -1933,7 +1939,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Marché aux Vins — Beaune</div>
-      <div class="vino-meta">Dia 8 · Beaune · 15h00 · Autoconduzido · €17/pessoa</div>
+      <div class="vino-meta">Dia 8 (15 jun) · Beaune · 15h00 · Autoconduzido · €17/pessoa</div>
       <div class="vino-detail">8 vinhos em caves medievais séc. XV · 3 Premiers Crus incluídos · comprar online</div>
       <a href="https://marcheauxvins.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">marcheauxvins.com →</a>
     </div>
@@ -1951,7 +1957,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">William Fèvre ou Domaine Raveneau</div>
-      <div class="vino-meta">Dia 9 · Chablis · 10h45 · Degustação · ~€15-20/pessoa</div>
+      <div class="vino-meta">Dia 9 (16 jun) · Chablis · 10h45 · Degustação · ~€15-20/pessoa</div>
       <div class="vino-detail">Chablis 1er Cru Montée de Tonnerre · mineral e austero · ligar antes</div>
       <a href="https://williamfevre.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">williamfevre.com →</a>
     </div>
@@ -2253,56 +2259,6 @@ function showPage(name, btn) {
 }
 </script>
 
-<script>
-function toggle(el) {
-  el.classList.toggle('checked');
-  updateProgress();
-  saveState();
-}
-
-function updateProgress() {
-  const all = document.querySelectorAll('.item');
-  const checked = document.querySelectorAll('.item.checked');
-  const pct = all.length ? Math.round(checked.length / all.length * 100) : 0;
-  document.getElementById('progressFill').style.width = pct + '%';
-  document.getElementById('progressText').textContent = `${checked.length} de ${all.length} itens`;
-  document.getElementById('progressPct').textContent = pct + '%';
-
-  // group counts
-  ['obrig','rec','opt'].forEach(g => {
-    const el = document.getElementById('count-' + g);
-    if (!el) return;
-    const total = document.querySelectorAll(`[data-group="${g}"]`).length;
-    const done = document.querySelectorAll(`[data-group="${g}"].checked`).length;
-    el.textContent = `${done}/${total}`;
-  });
-}
-
-function saveState() {
-  const items = document.querySelectorAll('.item');
-  const state = Array.from(items).map(el => el.classList.contains('checked'));
-  localStorage.setItem('checklist_docs_franca', JSON.stringify(state));
-}
-
-function loadState() {
-  try {
-    const state = JSON.parse(localStorage.getItem('checklist_docs_franca') || '[]');
-    const items = document.querySelectorAll('.item');
-    items.forEach((el, i) => {
-      if (state[i]) el.classList.add('checked');
-    });
-  } catch(e) {}
-  updateProgress();
-}
-
-function resetAll() {
-  document.querySelectorAll('.item').forEach(el => el.classList.remove('checked'));
-  localStorage.removeItem('checklist_docs_franca');
-  updateProgress();
-}
-
-loadState();
-</script>
 <script>
 function toggleVino(el) {
   el.classList.toggle('checked');
