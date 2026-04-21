@@ -1442,7 +1442,8 @@ const days = [
       { time:"13:00", type:"food", name:"🍽️ Almoço Marais — Rue des Rosiers", desc:"A rua judaica de Paris — falafel L'As du Fallafel (o mais famoso, fila na porta) ou Miznon (israelense moderno, sem fila). Comer caminhando pelo bairro.", addr:"Rue des Rosiers, Paris 4°" },
       { time:"14:30", type:"walk", name:"Le Marais + Place des Vosges", desc:"O bairro mais belo de Paris — hôtels particuliers do séc. XVII, galerias de arte, lojas de design. Place des Vosges: a praça mais antiga e bonita de Paris (1612), sob os arcos com um café.", addr:"Le Marais, Paris 3°/4°" },
       { time:"17:00", type:"walk", name:"Centre Pompidou — exterior", desc:"O prédio mais controverso de Paris — tubulações coloridas do lado de fora, escultura de Calder na praça, artistas de rua. Entrar é opcional (€15). A praça em frente é gratuita e sempre animada.", addr:"Place Georges-Pompidou, Paris 4° · gratuito exterior" },
-      { time:"20:00", type:"food", name:"🍷 Jantar natural wine bar", desc:"Le Rigmarole (cozinha japonesa-francesa com vinhos naturais, reservar) ou Septime Cave (cave-bar informal no Marais, sem reserva). O melhor da cena de vinho parisiense atual.", addr:"Le Marais / Oberkampf, Paris" }
+      { time:"20:00", type:"food", name:"🍷 Jantar natural wine bar", desc:"Le Rigmarole (cozinha japonesa-francesa com vinhos naturais, reservar) ou Septime Cave (cave-bar informal no Marais, sem reserva). O melhor da cena de vinho parisiense atual.", addr:"Le Marais / Oberkampf, Paris" },
+      { time:"—", type:"sleep", name:"🏨 Hôtel Zora", desc:"4 Rue Léopold Bellan, Paris · BN 6968649555", addr:"" }
     ]
   },
   {
@@ -1458,62 +1459,63 @@ const days = [
       { time:"13:30", type:"food", name:"🍽️ Almoço Palais Royal", desc:"Restaurante Véfour (histórico, 2 estrelas Michelin, caro) ou simplesmente comprar queijo e pão e sentar no jardim do Palais Royal.", addr:"Jardins du Palais Royal, Paris 1°" },
       { time:"14:30", type:"photo", name:"📸 Galerie Vivienne — a mais bonita de Paris", desc:"A passagem coberta mais elegante de Paris — mosaico no chão, teto de vidro do séc. XIX, livraria antiga Jousseaume (1826). 15 min. Depois explorar Galerie Colbert ao lado.", addr:"4 Rue des Petits Champs, Paris 2° · gratuito" },
       { time:"16:00", type:"walk", name:"Rue Montorgueil — mercado local", desc:"A rua de mercado mais autêntica de Paris — queijeiros, peixeiros, charcuterie, padarias. A 4 min do hotel. Comprar petiscos para o quarto: queijo, presunto, baguette, vinho.", addr:"Rue Montorgueil, Paris 2° — a 4 min do Hôtel Zora" },
-      { time:"20:00", type:"food", name:"🍽️ Último jantar em Paris", desc:"South Pigalle (SoPi) — a cena de bistrô mais animada de Paris no momento. Rues des Martyrs, Rue Notre-Dame de Lorette. Qualquer bistrô da área está bom.", addr:"South Pigalle, Paris 9°" }
+      { time:"20:00", type:"food", name:"🍽️ Último jantar em Paris", desc:"South Pigalle (SoPi) — a cena de bistrô mais animada de Paris no momento. Rues des Martyrs, Rue Notre-Dame de Lorette. Qualquer bistrô da área está bom.", addr:"South Pigalle, Paris 9°" },
+      { time:"—", type:"sleep", name:"🏨 Hôtel Zora", desc:"4 Rue Léopold Bellan, Paris · BN 6968649555", addr:"" }
     ]
   },
-
   {
     date: "08", month: "JUN", week: "SEG", city: "Reims",
     title: "Paris → Reims",
-    subtitle: "Primeiro dia de estrada. Retirada do BMW na Gare Saint-Lazare e direto para o Champagne — Veuve Clicquot + Taittinger no mesmo dia.",
-    tags: [{label:"Veuve Clicquot", color:"var(--wine)"},{label:"Taittinger", color:"var(--wine)"},{label:"Catedral", color:"var(--photo)"}],
+    subtitle: "Primeiro dia de estrada sem pressa. Saída de Paris, cidade de Reims e Taittinger às 15h.",
+    tags: [{label:"Taittinger", color:"var(--wine)"},{label:"Catedral", color:"var(--photo)"},{label:"Reims", color:"var(--walk)"}],
     slots: [
-      { time:"09:30", type:"drive", name:"Retirada do carro — SIXT Gare Saint-Lazare", desc:"Plataforma 27, atrás do Relay Store. Voucher 9732137617. Fazer vistoria completa e fotografar qualquer arranhão antes de sair.", addr:"13 Rue d'Amsterdam, Paris 08" },
-      { time:"10:30", type:"drive", name:"Paris → Reims", desc:"A4 em direção leste. 1h30 de autoestrada.", isDrive: true, driveInfo:"1h30 · 145 km · A4" },
-      { time:"12:00", type:"wine", name:"🍾 Veuve Clicquot — Tour + Degustação", desc:"As caves mais extensas de Reims — 18km de galerias subterrâneas escavadas em calcário. A história da Veuve Clicquot começa em 1772 — a 'grande dame do Champagne' que inventou o riddling (girar as garrafas para clarificar). Tour de 1h + degustação de 2 cuvées: Yellow Label e Rosé.", addr:"1 Place des Droits de l'Homme, Reims · veuveclicquot.com", tip:"💡 Reservar online com antecedência. ~€25/pessoa. Pedir o slot de 12h ou 12h30." },
-      { time:"13:30", type:"food", name:"Almoço rápido em Reims", desc:"Brasserie du Boulingrin — art déco de 1925. Prato do dia rápido: pâté champenois ou croque-monsieur com uma taça de Champagne rosé.", addr:"48 Rue de Mars, Reims" },
-      { time:"14:30", type:"wine", name:"🍾 Taittinger — Tour + Degustação", desc:"As galerias mais bonitas de Reims — escavadas pelos monges beneditinos no séc. IV d.C., 4 andares subterrâneos a 18m de profundidade. Completamente diferente da Veuve: aqui o foco é elegância e Chardonnay. Tour de 1h + degustação de 3 cuvées incluindo o Comtes de Champagne Blanc de Blancs.", addr:"9 Place Saint-Nicaise, Reims · taittinger.com", tip:"💡 Reservar slot de 14h30 ou 15h. ~€28/pessoa. O Comtes de Champagne é um dos maiores Champagnes do mundo." },
-      { time:"16:30", type:"photo", name:"📸 Catedral Notre-Dame de Reims", desc:"Onde 33 reis da França foram coroados. À luz do fim de tarde o arenito dourado fica espetacular. Entrar para ver os vitrais de Chagall no ábside — 20 minutos bastam.", addr:"Place du Cardinal Luçon, Reims · gratuito" },
-      { time:"17:15", type:"walk", name:"Place Royale + Porte de Mars", desc:"Praça real do séc. XVIII e o maior arco triunfal romano da França (séc. III). 20 min a pé do centro.", addr:"Rue du Mars, Reims" },
-      { time:"18:00", type:"sleep", name:"Check-in Airbnb Reims", desc:"Pernoite em Reims conforme reserva." },
-      { time:"20:00", type:"food", name:"Jantar em Reims", desc:"Brasserie Le Boulingrin — art déco de 1925, o mais histórico de Reims. Pedir pâté champenois e tarte à la crème. Ou Le Foch para algo mais refinado com harmonização de Champagne.", addr:"48 Rue de Mars, Reims" }
+      { time:"09:30", type:"drive", name:"Retirada do carro — SIXT Gare Saint-Lazare", desc:"Plataforma 27, atrás do Relay Store. Voucher 9732137617. Fazer vistoria completa e fotografar qualquer arranhão antes de sair. Sem pressa — o dia está tranquilo.", addr:"13 Rue d'Amsterdam, Paris 08" },
+      { time:"10:30", type:"drive", name:"Paris → Reims", desc:"A4 em direção leste. 1h30 de autoestrada.", isDrive:true, driveInfo:"1h30 · 145 km · A4" },
+      { time:"12:00", type:"food", name:"🍽️ Almoço em Reims", desc:"Brasserie Le Boulingrin — art déco de 1925, o mais histórico de Reims. Pedir pâté champenois e tarte à la crème.", addr:"48 Rue de Mars, Reims" },
+      { time:"13:30", type:"photo", name:"📸 Catedral Notre-Dame de Reims", desc:"Onde 33 reis da França foram coroados. Fachada gótica com mais de 2.300 estátuas. Entrar para ver os vitrais de Chagall no ábside. Luz da tarde perfeita para fotos.", addr:"Place du Cardinal Luçon, Reims · gratuito" },
+      { time:"14:30", type:"walk", name:"Place Royale + Porte de Mars", desc:"Praça real do séc. XVIII e o maior arco triunfal romano ainda de pé na França (séc. III). 20 min a pé do centro.", addr:"Rue du Mars, Reims" },
+      { time:"16:00", type:"wine", name:"🍾 Taittinger — Tour Completo + Degustação", desc:"As galerias mais bonitas de Reims — escavadas pelos monges beneditinos no séc. IV d.C., 4 andares subterrâneos a 18m de profundidade. Tour 1h + degustação de 3 cuvées incluindo o lendário Comtes de Champagne Blanc de Blancs.", addr:"9 Place Saint-Nicaise, Reims · taittinger.com", tip:"💡 Reservar slot das 16h. ~€28/pessoa. As galerias romanas são as mais impressionantes de Reims." },
+      { time:"16:30", type:"walk", name:"Passeio livre em Reims", desc:"Explorar o centro histórico, Rue de Vesle, lojas locais. Sem pressa — é o primeiro dia!", addr:"Centre-ville, Reims" },
+      { time:"18:00", type:"sleep", name:"🏨 Check-in Airbnb Reims", desc:"Reims · pago por Carla · R$316,90", addr:"Reims" },
+      { time:"20:00", type:"food", name:"🍽️ Jantar em Reims", desc:"Le Foch para algo refinado com harmonização de Champagne, ou bistrô informal no centro.", addr:"Centre-ville, Reims" }
     ]
   },
   {
     date: "09", month: "JUN", week: "TER", city: "Épernay",
-    title: "Épernay — Capital do Champagne",
-    subtitle: "O dia mais espumante da viagem. Avenue de Champagne, caves de Moët e produtores artesanais em Hautvillers.",
-    tags: [{label:"Champagne", color:"var(--wine)"},{label:"Hautvillers", color:"var(--photo)"},{label:"Moët", color:"var(--wine)"}],
+    title: "Veuve Clicquot + Épernay + Hautvillers",
+    subtitle: "Manhã em Reims com a Veuve Clicquot, depois Avenue de Champagne, Moët boutique e Hautvillers.",
+    tags: [{label:"Veuve Clicquot", color:"var(--wine)"},{label:"Moët", color:"var(--wine)"},{label:"Hautvillers", color:"var(--photo)"}],
     slots: [
-      { time:"09:00", type:"photo", name:"📸 Avenue de Champagne — manhã cedo", desc:"A rua mais rica do mundo por km². De manhã está vazia de turistas. Fotografar as grandes maisons com luz lateral. 1,8 km de fachadas históricas.", addr:"Avenue de Champagne, Épernay" },
-      { time:"10:00", type:"wine", name:"🍾 Moët & Chandon — visita e degustação", desc:"A maior maison do mundo, fundada em 1743. Cave subterrânea com 28 km de galerias. Tour de 1h com guia + degustação de 2 cuvées. Pedir o Brut Impérial e o Rosé.", addr:"20 Avenue de Champagne, Épernay · moet.com", tip:"💡 Reservar online obrigatório. ~€30/pessoa para o tour clássico." },
-      { time:"11:30", type:"wine", name:"🥂 Perrier-Jouët — fachada e loja", desc:"Não precisa de tour — a fachada art nouveau com flores esmaltadas é uma das mais fotografadas de Épernay. Entrar na boutique para ver as garrafas Belle Époque originais e fazer uma degustação rápida no balcão (~€15).", addr:"28 Avenue de Champagne, Épernay" },
-      { time:"12:30", type:"food", name:"Almoço — Le Théâtre", desc:"Restaurante na Place de la République, cozinha alsaciana-champenoise. Pedir a andouillette gratinée ou o foie gras local. Mesa do lado de fora na praça se o tempo estiver bom.", addr:"Place de la République, Épernay" },
-      { time:"13:30", type:"drive", name:"Épernay → Aÿ", desc:"10 min ao leste.", isDrive:true, driveInfo:"10 min · 5 km" },
-      { time:"13:45", type:"wine", name:"🍾 Bollinger — Maison Icônica de Pinot Noir", desc:"Uma das grandes maisons de Champagne, fundada em 1829, especializada em Pinot Noir — produz Champagnes mais encorpados, com mais estrutura e profundidade que os baseados em Chardonnay. Tour de 45 min nas caves históricas + degustação do Special Cuvée e do Blanc de Noirs. Favorita de James Bond nos filmes.", addr:"16 Rue Chanoine Gosset, Aÿ · champagne-bollinger.com", tip:"💡 Reserve com antecedência — tours privados apenas. ~€30/pessoa. Ótimo momento para comparar o estilo Pinot Noir (Bollinger) com o estilo Chardonnay (Taittinger de ontem)." },
-      { time:"14:45", type:"drive", name:"Aÿ → Hautvillers", desc:"10 min subindo as vinhas.", isDrive:true, driveInfo:"10 min · 8 km · estrada de vinha" },
-      { time:"14:30", type:"photo", name:"📸 Hautvillers — Dom Pérignon", desc:"O vilarejo mais bonito da região, em terraço entre as vinhas. Ruas de paralelepípedo, casas com ornamentos de ferro forjado nas portas, abadia beneditina onde Dom Pérignon trabalhou. Vista panorâmica do Vale do Marne.", addr:"Village de Hautvillers, 51160" },
-      { time:"15:00", type:"wine", name:"🍾 Récoltant-Manipulant artesanal — Hautvillers", desc:"Visite um produtor independente — eles cultivam as próprias uvas e fazem Champagne de parcela única, sem blending industrial. Recomendar: Champagne Tarlant (família há 13 gerações) ou Champagne Francis Boulard. Champagne de terroir completamente diferente das grandes maisons. Degustação livre, €10-15/pessoa.", addr:"Pergunta ao anfitrião do Airbnb o produtor local preferido", tip:"💡 Estes produtores artesanais são a grande revelação da visita ao Champagne. Guarda uma garrafa para levar." },
-      { time:"16:30", type:"drive", name:"Volta Épernay / Reims", desc:"Retorno ao hotel.", isDrive:true, driveInfo:"15 min" },
-      { time:"17:00", type:"walk", name:"Musée du Vin de Champagne", desc:"Palácio do séc. XVIII com história completa do Champagne, de Dom Pérignon aos dias atuais. 1h de visita tranquila.", addr:"13 Avenue de Champagne, Épernay · €7/pessoa" },
-      { time:"20:00", type:"food", name:"Jantar — improviso em Épernay", desc:"A própria Avenue de Champagne tem bistrôs bons. Les Cépages é uma boa opção — prato do dia com harmonização de Champagne local incluída no menu." }
+      { time:"09:00", type:"food", name:"☕ Café da manhã em Reims", desc:"Última manhã em Reims. Café e croissant antes de partir para a Veuve.", addr:"Centre-ville, Reims" },
+      { time:"10:30", type:"drive", name:"Reims → Veuve Clicquot", desc:"10 min de carro até a Butte Saint-Nicaise.", isDrive:true, driveInfo:"10 min · Butte Saint-Nicaise, Reims" },
+      { time:"11:00", type:"wine", name:"🍾 Veuve Clicquot — Tour + Degustação", desc:"24km de crayères subterrâneas classificadas como Patrimônio UNESCO. A história de Madame Clicquot — a primeira mulher a liderar uma maison de Champagne. Tour 1h30 + degustação Yellow Label e Rosé.", addr:"1 Place des Droits de l'Homme, Reims · veuveclicquot.com", tip:"💡 Reservar slot de 11h. ~€60/pessoa." },
+      { time:"12:30", type:"drive", name:"Reims → Épernay", desc:"Check-out do Airbnb Reims. Seguir para Épernay.", isDrive:true, driveInfo:"30 min · 28 km · N51" },
+      { time:"13:30", type:"food", name:"🍽️ Almoço na Avenue de Champagne", desc:"C Comme — cave-restaurante com lista de Champagnes de produtores pequenos.", addr:"8 Rue Gambetta, Épernay" },
+      { time:"14:30", type:"photo", name:"📸 Avenue de Champagne + Perrier-Jouët", desc:"A rua mais rica do mundo por km². Perrier-Jouët — entrar na boutique para ver as garrafas Belle Époque e fazer degustação rápida no balcão (~€15).", addr:"Avenue de Champagne, Épernay" },
+      { time:"15:40", type:"wine", name:"🍾 Moët & Chandon — Tour + Degustação", desc:"A maior maison do mundo, fundada em 1743. 28km de galerias subterrâneas. Tour ~1h30 com guia + degustação de 2 cuvées: Brut Impérial e Rosé. Reservar o slot de 15h40 para ter tempo depois de ir a Hautvillers.", addr:"20 Avenue de Champagne, Épernay · moet.com", tip:"💡 Reservar online obrigatório — slot das 15h40. ~€30/pessoa. Termina ~17h10, seguir direto para Hautvillers." },
+      { time:"17:15", type:"drive", name:"Épernay → Hautvillers", desc:"20 min subindo as vinhas após o tour Moët.", isDrive:true, driveInfo:"20 min · 12 km · estrada de vinha" },
+      { time:"17:35", type:"photo", name:"📸 Hautvillers — Dom Pérignon", desc:"O vilarejo mais bonito da região. Abadia beneditina onde Dom Pérignon trabalhou e está enterrado. Vista panorâmica do Vale do Marne. Ruas de paralelepípedo com ornamentos de ferro forjado.", addr:"Village de Hautvillers, 51160" },
+      { time:"18:00", type:"wine", name:"🍾 Récoltant artesanal em Hautvillers", desc:"Produtor independente — cultivam as próprias uvas e fazem Champagne de parcela única. Completamente diferente das grandes maisons. ~€10-15/pessoa.", addr:"Hautvillers", tip:"💡 Perguntar ao anfitrião do Airbnb o produtor local preferido. Guardar uma garrafa para levar." },
+      { time:"18:45", type:"drive", name:"Hautvillers → Épernay · Check-in", desc:"20 min de volta. Check-in no Airbnb de Épernay.", isDrive:true, driveInfo:"20 min · 12 km" },
+      { time:"20:00", type:"food", name:"🍽️ Jantar em Épernay", desc:"Improvisado — Les Cépages na Avenue de Champagne é boa opção com harmonização de Champagne local.", addr:"Centre, Épernay" },
+      { time:"—", type:"sleep", name:"🏨 Airbnb Épernay", desc:"Épernay · pago por Carla · R$317,05", addr:"" }
     ]
   },
   {
     date: "10", month: "JUN", week: "QUA", city: "Troyes",
     title: "Troyes — A Cidade Rolha",
-    subtitle: "Cidade medieval em formato de rolha de Champagne. Manhã no centro histórico, tarde de deslocamento para Colmar.",
+    subtitle: "Cidade medieval em formato de rolha de Champagne. Dia inteiro em Troyes, dorme aqui antes de partir para a Alsácia amanhã.",
     tags: [{label:"Medieval", color:"var(--photo)"},{label:"Vitrais", color:"var(--photo)"},{label:"Gastronomia", color:"var(--food)"}],
     slots: [
-      { time:"09:00", type:"drive", name:"Épernay → Troyes", desc:"Saída após café da manhã.", isDrive:true, driveInfo:"1h · 90 km · A26" },
+      { time:"09:00", type:"drive", name:"Épernay → Troyes", desc:"Saída após café da manhã. Check-out do Airbnb Épernay.", isDrive:true, driveInfo:"1h · 90 km · A26" },
       { time:"10:00", type:"photo", name:"📸 Ruelle des Chats + Centro Medieval", desc:"A ruela dos Gatos — 100m de casas medievais tão próximas que os gatos pulavam de telhado em telhado. Depois explorar a Rue Emile Zola, Rue de la Monnaie e Rue Champeaux: as ruas mais preservadas do séc. XV-XVI da França.", addr:"Ruelle des Chats, Troyes · gratuito" },
       { time:"11:00", type:"photo", name:"⛪ Catedral Saint-Pierre-et-Saint-Paul", desc:"Os vitrais do séc. XIII ao XIX são considerados os mais completos da França — 1.800m² de vitrais originais intactos. A luz da manhã atravessando o rosáceo norte é espetacular. 30-45 min.", addr:"Place Saint-Pierre, Troyes · gratuito" },
-      { time:"12:00", type:"food", name:"Almoço — Le Valentino ou Bistrot Dupont", desc:"Troyes é a capital da andouillette (linguiça de tripa) — prato divisivo mas autêntico. Se não for a cara, pedir o chaource (queijo local) com jambon. Le Valentino é o bistrô mais tradicional da cidade.", addr:"Centre Historique, Troyes" },
+      { time:"12:00", type:"food", name:"🍽️ Almoço — Le Valentino ou Bistrot Dupont", desc:"Troyes é a capital da andouillette (linguiça de tripa) — prato divisivo mas autêntico. Se não for a cara, pedir o chaource (queijo local) com jambon. Le Valentino é o bistrô mais tradicional.", addr:"Centre Historique, Troyes" },
       { time:"13:30", type:"walk", name:"Basilique Saint-Urbain", desc:"Joia do gótico radiante do séc. XIII, com vitrais do séc. XIII e XVII. Menor que a catedral mas mais delicada. 20 min.", addr:"Place Vernier, Troyes · gratuito" },
       { time:"14:15", type:"walk", name:"Hôtel-Dieu-le-Comte", desc:"Antiga farmácia do hospital do séc. XVIII com frascos e instrumentos médicos medievais intactos. Curioso e fotogênico.", addr:"Quai des Comtes de Champagne · €3" },
-      { time:"15:00", type:"drive", name:"Troyes → Colmar", desc:"O trecho mais longo do road trip. Atravessa a Champagne e entra na Alsácia.", isDrive:true, driveInfo:"2h30 · 220 km · A5 + A35" },
-      { time:"17:30", type:"photo", name:"📸 Primeira chegada em Colmar — Petite Venise", desc:"Deixar as malas no Airbnb e ir direto à Petite Venise. À tarde a luz já é lateral e dourada. Primeira exploração do canal, bairro dos Tanneurs e Grand Rue.", addr:"Quartier de la Petite Venise, Colmar" },
-      { time:"20:00", type:"food", name:"Jantar — Winstub alsaciana", desc:"Winstub é o bistrô tradicional alsaciano — madeira escura, menus escritos à mão, vinho local. Winstub de la Petite Venise é o mais charmoso. Pedir choucroute garnie (chucrute com carnes) e um Riesling local.", addr:"Quartier de la Petite Venise, Colmar" }
+      { time:"15:30", type:"walk", name:"Passeio livre em Troyes", desc:"Explorar o bairro da Madeleine, lojas de outlet (Troyes é famosa pelas fábricas de outlet de moda), ou simplesmente sentar num café e relaxar antes da grande travessia de amanhã para a Alsácia.", addr:"Centre Historique, Troyes" },
+      { time:"18:00", type:"sleep", name:"🏨 Check-in Airbnb Troyes", desc:"Troyes · pago por Carla · R$431,55", addr:"Troyes" },
+      { time:"20:00", type:"food", name:"🍽️ Jantar em Troyes", desc:"Bistrô informal no centro histórico. Última noite na região de Champagne antes de entrar na Alsácia amanhã.", addr:"Centre Historique, Troyes" }
     ]
   },
   {
@@ -1522,6 +1524,7 @@ const days = [
     subtitle: "O dia mais fotogênico da viagem. Petite Venise ao amanhecer, museu de classe mundial e a Maison Hugel para o Riesling.",
     tags: [{label:"Fotografia", color:"var(--photo)"},{label:"Riesling", color:"var(--wine)"},{label:"Museu", color:"var(--walk)"}],
     slots: [
+      { time:"07:00", type:"drive", name:"Troyes → Colmar", desc:"Saída cedo para chegar em Colmar a tempo da golden hour na Petite Venise. Check-out do Airbnb Troyes antes de partir.", isDrive:true, driveInfo:"2h30 · 220 km · A5 + A35" },
       { time:"07:30", type:"photo", name:"📸 Petite Venise — GOLDEN HOUR (não pule!)", desc:"Este é o horário. Às 7h30 não há ninguém. Os canais refletem as casas coloridas com luz suave, flores nas janelas, silêncio. Em 30 minutos chegam os primeiros turistas. Ir direto ao Pont de la Poissonnerie — a ponte mais fotografada de Colmar.", addr:"Pont de la Poissonnerie, Colmar", tip:"💡 Melhor foto da viagem inteira. Câmera, não smartphone — a luz é fraca e os reflexos nos canais precisam de exposição correta." },
       { time:"08:30", type:"food", name:"Café da manhã alsaciano", desc:"Patisserie Schmitt na Grand Rue — croissant, bretzel fresco e café. Sentar na calçada enquanto a cidade acorda.", addr:"Grand Rue, Colmar" },
       { time:"09:30", type:"photo", name:"📸 Bairro dos Tanneurs + Quartier des Tanneurs", desc:"O bairro dos curtidores — casas do séc. XVII com estruturas de secagem de couro nas fachadas, pintadas em tons pastel. Completamente diferente da Petite Venise. Ótimas fotos de arquitetura.", addr:"Rue des Tanneurs, Colmar" },
@@ -1531,7 +1534,8 @@ const days = [
       { time:"14:30", type:"photo", name:"📸 Riquewihr — vilarejo do séc. XVI", desc:"Um dos vilarejos mais preservados da França — cercado de vinhas, sem carros no centro, ruas de paralelepípedo. Portão medieval Dolder (1291), Maison Preiss-Zimmer. 45 min de exploração.", addr:"Riquewihr, 68340" },
       { time:"15:30", type:"walk", name:"Musée Unterlinden — Retábulo de Isenheim", desc:"Uma das 10 maiores obras de arte do mundo — o Retábulo de Isenheim (1515) de Matthias Grünewald. Pintura em 9 painéis retráteis sobre a Paixão de Cristo, de uma intensidade emocional perturbadora. 1h.", addr:"1 Rue des Unterlinden, Colmar · €13" },
       { time:"17:00", type:"wine", name:"🍷 Dopff au Moulin — Crémant d'Alsace", desc:"Degustação rápida no balcão (30 min). Pioneiros do Crémant d'Alsace (espumante alsaciano método tradicional). Provar o Brut Blanc de Blancs e o Blanc de Noirs. Excelente custo-benefício ~€12/pessoa.", addr:"2 Avenue Jacques Preiss, Riquewihr" },
-      { time:"20:00", type:"food", name:"Jantar em Colmar", desc:"JY'S ou La Maison des Têtes brasserie. JY'S é o melhor restaurante da cidade (1 estrela Michelin) mas caro — reservar antes se quiser ir. A Brasserie da Maison des Têtes é mais acessível e igualmente boa, com choucroute de Riesling e foie gras local.", addr:"Centre Historique, Colmar" }
+      { time:"20:00", type:"food", name:"Jantar em Colmar", desc:"JY'S ou La Maison des Têtes brasserie. JY'S é o melhor restaurante da cidade (1 estrela Michelin) mas caro — reservar antes se quiser ir. A Brasserie da Maison des Têtes é mais acessível e igualmente boa, com choucroute de Riesling e foie gras local.", addr:"Centre Historique, Colmar" },
+      { time:"—", type:"sleep", name:"🏨 Colmar", desc:"Colmar · 3 noites · pago por Daniel · R$1.335,63", addr:"" }
     ]
   },
   {
@@ -1552,7 +1556,8 @@ const days = [
       { time:"15:45", type:"wine", name:"🍷 Domaine Weinbach — Riesling Clos des Capucins", desc:"Uma das maiores domaines biodinâmicas da Alsácia, instalada num convento dos Capuchinhos do séc. XVII cercado por muros. O jardim de rosas na entrada é espetacular. Provar o Riesling Clos des Capucins (lendário, de parcela única dentro dos muros do convento) e o Gewürztraminer Altenbourg. Degustação ~€15/pessoa.", addr:"25 Route du Vin, Kaysersberg · weinbach.com", tip:"💡 Este é um dos endereços mais belos da Alsácia — o convento, o jardim, os muros cobertos de videiras. Reserve por e-mail com antecedência." },
       { time:"16:45", type:"wine", name:"🍷 Albert Mann — Gewürztraminer Grand Cru Furstentum", desc:"Degustação rápida (30 min). Uma das melhores domaines biodinâmicas da Alsácia. O Gewürztraminer Grand Cru Furstentum é aromático, exuberante, com notas de lichia e rosa. Provar também o Pinot Noir — o melhor da Alsácia.", addr:"13 Rue du Château, Wettolsheim (10 min de Kaysersberg) · albert-mann.com" },
       { time:"17:00", type:"drive", name:"Volta Colmar", desc:"20 min de volta para o Airbnb.", isDrive:true, driveInfo:"20 min · 13 km" },
-      { time:"20:00", type:"food", name:"Jantar improvisado em Colmar", desc:"Ao chegar, escolher um restaurante por intuição no centro histórico. Rue des Marchands e Place de la Cathédrale têm boas opções. Pedir um Gewürztraminer de Kaysersberg e uma flammkuche." }
+      { time:"20:00", type:"food", name:"Jantar improvisado em Colmar", desc:"Ao chegar, escolher um restaurante por intuição no centro histórico. Rue des Marchands e Place de la Cathédrale têm boas opções. Pedir um Gewürztraminer de Kaysersberg e uma flammkuche." },
+      { time:"—", type:"sleep", name:"🏨 Colmar", desc:"Colmar · 3 noites · pago por Daniel", addr:"" }
     ]
   },
   {
@@ -1571,7 +1576,8 @@ const days = [
       { time:"16:30", type:"walk", name:"Palácio Rohan + Place Gutenberg", desc:"Palácio episcopal do séc. XVIII com 3 museus internos. Fachada barroca impecável. Place Gutenberg com estátua do inventor da imprensa — a cidade onde Gutenberg desenvolveu a prensa tipográfica.", addr:"2 Place du Château, Strasbourg" },
       { time:"17:30", type:"walk", name:"Grande Île — Passeio livre", desc:"A ilha histórica de Strasbourg é Patrimônio UNESCO. Explorar o bairro do Krutenau, Rue des Hallebardes, Place Kléber. Compras, sorvetes, aperitivo num café.", addr:"Grande Île, Strasbourg" },
       { time:"19:30", type:"drive", name:"Strasbourg → Colmar", desc:"45 min de volta.", isDrive:true, driveInfo:"45 min · 70 km · A35" },
-      { time:"20:30", type:"food", name:"Último jantar em Colmar", desc:"Tarte flambée de despedida — Flam's na Rue des Tanneurs é rápido, informal, e faz as melhores flamenkuche da cidade com Crémant d'Alsace gelado." }
+      { time:"20:30", type:"food", name:"Último jantar em Colmar", desc:"Tarte flambée de despedida — Flam's na Rue des Tanneurs é rápido, informal, e faz as melhores flamenkuche da cidade com Crémant d'Alsace gelado." },
+      { time:"—", type:"sleep", name:"🏨 Colmar", desc:"Colmar · 3 noites · pago por Daniel", addr:"" }
     ]
   },
   {
@@ -1609,7 +1615,8 @@ const days = [
       { time:"15:00", type:"wine", name:"🍷 Marché aux Vins — Beaune", desc:"8 vinhos borgonheses em caves medievais do séc. XV, autoconduzido com taça de prata e mapa das parcelas. Inclui 3 Premiers Crus e às vezes um Grand Cru. ~€17/pessoa. Demora 1h30 no ritmo certo.", addr:"2 Rue Nicolas Rollin, Beaune · marcheauxvins.com", tip:"💡 Beber devagar — 8 vinhos em sequência. Cuspir é permitido e recomendado nos primeiros. Guardar o paladar para os Premiers Crus no final." },
       { time:"17:00", type:"walk", name:"Caves da Patriarche Père et Fils", desc:"As maiores caves de Beaune — 5 km de galerias subterrâneas. Tour independente com taça incluída. Mais espetacular visualmente que o Marché aux Vins mas vinhos menos interessantes. Opcional — só se tiver energia.", addr:"7 Rue du Collège, Beaune · €15" },
       { time:"19:00", type:"walk", name:"Ramparts de Beaune + aperitivo", desc:"Golden hour nas muralhas medievais — a luz do sol poente no arenito é linda. Aperitivo no Caves Madeleine (cave-bar dentro das muralhas) com uma taça de Aligoté local.", addr:"Ramparts, Beaune" },
-      { time:"20:30", type:"food", name:"Jantar — último na Borgonha", desc:"Le Bénaton — chef criativo com produtos locais, menu-degustação com harmonização opcional. Reservar com 1-2 dias de antecedência se possível. Alternativa: La Ciboulette, mais simples mas também excelente.", addr:"25 Rue du Faubourg Bretonnière, Beaune" }
+      { time:"20:30", type:"food", name:"Jantar — último na Borgonha", desc:"Le Bénaton — chef criativo com produtos locais, menu-degustação com harmonização opcional. Reservar com 1-2 dias de antecedência se possível. Alternativa: La Ciboulette, mais simples mas também excelente.", addr:"25 Rue du Faubourg Bretonnière, Beaune" },
+      { time:"—", type:"sleep", name:"🏨 Coto Hotel Beaune", desc:"Beaune · Conf. 5971835953 · PIN 3155", addr:"" }
     ]
   },
   {
@@ -1626,7 +1633,8 @@ const days = [
       { time:"15:30", type:"walk", name:"Tarde livre em Paris", desc:"Dependendo do cansaço — um café em Saint-Germain, última caminhada pelo Sena, ou simplesmente sentar num banco da Île Saint-Louis com um gelato Berthillon. Sem pressa.", addr:"Paris" },
       { time:"18:00", type:"food", name:"Jantar de encerramento em Paris", desc:"Qualquer bistrô de bairro. Steak frites com um Beaujolais ou Bordeaux. Simples, sem cerimônia. A viagem foi grande o suficiente.", addr:"Paris" },
       { time:"20:00", type:"drive", name:"Paris → CDG · RER B ou táxi", desc:"Sair com 3h30 de antecedência para ter margem. RER B linha direta (35 min) ou táxi (~€55). Não usar Uber às 20h — trânsito pesado.", addr:"Gare du Nord ou Châtelet → CDG Terminal 2E" },
-      { time:"23:35", type:"drive", name:"✈️ Decolagem CDG → GRU", desc:"G3 5003 · Air France · Terminal 2E · Pouso GRU 17 jun às 06h15.", addr:"CDG Terminal 2E, Aerogare 2" }
+      { time:"23:35", type:"drive", name:"✈️ Decolagem CDG → GRU", desc:"G3 5003 · Air France · Terminal 2E · Pouso GRU 17 jun às 06h15.", addr:"CDG Terminal 2E, Aerogare 2" },
+      { time:"—", type:"sleep", name:"🏨 ✈️ Voo retorno", desc:"CDG 23h35 → GRU 06h15 · G3 5003", addr:"" }
     ]
   }
 ];
@@ -1749,7 +1757,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Veuve Clicquot</div>
-      <div class="vino-meta">Dia 1 · Reims · 12h00 · Tour 1h30 · ~€25/pessoa</div>
+      <div class="vino-meta">Dia 9 · Reims · 11h00 · Tour 1h30 · ~€60/pessoa</div>
       <div class="vino-detail">18km de galerias · Yellow Label + Rosé · TOUR — reserva obrigatória</div>
       <a href="https://veuveclicquot.com/en-row/visites-et-evenements" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
     </div>
@@ -1760,57 +1768,37 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Taittinger</div>
-      <div class="vino-meta">Dia 1 · Reims · 14h30 · Tour 1h · ~€28/pessoa</div>
+      <div class="vino-meta">Dia 8 · Reims · 16h00 · Tour 1h · ~€28/pessoa</div>
       <div class="vino-detail">Galerias romanas séc. IV · Comtes de Champagne · TOUR — reserva obrigatória</div>
       <a href="https://taittinger.com/en/visites/" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
     </div>
     <span class="vino-tag vino-tag-tour">TOUR</span>
   </div>
 
-  <div class="vino-item" onclick="toggleVino(this)" data-url="https://www.moet.com/en-us/visits">
-    <div class="vino-check"><span class="vino-mark">✓</span></div>
-    <div class="vino-body">
-      <div class="vino-name">Moët & Chandon</div>
-      <div class="vino-meta">Dia 2 · Épernay · 10h00 · Tour 1h · ~€30/pessoa</div>
-      <div class="vino-detail">28km de galerias · Brut Impérial + Rosé · TOUR — reserva obrigatória</div>
-      <a href="https://www.moet.com/en-us/visits" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
-    </div>
-    <span class="vino-tag vino-tag-tour">TOUR</span>
-  </div>
+  
 
   <div class="vino-item" onclick="toggleVino(this)">
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Perrier-Jouët</div>
-      <div class="vino-meta">Dia 2 · Épernay · 11h30 · Degustação balcão · ~€15/pessoa</div>
-      <div class="vino-detail">Boutique Belle Époque · entrada livre, sem reserva necessária</div>
+      <div class="vino-meta">Dia 9 · Épernay · Avenue de Champagne · Degustação balcão · ~€15/pessoa</div>
+      <div class="vino-detail">Boutique Belle Époque · entrada livre, sem reserva necessária · visitar durante passeio pela Avenue</div>
     </div>
     <span class="vino-tag vino-tag-walk">LIVRE</span>
-  </div>
-
-  <div class="vino-item" onclick="toggleVino(this)" data-url="mailto:contact@champagne-bollinger.fr">
-    <div class="vino-check"><span class="vino-mark">✓</span></div>
-    <div class="vino-body">
-      <div class="vino-name">Bollinger</div>
-      <div class="vino-meta">Dia 2 · Aÿ · 13h45 · Tour 45min · ~€30/pessoa</div>
-      <div class="vino-detail">Pinot Noir · Special Cuvée + Blanc de Noirs · TOUR privado — reservar por e-mail</div>
-      <a href="mailto:contact@champagne-bollinger.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">E-mail →</a>
-    </div>
-    <span class="vino-tag vino-tag-tour">TOUR</span>
   </div>
 
   <div class="vino-item" onclick="toggleVino(this)">
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
-      <div class="vino-name">Récoltant artesanal em Hautvillers</div>
-      <div class="vino-meta">Dia 2 · Hautvillers · 15h00 · Degustação livre · ~€10-15/pessoa</div>
-      <div class="vino-detail">Perguntar ao anfitrião do Airbnb o produtor local preferido · sem reserva</div>
+      <div class="vino-name">Moët & Chandon</div>
+      <div class="vino-meta">Dia 9 · Épernay · 15h40 · Tour 1h30 · ~€30/pessoa</div>
+      <div class="vino-detail">28km de galerias · Brut Impérial + Rosé · TOUR — reserva obrigatória online</div>
+      <a href="https://www.moet.com/en-us/visits" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
     </div>
     <span class="vino-tag vino-tag-walk">LIVRE</span>
   </div>
-</div>
 
-<!-- ALSÁCIA -->
+    <!-- ALSÁCIA -->
 <div style="margin-bottom:20px">
   <div style="font-size:10px;letter-spacing:3px;color:#c8a96e;text-transform:uppercase;border-bottom:1px solid #d0cbc0;padding-bottom:8px;margin-bottom:10px">
     🍷 Alsácia · Dias 4, 5 e 6
@@ -1912,7 +1900,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Clos de Vougeot</div>
-      <div class="vino-meta">Dia 7 · Vougeot · 15h00 · Tour 45min · €5/pessoa</div>
+      <div class="vino-meta">Dia 7 (14 jun) · Vougeot · 15h00 · Tour 45min · €5/pessoa</div>
       <div class="vino-detail">Castelo medieval séc. XII · lagares medievais de pedra · comprar ticket online</div>
       <a href="https://closdevougeot.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">closdevougeot.fr →</a>
     </div>
@@ -1975,7 +1963,7 @@ days.forEach((day, i) => {
 <div style="background:#eceae4;border:1px solid #d0cbc0;border-radius:4px;padding:16px;margin-bottom:24px">
   <div style="font-size:10px;letter-spacing:3px;color:#6a4a1a;text-transform:uppercase;margin-bottom:12px">💰 Custo estimado · vinícolas</div>
   <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;color:#3a2a0a">
-    <div style="display:flex;justify-content:space-between"><span>Tours guiados (Veuve + Taittinger + Moët + Bollinger + Hugel + Rossignol)</span><span style="color:#c97eb8">~€161/pessoa</span></div>
+    <div style="display:flex;justify-content:space-between"><span>Tours guiados (Veuve + Taittinger + Hugel + Rossignol) + degustações (Moët boutique, Perrier-Jouët, Trimbach, etc.)</span><span style="color:#c97eb8">~€161/pessoa</span></div>
     <div style="display:flex;justify-content:space-between"><span>Degustações rápidas (todas as demais)</span><span style="color:#c97eb8">~€100/pessoa</span></div>
     <div style="display:flex;justify-content:space-between"><span>Marché aux Vins + Clos de Vougeot</span><span style="color:#c97eb8">~€22/pessoa</span></div>
     <div style="height:1px;background:#2a2010;margin:4px 0"></div>
