@@ -1523,7 +1523,7 @@ const days = [
   {
     date: "11", month: "JUN", week: "QUI", city: "Colmar",
     title: "Colmar + Riquewihr / Hugel",
-    subtitle: "Saída tranquila de Troyes, chegada em Colmar ao meio-dia, almoço em Riquewihr e tarde com Hugel (14h30, aguardando confirmação) e Dopff au Moulin (17h, aguardando confirmação).",
+    subtitle: "Saída tranquila de Troyes, chegada em Colmar ao meio-dia, almoço em Riquewihr e tarde com Hugel (14h30) e Dopff au Moulin (17h) — ambas confirmadas.",
     tags: [{label:"Riesling", color:"var(--wine)"},{label:"Riquewihr", color:"var(--photo)"},{label:"Crémant", color:"var(--wine)"}],
     slots: [
       { time:"08:30", type:"drive", name:"Troyes → Colmar", desc:"Saída sem pressa após café da manhã. Check-out do Airbnb Troyes antes de partir. Parada para café / esticar as pernas no caminho.", isDrive:true, driveInfo:"2h30 · 220 km · A5 + A35" },
@@ -1531,9 +1531,9 @@ const days = [
       { time:"11:30", type:"photo", name:"📸 Primeira caminhada por Colmar", desc:"Volta rápida pelo centro antes de subir para Riquewihr. Bairro dos Tanneurs (curtidores, casas pastel do séc. XVII), Maison Pfister (1537, fachada renascentista) e Koïfhus (alfândega medieval). ~1h, sem pressa — vocês têm 2 dias inteiros depois para Colmar com calma.", addr:"Centre Historique, Colmar" },
       { time:"12:45", type:"drive", name:"Colmar → Riquewihr", desc:"20 min pela D4 subindo para a vinha.", isDrive:true, driveInfo:"20 min · 15 km · D4" },
       { time:"13:15", type:"food", name:"🍽️ Almoço em Riquewihr", desc:"Restaurant du Dolder, dentro das muralhas medievais do séc. XVI — a 5 min a pé da Hugel. Flamenkuche (tarte flambée) com Pinot Gris local. Reservar para 13h15.", addr:"57 Rue du Général de Gaulle, Riquewihr" },
-      { time:"14:30", type:"wine", name:"🍷 Maison Hugel & Fils — TOUR COMPLETO ⏳", desc:"⏳ AGUARDANDO CONFIRMAÇÃO — slot solicitado: 14h30. A maison mais histórica da Alsácia, fundada em 1639. 13 gerações de vinificadores. Tour nas caves medievais com barris de carvalho de 1715 ainda ativos. Degustação de 4-5 vinhos incluindo Riesling Jubilee (Grand Cru) e Gewürztraminer Vendanges Tardives. ~1h30, termina ~16h.", addr:"3 Rue de la Première Armée, Riquewihr · hugel.com", tip:"💡 Reserva por e-mail: advance@hugel.com. €20/pessoa. Plano B: se não confirmarem 14h30, pedir 15h. O Riesling Jubilee é um dos maiores brancos do mundo." },
+      { time:"14:30", type:"wine", name:"🍷 Maison Hugel & Fils — TOUR COMPLETO ✅", desc:"✅ CONFIRMADO — slot 14h30. A maison mais histórica da Alsácia, fundada em 1639. 13 gerações de vinificadores. Tour nas caves medievais com barris de carvalho de 1715 ainda ativos. Degustação de 4-5 vinhos incluindo Riesling Jubilee (Grand Cru) e Gewürztraminer Vendanges Tardives. ~1h30, termina ~16h.", addr:"3 Rue de la Première Armée, Riquewihr · hugel.com", tip:"💡 €20/pessoa. O Riesling Jubilee é um dos maiores brancos do mundo." },
       { time:"16:00", type:"photo", name:"📸 Riquewihr — vilarejo do séc. XVI", desc:"Um dos vilarejos mais preservados da França — cercado de vinhas, sem carros no centro, ruas de paralelepípedo. Portão medieval Dolder (1291), Maison Preiss-Zimmer, ruelas escondidas. ~1h de exploração tranquila entre os dois tours.", addr:"Riquewihr, 68340" },
-      { time:"17:00", type:"wine", name:"🍷 Dopff au Moulin — Crémant d'Alsace ⏳", desc:"⏳ AGUARDANDO CONFIRMAÇÃO — slot solicitado: 17h00. A 3 min a pé da Hugel. Degustação rápida no balcão (~30 min). Pioneiros do Crémant d'Alsace (espumante alsaciano método tradicional). Provar o Brut Blanc de Blancs e o Blanc de Noirs. Excelente custo-benefício ~€12/pessoa.", addr:"2 Avenue Jacques Preiss, Riquewihr", tip:"💡 Plano B: se não confirmarem 17h, vão sem reserva — Dopff costuma aceitar walk-in para degustação no balcão até 18h." },
+      { time:"17:00", type:"wine", name:"🍷 Dopff au Moulin — Crémant d'Alsace ✅", desc:"✅ CONFIRMADO — slot 17h00. A 3 min a pé da Hugel. Degustação rápida no balcão (~30 min). Pioneiros do Crémant d'Alsace (espumante alsaciano método tradicional). Provar o Brut Blanc de Blancs e o Blanc de Noirs. Excelente custo-benefício ~€12/pessoa.", addr:"2 Avenue Jacques Preiss, Riquewihr" },
       { time:"17:45", type:"drive", name:"Riquewihr → Colmar", desc:"20 min de volta para o Airbnb.", isDrive:true, driveInfo:"20 min · 15 km · D4" },
       { time:"18:30", type:"sleep", name:"Check-in completo Airbnb Colmar", desc:"Pegar bagagem deixada de manhã, instalar-se de verdade. Banho e troca antes do jantar.", addr:"Colmar" },
       { time:"20:00", type:"food", name:"Jantar em Colmar", desc:"JY'S ou La Maison des Têtes brasserie. JY'S é o melhor restaurante da cidade (1 estrela Michelin) mas caro — reservar antes se quiser ir. A Brasserie da Maison des Têtes é mais acessível e igualmente boa, com choucroute de Riesling e foie gras local.", addr:"Centre Historique, Colmar" },
@@ -1814,7 +1814,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Maison Hugel & Fils</div>
-      <div class="vino-meta">Dia 4 (11 jun) · Riquewihr · 14h30 ⏳ · Tour 1h30 · ~€20/pessoa</div>
+      <div class="vino-meta">Dia 4 (11 jun) · Riquewihr · 14h30 ✅ · Tour 1h30 · ~€20/pessoa</div>
       <div class="vino-detail">Fundada 1639 · Riesling Jubilee Grand Cru · TOUR — reservar por e-mail</div>
       <a href="mailto:advance@hugel.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">advance@hugel.com →</a>
     </div>
@@ -1825,7 +1825,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Dopff au Moulin — Crémant d'Alsace</div>
-      <div class="vino-meta">Dia 4 (11 jun) · Riquewihr · 17h00 ⏳ · Degustação balcão · ~€12/pessoa</div>
+      <div class="vino-meta">Dia 4 (11 jun) · Riquewihr · 17h00 ✅ · Degustação balcão · ~€12/pessoa</div>
       <div class="vino-detail">Crémant Brut Blanc de Blancs + Blanc de Noirs · sem reserva</div>
     </div>
     <span class="vino-tag vino-tag-walk">LIVRE</span>
