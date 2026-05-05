@@ -1587,19 +1587,18 @@ const days = [
   {
     date: "14", month: "JUN", week: "DOM", city: "Beaune",
     title: "Colmar → Borgonha",
-    subtitle: "Grande travessia para a Borgonha. Gevrey-Chambertin pela Route des Grands Crus e Beaune medieval.",
+    subtitle: "Grande travessia para a Borgonha. Parada cênica em Gevrey-Chambertin pela Route des Grands Crus, depois Clos de Vougeot, Vosne-Romanée e Beaune medieval.",
     tags: [{label:"Pinot Noir", color:"var(--wine)"},{label:"Hôtel-Dieu", color:"var(--photo)"},{label:"Borgonha", color:"var(--wine)"}],
     slots: [
       { time:"09:00", type:"drive", name:"Colmar → Gevrey-Chambertin", desc:"2h15 pela A36 e N74 entrando na Côte de Nuits.", isDrive:true, driveInfo:"2h15 · 175 km · A36/N74" },
-      { time:"11:15", type:"photo", name:"📸 Gevrey-Chambertin — Route des Grands Crus", desc:"Entrar pela D122 ao invés da autoestrada — a Route des Grands Crus passa pelos maiores vinhedos do mundo: Chambertin, Clos de Bèze, Clos Saint-Jacques. Parar para fotografar as parcelas com placas dos Grand Crus.", addr:"D122, Gevrey-Chambertin" },
-      { time:"11:45", type:"wine", name:"🍷 Domaine Rossignol-Trapet — TOUR COMPLETO DO DIA", desc:"Domaine familiar em Gevrey há 5 gerações, pioneiros em biodinâmica na Borgonha. Tour nas caves medievais com barricas de Pinot Noir dos maiores Grand Crus do mundo (Chambertin, Latricières-Chambertin). Degustação de 4-5 vinhos incluindo Premier Cru e Grand Cru. Reserve por e-mail.", addr:"4 Rue Richebourg, Gevrey-Chambertin · rossignol-trapet.com", tip:"💡 Este é o momento de entender por que o Pinot Noir da Borgonha é diferente de qualquer outro. A diferença entre parcelas a 50m de distância é impressionante." },
-      { time:"13:30", type:"food", name:"Almoço em Gevrey-Chambertin", desc:"Le Bistrot Lucien — almoço simples mas com lista de vinhos locais notável. Pedir o boeuf bourguignon (o real, feito com Pinot Noir local) e uma taça de Gevrey Village.", addr:"Centre Village, Gevrey-Chambertin" },
-      { time:"14:30", type:"drive", name:"Gevrey → Beaune pela D122", desc:"A Route des Grands Crus passa pelos maiores vinhedos do mundo. Parar em 2 pontos obrigatórios no caminho.", isDrive:true, driveInfo:"40 min · 30 km · D122 cênica" },
-      { time:"15:00", type:"photo", name:"📸 Clos de Vougeot — Castelo Medieval nas Vinhas", desc:"O château medieval mais icônico da Borgonha, construído pelos monges de Cîteaux no séc. XII. Cercado pela maior parcela Grand Cru da Côte de Nuits (50 hectares). Tour interno com guia de 45 min mostrando os lagares medievais originais de pedra onde se pisava a uva. Vista das vinhas do alto das muralhas.", addr:"Clos de Vougeot, 21640 · closdevougeot.fr · €5" },
-      { time:"15:45", type:"photo", name:"📸 Vosne-Romanée — A Placa da Romanée-Conti", desc:"O vilarejo mais famoso do mundo do vinho. Na beira da estrada, uma placa discreta marca a entrada da vinha da Romanée-Conti — 1,8 hectares que produzem o vinho mais caro do planeta (€15.000–30.000 a garrafa). Parar 10 minutos para fotografar. A Domaine não recebe visitantes, mas caminhar ao redor da vinha é permitido.", addr:"Lieu-dit La Romanée-Conti, Vosne-Romanée", tip:"💡 Estão literalmente em cima da terra mais valorizada do mundo do vinho. Uma foto aqui é obrigatória para qualquer amante de vinho." },
-      { time:"16:15", type:"drive", name:"Vosne-Romanée → Beaune", desc:"25 min pela N74, coração da Côte de Nuits.", isDrive:true, driveInfo:"25 min · 20 km · N74" },
-      { time:"16:45", type:"photo", name:"📸 Hôtel-Dieu de Beaune", desc:"Hospital medieval de 1443 — um dos edifícios mais bonitos da França. Telhado de telhas esmaltadas em padrão geométrico borgonhês (policromo, único no mundo). Pátio interno de tirar o fôlego. Entrar para ver as salas medievais, a farmácia do séc. XV e o polyptique de Rogier van der Weyden.", addr:"Rue de l'Hôtel Dieu, Beaune · €8" },
-      { time:"18:00", type:"walk", name:"Beaune Intramuros — muralhas medievais", desc:"Beaune tem as muralhas medievais mais intactas da Borgonha. Caminhar pelos bastiões e fossas. Rue de Lorraine, Rue Carnot e Place Carnot com o Hôtel de Ville. Muito fotogênico.", addr:"Intramuros, Beaune" },
+      { time:"11:15", type:"photo", name:"📸 Gevrey-Chambertin — Route des Grands Crus", desc:"Entrar pela D122 ao invés da autoestrada — a Route des Grands Crus passa pelos maiores vinhedos do mundo: Chambertin, Clos de Bèze, Clos Saint-Jacques. Parar para fotografar as parcelas com placas dos Grand Crus. Caminhar nas vinhas do Chambertin: ~1h.", addr:"D122, Gevrey-Chambertin", tip:"💡 As placas de pedra dos Grand Crus estão ali na beira da estrada. Caminhar entre as vinhas é gratuito e impressionante — é literalmente o Pinot Noir mais valorizado do mundo." },
+      { time:"12:30", type:"food", name:"🍽️ Almoço em Gevrey-Chambertin", desc:"Le Bistrot Lucien — almoço simples mas com lista de vinhos locais notável. Pedir o boeuf bourguignon (o real, feito com Pinot Noir local) e uma taça de Gevrey Village. Sem pressa, almoço relaxado.", addr:"Centre Village, Gevrey-Chambertin" },
+      { time:"14:00", type:"drive", name:"Gevrey → Vougeot pela D122", desc:"A Route des Grands Crus passa pelos maiores vinhedos do mundo.", isDrive:true, driveInfo:"15 min · 12 km · D122 cênica" },
+      { time:"14:30", type:"photo", name:"📸 Clos de Vougeot — Castelo Medieval nas Vinhas", desc:"O château medieval mais icônico da Borgonha, construído pelos monges de Cîteaux no séc. XII. Cercado pela maior parcela Grand Cru da Côte de Nuits (50 hectares). Tour interno com guia de 45 min mostrando os lagares medievais originais de pedra onde se pisava a uva. Vista das vinhas do alto das muralhas.", addr:"Clos de Vougeot, 21640 · closdevougeot.fr · €5" },
+      { time:"15:30", type:"photo", name:"📸 Vosne-Romanée — A Placa da Romanée-Conti", desc:"O vilarejo mais famoso do mundo do vinho. Na beira da estrada, uma placa discreta marca a entrada da vinha da Romanée-Conti — 1,8 hectares que produzem o vinho mais caro do planeta (€15.000–30.000 a garrafa). Parar 15 min para fotografar. A Domaine não recebe visitantes, mas caminhar ao redor da vinha é permitido.", addr:"Lieu-dit La Romanée-Conti, Vosne-Romanée", tip:"💡 Estão literalmente em cima da terra mais valorizada do mundo do vinho. Uma foto aqui é obrigatória para qualquer amante de vinho." },
+      { time:"16:00", type:"drive", name:"Vosne-Romanée → Beaune", desc:"25 min pela N74, coração da Côte de Nuits.", isDrive:true, driveInfo:"25 min · 20 km · N74" },
+      { time:"16:30", type:"photo", name:"📸 Hôtel-Dieu de Beaune", desc:"Hospital medieval de 1443 — um dos edifícios mais bonitos da França. Telhado de telhas esmaltadas em padrão geométrico borgonhês (policromo, único no mundo). Pátio interno de tirar o fôlego. Entrar para ver as salas medievais, a farmácia do séc. XV e o polyptique de Rogier van der Weyden.", addr:"Rue de l'Hôtel Dieu, Beaune · €8" },
+      { time:"17:45", type:"walk", name:"Beaune Intramuros — muralhas medievais", desc:"Beaune tem as muralhas medievais mais intactas da Borgonha. Caminhar pelos bastiões e fossas. Rue de Lorraine, Rue Carnot e Place Carnot com o Hôtel de Ville. Muito fotogênico no fim de tarde.", addr:"Intramuros, Beaune" },
       { time:"19:00", type:"sleep", name:"Check-in Coto Hotel Beaune", desc:"2 noites. Conf. 5971835953 · PIN 3155.", addr:"Beaune" },
       { time:"20:00", type:"food", name:"Jantar — Beaune", desc:"Bistrot Bourguignon — o mais clássico de Beaune, dentro das muralhas. Jambon persillé de Beaune, escargots à la bourguignonne e entrecôte com molho de Pinot Noir. Pedir uma garrafa de Beaune Villages.", addr:"8 Rue Monge, Beaune" }
     ]
@@ -1750,7 +1749,7 @@ days.forEach((day, i) => {
 
 <!-- ALERTA -->
 <div style="background:#f0e8e0;border:1px solid #e8956d44;border-radius:4px;padding:12px 16px;margin-bottom:20px;font-size:12px;color:#8a6a3a;line-height:1.6">
-  <strong style="color:#e8956d">⚠️ Tours guiados precisam de reserva antecipada.</strong> Especialmente em junho (alta temporada). Veuve Clicquot, Taittinger, Moët, Hugel e Rossignol-Trapet — reservar com pelo menos 2-3 semanas de antecedência.
+  <strong style="color:#e8956d">⚠️ Tours guiados precisam de reserva antecipada.</strong> Especialmente em junho (alta temporada). Veuve Clicquot, Taittinger, Moët e Hugel — reservar com pelo menos 2-3 semanas de antecedência.
 </div>
 
 <!-- CHAMPAGNE -->
@@ -1763,7 +1762,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Veuve Clicquot</div>
-      <div class="vino-meta">Dia 2 (09 jun) · Reims · 13h30 · Tour 1h30 · ~€60/pessoa</div>
+      <div class="vino-meta">Dia 2 (09 jun) · Reims · 13h30 ✅ · Tour 1h30 · ~€60/pessoa</div>
       <div class="vino-detail">18km de galerias · Yellow Label + Rosé · TOUR — reserva obrigatória</div>
       <a href="https://veuveclicquot.com/en-row/visites-et-evenements" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
     </div>
@@ -1774,7 +1773,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Taittinger</div>
-      <div class="vino-meta">Dia 1 (08 jun) · Reims · 16h00 · Tour 1h · ~€28/pessoa</div>
+      <div class="vino-meta">Dia 1 (08 jun) · Reims · 16h00 ✅ · Tour 1h · ~€28/pessoa</div>
       <div class="vino-detail">Galerias romanas séc. IV · Comtes de Champagne · TOUR — reserva obrigatória</div>
       <a href="https://taittinger.com/en/visites/" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
     </div>
@@ -1797,7 +1796,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Moët & Chandon</div>
-      <div class="vino-meta">Dia 3 (10 jun) · Épernay · 09h00 · Tour 1h30 · ~€30/pessoa</div>
+      <div class="vino-meta">Dia 3 (10 jun) · Épernay · 09h00 ✅ · Tour 1h30 · ~€30/pessoa</div>
       <div class="vino-detail">28km de galerias · Brut Impérial + Rosé · TOUR — reserva obrigatória online</div>
       <a href="https://www.moet.com/en-us/visits" target="_blank" class="vino-link" onclick="event.stopPropagation()">Reservar →</a>
     </div>
@@ -1845,7 +1844,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Cave Trimbach</div>
-      <div class="vino-meta">Dia 5 (12 jun) · Ribeauvillé · 12h00 · Degustação balcão · ~€15/pessoa</div>
+      <div class="vino-meta">Dia 5 (12 jun) · Ribeauvillé · 12h00 ⏳ · Degustação balcão · ~€15/pessoa</div>
       <div class="vino-detail">Riesling Réserve + Frédéric Emile · recomendável ligar antes</div>
       <a href="https://trimbach.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">trimbach.fr →</a>
     </div>
@@ -1856,7 +1855,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Domaine Weinbach</div>
-      <div class="vino-meta">Dia 5 (12 jun) · Kaysersberg · 15h45 · Degustação · ~€15/pessoa</div>
+      <div class="vino-meta">Dia 5 (12 jun) · Kaysersberg · 15h45 ⏳ · Degustação · ~€15/pessoa</div>
       <div class="vino-detail">Convento Capuchinhos séc. XVII · Riesling Clos des Capucins · reservar por e-mail</div>
       <a href="mailto:contact@weinbach.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">contact@weinbach.com →</a>
     </div>
@@ -1880,17 +1879,6 @@ days.forEach((day, i) => {
     🍷 Borgonha · Dias 7 e 8
   </div>
 
-  <div class="vino-item" onclick="toggleVino(this)" data-url="mailto:contact@rossignol-trapet.com">
-    <div class="vino-check"><span class="vino-mark">✓</span></div>
-    <div class="vino-body">
-      <div class="vino-name">Domaine Rossignol-Trapet</div>
-      <div class="vino-meta">Dia 7 (14 jun) · Gevrey-Chambertin · 11h45 · Tour 1h30 · ~€25/pessoa</div>
-      <div class="vino-detail">Chambertin Grand Cru · biodinâmica · TOUR — reservar por e-mail com antecedência</div>
-      <a href="mailto:contact@rossignol-trapet.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">rossignol-trapet.com →</a>
-    </div>
-    <span class="vino-tag vino-tag-tour">TOUR</span>
-  </div>
-
   <div class="vino-item" onclick="toggleVino(this)" data-url="https://closdevougeot.fr">
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
@@ -1906,7 +1894,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Domaine des Comtes Lafon</div>
-      <div class="vino-meta">Dia 8 (15 jun) · Meursault · 09h45 · Degustação · ~€20/pessoa</div>
+      <div class="vino-meta">Dia 8 (15 jun) · Meursault · 09h45 ⏳ · Degustação · ~€20/pessoa</div>
       <div class="vino-detail">Meursault 1er Cru Perrières · amanteigado e mineral · reservar por e-mail</div>
       <a href="mailto:contact@comtes-lafon.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">comtes-lafon.com →</a>
     </div>
@@ -1917,7 +1905,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Domaine Leflaive</div>
-      <div class="vino-meta">Dia 8 (15 jun) · Puligny-Montrachet · 12h00 · Degustação · ~€25/pessoa</div>
+      <div class="vino-meta">Dia 8 (15 jun) · Puligny-Montrachet · 12h00 ⏳ · Degustação · ~€25/pessoa</div>
       <div class="vino-detail">Puligny-Montrachet 1er Cru Les Pucelles · o mais elegante da Borgonha · reservar</div>
       <a href="https://leflaive.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">leflaive.fr →</a>
     </div>
@@ -1946,7 +1934,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">William Fèvre ou Domaine Raveneau</div>
-      <div class="vino-meta">Dia 9 (16 jun) · Chablis · 10h45 · Degustação · ~€15-20/pessoa</div>
+      <div class="vino-meta">Dia 9 (16 jun) · Chablis · 10h45 ⏳ · Degustação · ~€15-20/pessoa</div>
       <div class="vino-detail">Chablis 1er Cru Montée de Tonnerre · mineral e austero · ligar antes</div>
       <a href="https://williamfevre.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">williamfevre.com →</a>
     </div>
@@ -1958,7 +1946,7 @@ days.forEach((day, i) => {
 <div style="background:#eceae4;border:1px solid #d0cbc0;border-radius:4px;padding:16px;margin-bottom:24px">
   <div style="font-size:10px;letter-spacing:3px;color:#6a4a1a;text-transform:uppercase;margin-bottom:12px">💰 Custo estimado · vinícolas</div>
   <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;color:#3a2a0a">
-    <div style="display:flex;justify-content:space-between"><span>Tours guiados (Veuve + Taittinger + Hugel + Rossignol) + degustações (Moët boutique, Perrier-Jouët, Trimbach, etc.)</span><span style="color:#c97eb8">~€161/pessoa</span></div>
+    <div style="display:flex;justify-content:space-between"><span>Tours guiados (Veuve + Taittinger + Hugel) + degustações (Moët, Perrier-Jouët, Trimbach, etc.)</span><span style="color:#c97eb8">~€136/pessoa</span></div>
     <div style="display:flex;justify-content:space-between"><span>Degustações rápidas (todas as demais)</span><span style="color:#c97eb8">~€100/pessoa</span></div>
     <div style="display:flex;justify-content:space-between"><span>Marché aux Vins + Clos de Vougeot</span><span style="color:#c97eb8">~€22/pessoa</span></div>
     <div style="height:1px;background:#2a2010;margin:4px 0"></div>
