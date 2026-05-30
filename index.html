@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>França Junho 2026 · Guia Completo</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <style>
 :root {
   --gold: #9a6e28;
@@ -1029,6 +1030,7 @@ img, iframe { max-width: 100%; }
   <button class="nav-btn active" onclick="showPage('custos',this)"><span>💰</span><span class="nav-label"> Custos</span></button>
   <button class="nav-btn" onclick="showPage('roteiro',this)"><span>🗺️</span><span class="nav-label"> Roteiro</span></button>
   <button class="nav-btn" onclick="showPage('vinicolas',this)"><span>🍷</span><span class="nav-label"> Vinícolas</span></button>
+  <button class="nav-btn" onclick="showPage('mapas',this)"><span>📍</span><span class="nav-label"> Mapas</span></button>
   <button class="nav-btn" onclick="showPage('docs',this)"><span>✅</span><span class="nav-label"> Docs</span></button>
 </nav>
 
@@ -1347,15 +1349,15 @@ img, iframe { max-width: 100%; }
           <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#7a6a3a">
             <span style="color:#c8a96e;font-size:14px">⚠️</span>
             <div>
-              <div>Sainte-Chapelle · 6 jun manhã (8h30)</div>
+              <div>Sainte-Chapelle · 6 jun (9h30)</div>
               <div style="font-size:10px;color:#3a2a0a">sainte-chapelle.fr · fila grande sem reserva</div>
             </div>
           </div>
-          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#7a6a3a">
-            <span style="color:#c8a96e;font-size:14px">⚠️</span>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#e8956d">
+            <span style="color:#e8956d;font-size:14px">🚨</span>
             <div>
-              <div>Louvre · 6 jun (10h)</div>
-              <div style="font-size:10px;color:#3a2a0a">ticketlouvre.fr · entrada obrigatória com hora marcada</div>
+              <div><strong>Parc des Princes · Tour do estádio PSG · 6 jun (17h30)</strong></div>
+              <div style="font-size:10px;color:#3a2a0a">billetterie.psg.fr · ~€22/pessoa · <strong style="color:#e8956d">reservar JÁ — faltam 7 dias!</strong> Se 17h30 não estiver disponível, escolher slot mais cedo e me avisar para reorganizar o dia.</div>
             </div>
           </div>
           <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#7a6a3a">
@@ -1372,7 +1374,7 @@ img, iframe { max-width: 100%; }
     <div class="tips">
       <div class="tip"><span class="tip-icon">✈️</span><div><strong>Voo direto GRU→CDG:</strong> Air France (AF453/AF459) e LATAM (LA8068) — ~11h20. Decolagem noturna de SP, chegada matinal em Paris. Reserve com 3–4 meses de antecedência para junho.</div></div>
       <div class="tip"><span class="tip-icon">⏰</span><div><strong>Jet lag:</strong> Paris está +5h no horário de São Paulo. Chegando de manhã, mantenha-se acordado até às 21h locais no primeiro dia — resolve o jet lag rapidinho.</div></div>
-      <div class="tip"><span class="tip-icon">🎫</span><div><strong>Reserve com antecedência:</strong> Torre Eiffel, Sainte-Chapelle, Louvre — todos exigem reserva online. Em junho lotam. Faça com 30–60 dias de antecedência.</div></div>
+      <div class="tip"><span class="tip-icon">🎫</span><div><strong>Reserve com antecedência:</strong> Torre Eiffel, Sainte-Chapelle e Parc des Princes — todos exigem reserva online. A viagem é em poucos dias, reservar JÁ. Louvre não precisa (só por fora).</div></div>
       <div class="tip"><span class="tip-icon">🚗</span><div><strong>Carro:</strong> Retire no final do Dia 3 em Paris ou na manhã do Dia 4. Devolva em Paris no Dia 13 — mesma cidade, sem taxa extra.</div></div>
       <div class="tip"><span class="tip-icon">🌤️</span><div><strong>Junho em Paris e Alsácia:</strong> dias longos (pôr do sol às 21h45!), temperatura média 20–25°C. A melhor época do ano para essa viagem.</div></div>
     </div>
@@ -1457,39 +1459,48 @@ const days = [
       { time:"12:00", type:"walk", name:"Champs-Élysées + Arc de Triomphe", desc:"Descer o boulevard a pé do Arco até a Place de la Concorde — 2km de caminhada. O Arco por fora já basta, subir é optional (€13, fila grande).", addr:"Avenue des Champs-Élysées, Paris 8°" },
       { time:"13:30", type:"food", name:"🍽️ Almoço rápido", desc:"Qualquer bistrô perto dos Champs ou já no caminho de volta ao hotel. Croque-monsieur, salada niçoise — simples e sem cerimônia.", addr:"Paris 8° / 1°" },
       { time:"15:00", type:"sleep", name:"🏨 Check-in Hôtel Zora + descanso", desc:"Trocar de roupa, banho rápido, descanso de 1h máximo — não dormir!", addr:"4 Rue Léopold Bellan, 75002 Paris" },
-      { time:"19:00", type:"photo", name:"📸 Torre Eiffel ao pôr do sol", desc:"Junho — pôr do sol às 21h45. Chegar às 19h para ver a luz dourada na torre antes de escurecer. Subir até o 2° andar. A vista de cima com a luz do fim de tarde é a melhor foto da estadia em Paris.", addr:"Champ de Mars, Paris 7° · toureiffel.paris", tip:"💡 Reservar online com antecedência — esgota semanas antes em junho. 2° andar ~€19/pessoa." },
-      { time:"21:00", type:"food", name:"🍽️ Jantar Saint-Germain", desc:"Bistrô informal no bairro. Dormir cedo — o jet lag vai cobrar a conta amanhã cedo.", addr:"Saint-Germain-des-Prés, Paris 6°" }
+      { time:"17:00", type:"walk", name:"🥖 Rue Cler — comprar petiscos para o picnic", desc:"A rua de mercado mais clássica de Paris, a 10 min a pé do Champ de Mars. Comprar baguette fresca, queijos (Comté, Brie, chèvre), charcuterie, frutas, uma garrafa de Sancerre ou Crémant, e copos descartáveis. ~€25-35 para os dois. Bolsa térmica é um plus mas não obrigatório.", addr:"Rue Cler, Paris 7°", tip:"💡 Fromagerie Marie-Anne Cantin (12 Rue du Champ de Mars) tem os melhores queijos. Le Petit Cler ou a frutaria da Rue Cler resolvem o resto." },
+      { time:"18:00", type:"photo", name:"📸 Avenue de Camoëns — foto cult da Torre", desc:"Rua pequena no 16° com a Torre Eiffel emoldurada perfeitamente no fundo da escadaria de pedra — virou um dos cenários mais fotografados de Paris. Menos turística que o Trocadéro, com vista mais íntima. Em junho às 18h ainda é luz alta e dourada (pôr do sol só às 21h45). 15-20 min para fotos.", addr:"Avenue de Camoëns, Paris 16° · gratuito", tip:"💡 Metrô Trocadéro (linha 9) e 5 min a pé. Depois descer caminhando para o Champ de Mars (~15 min) onde está a Torre." },
+      { time:"18:30", type:"food", name:"🧺 Picnic no Champ de Mars — com a Torre na frente", desc:"O picnic clássico de Paris. Sentar no gramado do Champ de Mars com a Torre Eiffel inteira na frente. Em junho às 18h30 a luz ainda é alta — sol no rosto, torre dourada. Abrir os queijos, baguette, garrafa de vinho, brindar. Aprox 1h. Depois levantar e subir na torre.", addr:"Champ de Mars, Paris 7° · gratuito", tip:"💡 Vinho em garrafa de vidro é permitido no Champ de Mars (latas e plástico não). Levar uma manta leve no porta-mala se possível, ou improvisar com casaco. Recolher o lixo!" },
+      { time:"19:45", type:"photo", name:"📸 Torre Eiffel ao pôr do sol", desc:"Junho — pôr do sol às 21h45. Subir ao 2° andar para a vista do alto antes de escurecer. A vista de cima com a luz do fim de tarde é a melhor foto da estadia em Paris.", addr:"Champ de Mars, Paris 7° · toureiffel.paris", tip:"💡 Reservar online com antecedência — esgota semanas antes em junho. 2° andar ~€19/pessoa. Tickets de subida para slot 19h45-20h00 ideal." },
+      { time:"21:00", type:"food", name:"🍽️ Jantar — Au P'tit Grec", desc:"Crêperie lendária na Rue Mouffetard (Bairro Latino, 5°), a 15 min a pé do Saint-Germain. Galettes salgadas gigantes (queijo + jambon + ovo) e crepes doces enormes a preço justo — €10–15 por pessoa. Fila na porta na hora do jantar, mas anda rápido. Final de noite informal e barato, perfeito para um primeiro dia cansado. Dormir cedo depois — o jet lag vai cobrar a conta amanhã cedo.", addr:"68 Rue Mouffetard, Paris 5°" }
     ]
   },
   {
     date: "06", month: "JUN", week: "SAB", city: "Paris",
-    title: "Sainte-Chapelle · Notre-Dame · Louvre · Marais",
-    subtitle: "O dia dos grandes monumentos. Começar cedo na Île de la Cité e terminar flanando pelo Marais.",
-    tags: [{label:"Sainte-Chapelle", color:"var(--photo)"},{label:"Louvre", color:"var(--walk)"},{label:"Marais", color:"var(--walk)"}],
+    title: "Île de la Cité · Marais · Parc des Princes",
+    subtitle: "Início tranquilo às 9h30. Sainte-Chapelle, Marais à tarde e tour do estádio do PSG no fim do dia.",
+    tags: [{label:"Sainte-Chapelle", color:"var(--photo)"},{label:"Marais", color:"var(--walk)"},{label:"Parc des Princes", color:"var(--photo)"}],
     slots: [
-      { time:"08:30", type:"photo", name:"📸 Sainte-Chapelle — vitrais do séc. XIII", desc:"Os vitrais mais bonitos do mundo medieval — 15 janelas de 15m de altura cobrindo 2/3 das paredes. A luz da manhã atravessando os vitrais azuis é perturbadora. 1h de visita tranquila.", addr:"8 Boul. du Palais, Paris 1° · sainte-chapelle.fr · ~€13", tip:"💡 Reserva online obrigatória — sem reserva a fila pode ser 1h+. Chegar na abertura (09h) para pegar a luz certa nos vitrais." },
-      { time:"10:00", type:"photo", name:"📸 Notre-Dame — fachada recém-restaurada", desc:"Após 5 anos de restauração pós-incêndio de 2019, a catedral reabriu em dezembro 2024 completamente restaurada. A fachada está mais limpa e detalhada que em décadas. 20 min do lado de fora — fila para entrar costuma ser grande.", addr:"Place du Parvis Notre-Dame, Paris 4° · gratuito exterior" },
-      { time:"10:30", type:"walk", name:"🏛️ Louvre — os essenciais em 2h", desc:"Estratégia: entrar pela pirâmide, ir direto para Vênus de Milo (ala Denon, piso 0), depois Vitória de Samotrácia (escadaria Daru), depois Mona Lisa (sala 711). Sair após 2h máximo — mais do que isso cansa e não acrescenta.", addr:"Rue de Rivoli, Paris 1° · ticketlouvre.fr · €22", tip:"💡 Reserva online obrigatória com horário marcado. Entrar logo na abertura (09h) para pegar menos fila na Mona Lisa." },
-      { time:"13:00", type:"food", name:"🍽️ Almoço Marais — Rue des Rosiers", desc:"A rua judaica de Paris — falafel L'As du Fallafel (o mais famoso, fila na porta) ou Miznon (israelense moderno, sem fila). Comer caminhando pelo bairro.", addr:"Rue des Rosiers, Paris 4°" },
-      { time:"14:30", type:"walk", name:"Le Marais + Place des Vosges", desc:"O bairro mais belo de Paris — hôtels particuliers do séc. XVII, galerias de arte, lojas de design. Place des Vosges: a praça mais antiga e bonita de Paris (1612), sob os arcos com um café.", addr:"Le Marais, Paris 3°/4°" },
-      { time:"17:00", type:"walk", name:"Centre Pompidou — exterior", desc:"O prédio mais controverso de Paris — tubulações coloridas do lado de fora, escultura de Calder na praça, artistas de rua. Entrar é opcional (€15). A praça em frente é gratuita e sempre animada.", addr:"Place Georges-Pompidou, Paris 4° · gratuito exterior" },
-      { time:"20:00", type:"food", name:"🍷 Jantar natural wine bar", desc:"Le Rigmarole (cozinha japonesa-francesa com vinhos naturais, reservar) ou Septime Cave (cave-bar informal no Marais, sem reserva). O melhor da cena de vinho parisiense atual.", addr:"Le Marais / Oberkampf, Paris" },
+      { time:"09:30", type:"photo", name:"📸 Sainte-Chapelle — vitrais do séc. XIII", desc:"Os vitrais mais bonitos do mundo medieval — 15 janelas de 15m de altura cobrindo 2/3 das paredes. A luz da manhã atravessando os vitrais azuis é perturbadora. 1h de visita tranquila.", addr:"8 Boul. du Palais, Paris 1° · sainte-chapelle.fr · ~€13", tip:"💡 Reserva online obrigatória — sem reserva a fila pode ser 1h+. Slot das 09h30 ainda pega luz boa nos vitrais." },
+      { time:"10:45", type:"photo", name:"📸 Notre-Dame — fachada recém-restaurada", desc:"Após 5 anos de restauração pós-incêndio de 2019, a catedral reabriu em dezembro 2024 completamente restaurada. A fachada está mais limpa e detalhada que em décadas. 20 min do lado de fora — fila para entrar costuma ser grande.", addr:"Place du Parvis Notre-Dame, Paris 4° · gratuito exterior" },
+      { time:"11:30", type:"walk", name:"🏛️ Louvre — só por fora", desc:"Pirâmide de Pei pelo exterior, pátio Cour Napoléon, Arc du Carrousel e os Jardins das Tuileries. 1h para fotografar e atravessar até o final dos jardins, sem entrar no museu. Em junho a vegetação dos Tuileries está no auge.", addr:"Cour Napoléon + Jardins des Tuileries, Paris 1° · gratuito" },
+      { time:"12:45", type:"food", name:"🍽️ Almoço Marais — Rue des Rosiers", desc:"A rua judaica de Paris — falafel L'As du Fallafel (o mais famoso, fila na porta) ou Miznon (israelense moderno, sem fila). Comer caminhando pelo bairro.", addr:"Rue des Rosiers, Paris 4°" },
+      { time:"14:00", type:"walk", name:"Le Marais + Place des Vosges", desc:"O bairro mais belo de Paris — hôtels particuliers do séc. XVII, galerias de arte, lojas de design. Place des Vosges: a praça mais antiga e bonita de Paris (1612), sob os arcos com um café.", addr:"Le Marais, Paris 3°/4°" },
+      { time:"16:00", type:"walk", name:"Centre Pompidou — exterior", desc:"O prédio mais controverso de Paris — tubulações coloridas do lado de fora, escultura de Calder na praça, artistas de rua. A praça em frente é gratuita e sempre animada.", addr:"Place Georges-Pompidou, Paris 4° · gratuito exterior" },
+      { time:"16:45", type:"drive", name:"Pompidou → Parc des Princes", desc:"Metrô linha 11 até Châtelet, depois linha 9 direção Pont de Sèvres até Porte de Saint-Cloud. ~35 min total.", isDrive:true, driveInfo:"35 min · Métro lignes 11 + 9 · €2,15" },
+      { time:"17:30", type:"photo", name:"⚽ Parc des Princes — Tour do Estádio do PSG", desc:"Visita guiada ao estádio do Paris Saint-Germain. Acesso aos vestiários, túnel dos jogadores, gramado, sala de imprensa e museu do clube com troféus. ~1h30. Reservar online antes — slots costumam fechar em alta temporada.", addr:"24 Rue du Commandant Guilbaud, Paris 16° · billetterie.psg.fr · ~€22/pessoa", tip:"💡 Confirmar disponibilidade do tour para 13/06 (sábado em junho costuma ter, mas se houver evento o tour é cancelado). Alternativa: comprar Experience PSG combinado com museu." },
+      { time:"20:30", type:"food", name:"🍷 Jantar — Chez Janou", desc:"Bistrô provençal lendário na esquina da Place des Vosges. Ambiente animado e barulhento, mesas coladas, garçons rabugentos no estilo francês clássico. Pedir o ratatouille, o magret de canard e — obrigatório — a mousse au chocolat (servida numa tigela gigante no centro da mesa, você se serve à vontade). ~€40–50 por pessoa. Reservar 1-2 dias antes pelo site ou ligar.", addr:"2 Rue Roger Verlomme, Paris 3° · chezjanou.com" },
       { time:"—", type:"sleep", name:"🏨 Hôtel Zora", desc:"4 Rue Léopold Bellan, Paris · BN 6968649555", addr:"" }
     ]
   },
   {
     date: "07", month: "JUN", week: "DOM", city: "Paris",
-    title: "Montmartre · Palais Royal · Galerie Vivienne",
-    subtitle: "Último dia em Paris. Montmartre ao amanhecer sem turistas e as passagens cobertas do séc. XIX.",
-    tags: [{label:"Montmartre", color:"var(--photo)"},{label:"Sacré-Cœur", color:"var(--photo)"},{label:"Galerias", color:"var(--walk)"}],
+    title: "Montmartre · Galeries · Normal · Rayon d'Or",
+    subtitle: "Último dia em Paris. Manhã em Montmartre, cúpula art déco das Galeries, compras (Normal + mala) e passagens cobertas. Volta ao hotel após compras para almoçar leve.",
+    tags: [{label:"Montmartre", color:"var(--photo)"},{label:"Galeries Lafayette", color:"var(--photo)"},{label:"Compras", color:"var(--walk)"}],
     slots: [
-      { time:"07:30", type:"photo", name:"📸 Montmartre cedo — sem turistas", desc:"Às 7h30 o bairro ainda é dos padeiros e dos gatos. Ruas de paralelepípedo vazias, Sacré-Cœur com a luz da manhã, Place du Tertre sem os pintores de turista. Em 45 min chegam os primeiros grupos — aproveite antes.", addr:"Montmartre, Paris 18° · Sacré-Cœur: gratuito", tip:"💡 Ir a pé pela Rue Lepic (mercado local) ou de funicular (€2 com ticket de metrô). Vista panorâmica de Paris do topo — em junho o sol nasce às 05h45, a luz está linda às 07h30." },
-      { time:"09:30", type:"food", name:"☕ Café em Montmartre", desc:"Depois que os turistas chegam, hora de sentar num café e observar. Le Consulat ou Café des Deux Moulins (o café de Amélie Poulain — sim, existe de verdade).", addr:"Rue Lepic ou Rue Abbesses, Montmartre" },
-      { time:"11:00", type:"walk", name:"Opéra Garnier — exterior", desc:"A ópera mais suntuosa do mundo, construída em 1875. A fachada com esculturas douradas é espetacular. Entrar para ver o interior (€14) é opcional mas vale — o teto pintado por Chagall é único.", addr:"Place de l'Opéra, Paris 9° · exterior gratuito" },
-      { time:"12:00", type:"walk", name:"🏛️ Palais Royal", desc:"O jardim mais secreto de Paris — cercado por arcadas do séc. XVIII, lojas raras, restaurantes históricos. As colunas de Buren no pátio interno são a instalação de arte mais fotografada de Paris. Gratuito e sem fila.", addr:"Place du Palais Royal, Paris 1° · gratuito" },
-      { time:"13:30", type:"food", name:"🍽️ Almoço Palais Royal", desc:"Restaurante Véfour (histórico, 2 estrelas Michelin, caro) ou simplesmente comprar queijo e pão e sentar no jardim do Palais Royal.", addr:"Jardins du Palais Royal, Paris 1°" },
-      { time:"14:30", type:"photo", name:"📸 Galerie Vivienne — a mais bonita de Paris", desc:"A passagem coberta mais elegante de Paris — mosaico no chão, teto de vidro do séc. XIX, livraria antiga Jousseaume (1826). 15 min. Depois explorar Galerie Colbert ao lado.", addr:"4 Rue des Petits Champs, Paris 2° · gratuito" },
-      { time:"16:00", type:"walk", name:"Rue Montorgueil — mercado local", desc:"A rua de mercado mais autêntica de Paris — queijeiros, peixeiros, charcuterie, padarias. A 4 min do hotel. Comprar petiscos para o quarto: queijo, presunto, baguette, vinho.", addr:"Rue Montorgueil, Paris 2° — a 4 min do Hôtel Zora" },
+      { time:"09:00", type:"photo", name:"📸 Montmartre — Sacré-Cœur", desc:"Subir até a Basílica do Sacré-Cœur — vista panorâmica de toda Paris do alto. Em horário comercial Montmartre fica movimentado, mas a vista compensa. Place du Tertre com os pintores e cafés, Rue Lepic (mercado local), ruelas de paralelepípedo. ~1h30 sem pressa.", addr:"Montmartre, Paris 18° · Sacré-Cœur: gratuito", tip:"💡 Ir a pé pela Rue Lepic ou de funicular (€2 com ticket de metrô)." },
+      { time:"10:30", type:"food", name:"☕ Café em Montmartre", desc:"Sentar num café e observar. Le Consulat ou Café des Deux Moulins (o café de Amélie Poulain — sim, existe de verdade).", addr:"Rue Lepic ou Rue Abbesses, Montmartre" },
+      { time:"11:30", type:"walk", name:"Opéra Garnier — exterior", desc:"A ópera mais suntuosa do mundo, construída em 1875. A fachada com esculturas douradas é espetacular. Entrar para ver o interior (€14) é opcional mas vale — o teto pintado por Chagall é único.", addr:"Place de l'Opéra, Paris 9° · exterior gratuito" },
+      { time:"12:00", type:"photo", name:"🏬 Galeries Lafayette — Cúpula Art Déco + Rooftop", desc:"A loja de departamentos mais famosa do mundo, no prédio Belle Époque de 1912. A cúpula de vitral colorido (33m de altura) sobre o saguão central é uma das vistas mais fotografadas de Paris. Subir gratuitamente até o rooftop no 7° andar — vista 360° de Paris com a Torre Eiffel, Opéra e Sacré-Cœur. A 5 min a pé da Opéra Garnier.", addr:"40 Boul. Haussmann, Paris 9° · gratuito (rooftop)", tip:"💡 O rooftop é gratuito e quase ninguém sabe. Ir antes de subir nas lojas. Bom para foto sem fila vs Torre Eiffel ou Arc de Triomphe." },
+      { time:"13:00", type:"walk", name:"🛍️ Normal — Boulevard Haussmann", desc:"Rede dinamarquesa de cosméticos e perfumaria a preços muito baixos — protagonista das listas de compras de brasileiros em Paris. Produtos europeus de skincare, perfumes mini, batons e itens de higiene a 30-50% abaixo do que vocês pagariam no Brasil. 30 min para garimpar — ao lado da Galeries Lafayette.", addr:"Boul. Haussmann, Paris 9° · normal.fr", tip:"💡 Levar sacola própria; eles não fornecem. Aceitam cartão. Pagar com cartão internacional para câmbio comercial." },
+      { time:"13:30", type:"walk", name:"🧳 Rayon d'Or — comprar mala extra", desc:"Loja tradicional de bagagens a 5 min a pé da Galeries Lafayette. Delsey, Roncato, Samsonite, Travelite. Mala grande de marca a partir de €60-90, com promoções frequentes. Domingo abre 13h-19h. ~45 min para escolher.", addr:"93 Rue Saint-Lazare, Paris 9° · rayondor-bagages.fr", tip:"💡 Sair pela Rue Saint-Lazare em direção ao hotel — não precisa carregar a mala o dia todo, vão deixar tudo no Hôtel Zora a seguir." },
+      { time:"14:15", type:"sleep", name:"🏨 Volta ao hotel — deixar compras", desc:"15 min a pé da Rayon d'Or ou 5 min de metrô (Trinité → Sentier). Deixar mala, sacolas da Galeries e da Normal no quarto. Trocar de roupa se precisar.", addr:"Hôtel Zora · 4 Rue Léopold Bellan, Paris 2°" },
+      { time:"14:45", type:"food", name:"🍽️ Almoço Palais Royal", desc:"Restaurante Véfour (histórico, 2 estrelas Michelin, caro) ou simplesmente comprar queijo e pão e sentar no jardim do Palais Royal. A 3 min do hotel.", addr:"Jardins du Palais Royal, Paris 1°" },
+      { time:"15:45", type:"walk", name:"🏛️ Palais Royal", desc:"O jardim mais secreto de Paris — cercado por arcadas do séc. XVIII, lojas raras, restaurantes históricos. As colunas de Buren no pátio interno são a instalação de arte mais fotografada de Paris. Gratuito e sem fila.", addr:"Place du Palais Royal, Paris 1° · gratuito" },
+      { time:"16:45", type:"photo", name:"📸 Galerie Vivienne — a mais bonita de Paris", desc:"A passagem coberta mais elegante de Paris — mosaico no chão, teto de vidro do séc. XIX, livraria antiga Jousseaume (1826). 15 min. Depois explorar Galerie Colbert ao lado.", addr:"4 Rue des Petits Champs, Paris 2° · gratuito" },
+      { time:"17:30", type:"walk", name:"Rue Montorgueil — mercado local", desc:"A rua de mercado mais autêntica de Paris — queijeiros, peixeiros, charcuterie, padarias. A 4 min do hotel. Comprar petiscos para o quarto: queijo, presunto, baguette, vinho.", addr:"Rue Montorgueil, Paris 2° — a 4 min do Hôtel Zora" },
       { time:"20:00", type:"food", name:"🍽️ Último jantar em Paris", desc:"South Pigalle (SoPi) — a cena de bistrô mais animada de Paris no momento. Rues des Martyrs, Rue Notre-Dame de Lorette. Qualquer bistrô da área está bom.", addr:"South Pigalle, Paris 9°" },
       { time:"—", type:"sleep", name:"🏨 Hôtel Zora", desc:"4 Rue Léopold Bellan, Paris · BN 6968649555", addr:"" }
     ]
@@ -1557,10 +1568,10 @@ const days = [
     subtitle: "Saída tranquila de Troyes, chegada em Colmar ao meio-dia, almoço em Riquewihr e tarde com Hugel (14h30) e Dopff au Moulin (17h) — ambas confirmadas.",
     tags: [{label:"Riesling", color:"var(--wine)"},{label:"Riquewihr", color:"var(--photo)"},{label:"Crémant", color:"var(--wine)"}],
     slots: [
-      { time:"08:30", type:"drive", name:"Troyes → Colmar", desc:"Saída sem pressa após café da manhã. Check-out do Airbnb Troyes antes de partir. Parada para café / esticar as pernas no caminho.", isDrive:true, driveInfo:"2h30 · 220 km · A5 + A35" },
-      { time:"11:00", type:"sleep", name:"Chegada em Colmar — deixar bagagem", desc:"Check-in só à tarde; deixar as malas com o anfitrião. Alongar as pernas depois da viagem.", addr:"Colmar" },
-      { time:"11:30", type:"photo", name:"📸 Primeira caminhada por Colmar", desc:"Volta rápida pelo centro antes de subir para Riquewihr. Bairro dos Tanneurs (curtidores, casas pastel do séc. XVII), Maison Pfister (1537, fachada renascentista) e Koïfhus (alfândega medieval). ~1h, sem pressa — vocês têm 2 dias inteiros depois para Colmar com calma.", addr:"Centre Historique, Colmar" },
-      { time:"12:45", type:"drive", name:"Colmar → Riquewihr", desc:"20 min pela D4 subindo para a vinha.", isDrive:true, driveInfo:"20 min · 15 km · D4" },
+      { time:"09:00", type:"drive", name:"Troyes → Colmar", desc:"Saída sem pressa após café da manhã. Check-out do Airbnb Troyes antes de partir. Parada para café / esticar as pernas no caminho.", isDrive:true, driveInfo:"2h30 · 220 km · A5 + A35" },
+      { time:"11:30", type:"sleep", name:"Chegada em Colmar — deixar bagagem", desc:"Check-in só à tarde; deixar as malas com o anfitrião. Alongar as pernas depois da viagem.", addr:"Colmar" },
+      { time:"12:00", type:"photo", name:"📸 Primeira caminhada por Colmar", desc:"Volta rápida pelo centro antes de subir para Riquewihr. Bairro dos Tanneurs (curtidores, casas pastel do séc. XVII), Maison Pfister (1537, fachada renascentista) e Koïfhus (alfândega medieval). ~45 min, sem pressa — vocês têm 2 dias inteiros depois para Colmar com calma.", addr:"Centre Historique, Colmar" },
+      { time:"12:50", type:"drive", name:"Colmar → Riquewihr", desc:"20 min pela D4 subindo para a vinha.", isDrive:true, driveInfo:"20 min · 15 km · D4" },
       { time:"13:15", type:"food", name:"🍽️ Almoço em Riquewihr", desc:"Restaurant du Dolder, dentro das muralhas medievais do séc. XVI — a 5 min a pé da Hugel. Flamenkuche (tarte flambée) com Pinot Gris local. Reservar para 13h15.", addr:"57 Rue du Général de Gaulle, Riquewihr" },
       { time:"14:30", type:"wine", name:"🍷 Maison Hugel & Fils — TOUR COMPLETO ✅", desc:"✅ CONFIRMADO — slot 14h30. A maison mais histórica da Alsácia, fundada em 1639. 13 gerações de vinificadores. Tour nas caves medievais com barris de carvalho de 1715 ainda ativos. Degustação de 4-5 vinhos incluindo Riesling Jubilee (Grand Cru) e Gewürztraminer Vendanges Tardives. ~1h30, termina ~16h.", addr:"3 Rue de la Première Armée, Riquewihr · hugel.com", tip:"💡 €20/pessoa. O Riesling Jubilee é um dos maiores brancos do mundo." },
       { time:"16:00", type:"photo", name:"📸 Riquewihr — vilarejo do séc. XVI", desc:"Um dos vilarejos mais preservados da França — cercado de vinhas, sem carros no centro, ruas de paralelepípedo. Portão medieval Dolder (1291), Maison Preiss-Zimmer, ruelas escondidas. ~1h de exploração tranquila entre os dois tours.", addr:"Riquewihr, 68340" },
@@ -1574,23 +1585,23 @@ const days = [
   {
     date: "12", month: "JUN", week: "SEX", city: "Colmar",
     title: "Petite Venise + Rota dos Vilarejos",
-    subtitle: "Golden hour na Petite Venise antes dos turistas acordarem. Depois Eguisheim, Ribeauvillé e Kaysersberg — os 3 vilarejos mais fotogênicos da Alsácia.",
+    subtitle: "Foto da Petite Venise pela manhã, depois Eguisheim, Ribeauvillé e Kaysersberg — os 3 vilarejos mais fotogênicos da Alsácia.",
     tags: [{label:"Petite Venise", color:"var(--photo)"},{label:"Eguisheim", color:"var(--photo)"},{label:"Pinot Gris", color:"var(--wine)"}],
     slots: [
-      { time:"07:30", type:"photo", name:"📸 Petite Venise — GOLDEN HOUR (não pule!)", desc:"Este é o horário. Às 7h30 não há ninguém. Os canais refletem as casas coloridas com luz suave, flores nas janelas, silêncio. Em 30 minutos chegam os primeiros turistas. Ir direto ao Pont de la Poissonnerie — a ponte mais fotografada de Colmar.", addr:"Pont de la Poissonnerie, Colmar", tip:"💡 Melhor foto da viagem inteira. Câmera, não smartphone — a luz é fraca e os reflexos nos canais precisam de exposição correta. Em junho o sol nasce ~05:45; às 07:30 a luz já é suave mas presente." },
-      { time:"08:30", type:"food", name:"Café da manhã alsaciano", desc:"Patisserie Schmitt na Grand Rue — croissant, bretzel fresco e café. Sentar na calçada enquanto a cidade acorda.", addr:"Grand Rue, Colmar" },
-      { time:"09:00", type:"drive", name:"Colmar → Eguisheim", desc:"8 min ao sul de Colmar.", isDrive:true, driveInfo:"8 min · 6 km" },
-      { time:"09:15", type:"photo", name:"📸 Eguisheim — O Mais Bonito da França", desc:"Eleito o mais belo vilarejo da França. Única rua circular concêntrica, casas do séc. XV pintadas em cores vivas, flores em cada janela. Praça central com a Fontaine Saint-Léon. Andar no sentido horário para seguir a rua principal.", addr:"Eguisheim, 68420 · gratuito" },
-      { time:"09:45", type:"wine", name:"🍷 Cave Viticole d'Eguisheim — Grand Cru", desc:"Degustação rápida (30 min). Provar o Pinot Gris Grand Cru Eichberg e o Gewürztraminer Grand Cru Pfersigberg — dois dos maiores Grand Crus da Alsácia, produzidos aqui em solo vulcânico único. ~€10/pessoa.", addr:"6 Grand Rue, Eguisheim", tip:"💡 O Pinot Gris daqui é fumado, denso e mineral. Completamente diferente de qualquer Pinot Gris que você já provou." },
-      { time:"10:30", type:"drive", name:"Eguisheim → Ribeauvillé", desc:"18 min pela Route des Vins — estrada mais bonita do trecho.", isDrive:true, driveInfo:"18 min · 15 km · Route des Vins" },
-      { time:"11:00", type:"photo", name:"📸 Ribeauvillé — 3 Castelos no Alto", desc:"Três castelos medievais em ruínas no topo da montanha atrás do vilarejo: Girsberg, Saint-Ulrich e Haut-Ribeaupierre. O vilarejo embaixo é medieval intacto com fontanelas e casas do séc. XIII. Subir pela Rue du Château para vista panorâmica (20 min de caminhada leve).", addr:"Ribeauvillé, 68150" },
-      { time:"12:00", type:"wine", name:"🍷 Cave Trimbach — Riesling Clos Sainte Hune", desc:"Degustação rápida no balcão. Trimbach é a maison de referência mundial para Riesling seco. O Clos Sainte Hune é considerado um dos 10 maiores vinhos brancos do planeta. Provar o Riesling Réserve e o Riesling Frédéric Emile. ~€15/pessoa.", addr:"15 Route de Bergheim, Ribeauvillé · trimbach.fr", tip:"💡 Não compre o Clos Sainte Hune aqui — custa €150+ a garrafa. Mas provar €15 é o melhor custo-benefício da viagem." },
-      { time:"13:00", type:"food", name:"Almoço em Ribeauvillé", desc:"Winstub zum Pfifferhüs — o mais antigo de Ribeauvillé (séc. XVI), com teto de vigas e menu escrito no quadro negro. Tarte flambée au lard e um copo de Riesling Réserve Trimbach.", addr:"14 Grand Rue, Ribeauvillé" },
-      { time:"14:30", type:"drive", name:"Ribeauvillé → Kaysersberg", desc:"15 min pela Route des Vins, passando por Riquewihr.", isDrive:true, driveInfo:"15 min · 12 km" },
-      { time:"15:00", type:"photo", name:"📸 Kaysersberg — Ponte Medieval", desc:"A ponte medieval coberta sobre o rio Weiss, com torre de guarda do séc. XV e castelo em ruínas no morro atrás — a composição mais fotogênica da Alsácia. Centro histórico compacto com casas renascentistas do séc. XVI.", addr:"Kaysersberg, 68240" },
-      { time:"15:45", type:"wine", name:"🍷 Domaine Weinbach — Riesling Clos des Capucins", desc:"Uma das maiores domaines biodinâmicas da Alsácia, instalada num convento dos Capuchinhos do séc. XVII cercado por muros. O jardim de rosas na entrada é espetacular. Provar o Riesling Clos des Capucins (lendário, de parcela única dentro dos muros do convento) e o Gewürztraminer Altenbourg. Degustação ~€15/pessoa.", addr:"25 Route du Vin, Kaysersberg · weinbach.com", tip:"💡 Este é um dos endereços mais belos da Alsácia — o convento, o jardim, os muros cobertos de videiras. Reserve por e-mail com antecedência." },
-      { time:"16:45", type:"drive", name:"Volta Colmar", desc:"15 min de Kaysersberg para o Airbnb. Tarde encerrada com calma após 3 vinícolas e 3 vilarejos.", isDrive:true, driveInfo:"15 min · 12 km" },
-      { time:"17:00", type:"walk", name:"Tarde livre em Colmar", desc:"Tempo de sobra antes do jantar. Sentar num terraço para uma taça de Riesling, voltar a alguma vista da Petite Venise com a luz diferente do fim de tarde, ou simplesmente descansar no Airbnb antes de sair.", addr:"Centre Historique, Colmar" },
+      { time:"09:00", type:"photo", name:"📸 Petite Venise — Pont de la Poissonnerie", desc:"O cenário mais fotografado de Colmar. Canais com reflexos das casas em tons pastel, flores nas janelas, padaria. Às 9h tem turistas mas ainda dá foto bonita — basta esperar 1-2 min entre passagens para enquadrar limpo. 30 min de fotos.", addr:"Pont de la Poissonnerie, Colmar", tip:"💡 Tirar as fotos do lado leste da ponte para ter as casas iluminadas pelo sol da manhã." },
+      { time:"09:45", type:"food", name:"Café da manhã alsaciano", desc:"Patisserie Schmitt na Grand Rue — croissant, bretzel fresco e café. Sentar na calçada enquanto a cidade acorda.", addr:"Grand Rue, Colmar" },
+      { time:"10:30", type:"drive", name:"Colmar → Eguisheim", desc:"8 min ao sul de Colmar.", isDrive:true, driveInfo:"8 min · 6 km" },
+      { time:"10:45", type:"photo", name:"📸 Eguisheim — O Mais Bonito da França", desc:"Eleito o mais belo vilarejo da França. Única rua circular concêntrica, casas do séc. XV pintadas em cores vivas, flores em cada janela. Praça central com a Fontaine Saint-Léon. Andar no sentido horário para seguir a rua principal.", addr:"Eguisheim, 68420 · gratuito" },
+      { time:"11:15", type:"wine", name:"🍷 Cave Viticole d'Eguisheim — Grand Cru", desc:"Degustação rápida (30 min). Provar o Pinot Gris Grand Cru Eichberg e o Gewürztraminer Grand Cru Pfersigberg — dois dos maiores Grand Crus da Alsácia, produzidos aqui em solo vulcânico único. ~€10/pessoa.", addr:"6 Grand Rue, Eguisheim", tip:"💡 O Pinot Gris daqui é fumado, denso e mineral. Completamente diferente de qualquer Pinot Gris que você já provou." },
+      { time:"11:50", type:"drive", name:"Eguisheim → Ribeauvillé", desc:"18 min pela Route des Vins — estrada mais bonita do trecho.", isDrive:true, driveInfo:"18 min · 15 km · Route des Vins" },
+      { time:"12:15", type:"photo", name:"📸 Ribeauvillé — 3 Castelos no Alto", desc:"Três castelos medievais em ruínas no topo da montanha atrás do vilarejo: Girsberg, Saint-Ulrich e Haut-Ribeaupierre. O vilarejo embaixo é medieval intacto. Caminhada leve pelas ruas e fontanelas, 30 min.", addr:"Ribeauvillé, 68150" },
+      { time:"13:00", type:"wine", name:"🍷 Cave Trimbach — Riesling Clos Sainte Hune ⏳", desc:"⏳ AGUARDANDO CONFIRMAÇÃO — slot solicitado: 13h00. Degustação rápida no balcão (~30 min). Trimbach é a maison de referência mundial para Riesling seco. O Clos Sainte Hune é considerado um dos 10 maiores vinhos brancos do planeta. Provar o Riesling Réserve e o Frédéric Emile. ~€15/pessoa.", addr:"15 Route de Bergheim, Ribeauvillé · trimbach.fr", tip:"💡 Não compre o Clos Sainte Hune aqui — custa €150+ a garrafa. Mas provar €15 é o melhor custo-benefício da viagem." },
+      { time:"14:00", type:"food", name:"Almoço em Ribeauvillé", desc:"Winstub zum Pfifferhüs — o mais antigo de Ribeauvillé (séc. XVI), com teto de vigas e menu escrito no quadro negro. Tarte flambée au lard e um copo de Riesling Réserve Trimbach.", addr:"14 Grand Rue, Ribeauvillé" },
+      { time:"15:15", type:"drive", name:"Ribeauvillé → Kaysersberg", desc:"15 min pela Route des Vins, passando por Riquewihr.", isDrive:true, driveInfo:"15 min · 12 km" },
+      { time:"15:30", type:"photo", name:"📸 Kaysersberg — Ponte Medieval", desc:"A ponte medieval coberta sobre o rio Weiss, com torre de guarda do séc. XV e castelo em ruínas no morro atrás — a composição mais fotogênica da Alsácia. Centro histórico compacto com casas renascentistas do séc. XVI.", addr:"Kaysersberg, 68240" },
+      { time:"16:15", type:"wine", name:"🍷 Domaine Weinbach — Riesling Clos des Capucins ⏳", desc:"⏳ AGUARDANDO CONFIRMAÇÃO — slot solicitado: 16h15. Uma das maiores domaines biodinâmicas da Alsácia, instalada num convento dos Capuchinhos do séc. XVII cercado por muros. O jardim de rosas na entrada é espetacular. Provar o Riesling Clos des Capucins (lendário, de parcela única dentro dos muros do convento) e o Gewürztraminer Altenbourg. Degustação ~€15/pessoa.", addr:"25 Route du Vin, Kaysersberg · weinbach.com", tip:"💡 Este é um dos endereços mais belos da Alsácia — o convento, o jardim, os muros cobertos de videiras. Reserve por e-mail com antecedência." },
+      { time:"17:15", type:"drive", name:"Volta Colmar", desc:"15 min de Kaysersberg para o Airbnb. Tarde encerrada com calma após 3 vinícolas e 3 vilarejos.", isDrive:true, driveInfo:"15 min · 12 km" },
+      { time:"17:30", type:"walk", name:"Tarde livre em Colmar", desc:"Tempo de sobra antes do jantar. Sentar num terraço para uma taça de Riesling, voltar a alguma vista da Petite Venise com a luz diferente do fim de tarde, ou simplesmente descansar no Airbnb antes de sair.", addr:"Centre Historique, Colmar" },
       { time:"20:00", type:"food", name:"Jantar improvisado em Colmar", desc:"Ao chegar, escolher um restaurante por intuição no centro histórico. Rue des Marchands e Place de la Cathédrale têm boas opções. Pedir um Gewürztraminer de Kaysersberg e uma flammkuche." },
       { time:"—", type:"sleep", name:"🏨 Colmar", desc:"Colmar · 3 noites · pago por Daniel", addr:"" }
     ]
@@ -1655,18 +1666,19 @@ const days = [
     ]
   },
   {
-    date: "16", month: "JUN", week: "TER", city: "Chablis + Paris",
-    title: "Chablis → Paris → Voo",
-    subtitle: "O terceiro Chardonnay e o encerramento perfeito. Tarde em Paris antes do voo noturno.",
-    tags: [{label:"Chablis", color:"var(--wine)"},{label:"Chardonnay", color:"var(--wine)"},{label:"Voo 23h35", color:"var(--drive)"}],
+    date: "16", month: "JUN", week: "TER", city: "Chablis + Le Bourget",
+    title: "Chablis → Musée de l'Air → Voo",
+    subtitle: "O terceiro Chardonnay e o encerramento perfeito. Museu aeroespacial em Le Bourget antes do voo noturno.",
+    tags: [{label:"Chablis", color:"var(--wine)"},{label:"Concorde", color:"var(--photo)"},{label:"Voo 23h35", color:"var(--drive)"}],
     slots: [
       { time:"09:00", type:"drive", name:"Beaune → Chablis", desc:"1h pela A6. Check-out antes.", isDrive:true, driveInfo:"1h · 115 km · A6" },
       { time:"10:15", type:"photo", name:"📸 Chablis — Vilarejo às margens do Serein", desc:"O menor dos três vilarejos vinícolas da viagem — quase ninguém vem até aqui. Igreja Saint-Martin do séc. XII, Pont du Serein, vielas de paralelepípedo. 20 min de caminhada tranquila.", addr:"Chablis, 89800" },
       { time:"10:45", type:"wine", name:"🍷 William Fèvre ou Domaine Raveneau — O 3° Chardonnay", desc:"O encerramento da trilogia: Chablis é o Chardonnay mais austero e mineral do mundo — sem carvalho, sem manteiga, puro calcário e mar. Completamente diferente de Meursault. Provar o Chablis Premier Cru Montée de Tonnerre (Fèvre) ou Chablis 1er Cru Montée de Tonnerre (Raveneau). ~€15-20/pessoa.", addr:"Chablis · williamfevre.com", tip:"💡 A trilogia completa: Chablis (mineral/austero) → Meursault (rico/amanteigado) → Puligny (elegante/floral). Três expressões do mesmo Chardonnay, totalmente diferentes." },
       { time:"12:00", type:"food", name:"Almoço de despedida em Chablis", desc:"Au Fil du Zinc — o melhor bistrô de Chablis. Jambon au Chablis (presunto braseado no próprio vinho) com batatas ao murro. Uma taça de Chablis Premier Cru para fechar.", addr:"18 Rue des Moulins, Chablis" },
-      { time:"13:30", type:"drive", name:"Chablis → Paris (para tarde livre)", desc:"1h45 pela A6. Deixar o carro num estacionamento público próximo ao Sena (ex: Parking Saint-Germain ou Q-Park Louvre) — a devolução SIXT é no CDG, então guardamos o carro e pegamos de volta ~17h para seguir ao aeroporto.", isDrive:true, driveInfo:"1h45 · 180 km · A6" },
-      { time:"15:30", type:"walk", name:"Tarde livre em Paris", desc:"Duas horas tranquilas. Um café em Saint-Germain, última caminhada pelo Sena, ou sentar num banco da Île Saint-Louis com um gelato Berthillon. Sem pressa — mas de olho no relógio.", addr:"Paris" },
-      { time:"17:30", type:"drive", name:"Paris → CDG (devolução SIXT)", desc:"Voltar ao estacionamento, pegar o carro e seguir para o Terminal 2. 1h de trajeto com trânsito típico de fim de tarde. Devolução SIXT no CDG Airport.", isDrive:true, driveInfo:"1h · 35 km · A1" },
+      { time:"13:30", type:"drive", name:"Chablis → Le Bourget", desc:"~2h pela A6 + A86 (anel externo de Paris). Não precisa entrar no centro — Le Bourget fica ao norte, no caminho do CDG.", isDrive:true, driveInfo:"2h · 195 km · A6 + A86" },
+      { time:"15:30", type:"sleep", name:"Chegada Le Bourget · estacionar", desc:"Estacionamento próprio do museu (gratuito). Esticar as pernas depois de 2h de carro.", addr:"3 Esplanade de l'Air et de l'Espace, Le Bourget" },
+      { time:"15:45", type:"photo", name:"✈️ Musée de l'Air et de l'Espace", desc:"Um dos maiores museus aeroespaciais do mundo, no aeroporto histórico de Le Bourget (onde Lindbergh pousou em 1927 após cruzar o Atlântico). Aviões reais: Concorde 001 (vocês podem entrar dentro), Boeing 747, caças militares, módulo lunar, foguete Ariane V em escala real. ~2h de visita. Fecha às 18h (verificar online — em junho às vezes estende até 19h).", addr:"Aéroport du Bourget, 93350 Le Bourget · museeairespace.fr · €17/pessoa", tip:"💡 Confirmar abertura para terça 16/06 antes da viagem. Entrar no Concorde 001 é gratuito mas precisa ticket separado retirado na bilheteria." },
+      { time:"17:45", type:"drive", name:"Le Bourget → CDG", desc:"10-15 min pela A1. Praticamente vizinhos.", isDrive:true, driveInfo:"15 min · 8 km · A1" },
       { time:"18:30", type:"drive", name:"Devolução SIXT — CDG Airport", desc:"Retornar o BMW no balcão SIXT do CDG. Voucher 9732137617. Inspeção final, fotos, assinatura. Dali seguir para o Terminal 2E para check-in.", addr:"SIXT CDG Airport Terminal 2" },
       { time:"19:30", type:"food", name:"Jantar de encerramento — CDG", desc:"Check-in Air France no Terminal 2E (fazer online 30h antes para agilizar). Depois jantar pós-segurança — há boas opções no terminal, incluindo brasseries. Sem pressa; o voo é 23h35.", addr:"CDG Terminal 2E" },
       { time:"23:35", type:"drive", name:"✈️ Decolagem CDG → GRU", desc:"G3 5003 · Air France · Terminal 2E · Pouso GRU 17 jun às 06h15.", addr:"CDG Terminal 2E, Aerogare 2" },
@@ -1875,7 +1887,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Cave Trimbach</div>
-      <div class="vino-meta">Dia 5 (12 jun) · Ribeauvillé · 12h00 ⏳ · Degustação balcão · ~€15/pessoa</div>
+      <div class="vino-meta">Dia 5 (12 jun) · Ribeauvillé · 13h00 ⏳ · Degustação balcão · ~€15/pessoa</div>
       <div class="vino-detail">Riesling Réserve + Frédéric Emile · recomendável ligar antes</div>
       <a href="https://trimbach.fr" target="_blank" class="vino-link" onclick="event.stopPropagation()">trimbach.fr →</a>
     </div>
@@ -1886,7 +1898,7 @@ days.forEach((day, i) => {
     <div class="vino-check"><span class="vino-mark">✓</span></div>
     <div class="vino-body">
       <div class="vino-name">Domaine Weinbach</div>
-      <div class="vino-meta">Dia 5 (12 jun) · Kaysersberg · 15h45 ⏳ · Degustação · ~€15/pessoa</div>
+      <div class="vino-meta">Dia 5 (12 jun) · Kaysersberg · 16h15 ⏳ · Degustação · ~€15/pessoa</div>
       <div class="vino-detail">Convento Capuchinhos séc. XVII · Riesling Clos des Capucins · reservar por e-mail</div>
       <a href="mailto:contact@weinbach.com" target="_blank" class="vino-link" onclick="event.stopPropagation()">contact@weinbach.com →</a>
     </div>
@@ -1992,6 +2004,8 @@ days.forEach((day, i) => {
 </div>
 
 </div>
+</div>
+<!-- /page-vinicolas -->
 
 <!-- PAGE 4: DOCUMENTOS -->
 <div class="app-page" id="page-docs">
@@ -2302,5 +2316,345 @@ function resetVino() {
 }
 loadVino();
 </script>
+
+<!-- PAGE 5: MAPAS -->
+<div class="app-page" id="page-mapas">
+  <div style="background:linear-gradient(180deg,#ede9df 0%,#f5f3ef 100%);border-bottom:1px solid #d0cbc0;padding:36px 24px 28px;text-align:center">
+    <div style="font-size:11px;letter-spacing:5px;color:#6a4a1a;text-transform:uppercase;margin-bottom:10px">um mapa por dia</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,5vw,38px);font-weight:300;color:#2c2416">Mapas do Roteiro</div>
+    <div style="font-size:12px;color:#3a2a0a;margin-top:8px;letter-spacing:1px">Pontos numerados em sequência de cada dia</div>
+  </div>
+
+  <div id="day-selector" style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;padding:18px 12px;border-bottom:1px solid #d0cbc0;background:#f5f3ef"></div>
+
+  <div id="map-title" style="text-align:center;padding:16px 12px 4px;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:#2c2416"></div>
+  <div id="map-subtitle" style="text-align:center;padding:0 12px 16px;font-size:12px;color:#6a5a3a;letter-spacing:1px"></div>
+
+  <div id="map-canvas" style="height:500px;margin:0 12px;border-radius:6px;border:1px solid #d0cbc0;box-shadow:0 2px 12px rgba(60,40,10,0.08);z-index:0"></div>
+
+  <div id="map-legend" style="padding:20px 16px 60px;max-width:720px;margin:0 auto"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// Coordenadas dos pontos de cada dia
+const dayMaps = {
+  '04': {
+    title: 'Qui 04/06 · Partida São Paulo',
+    subtitle: 'Saída do Brasil. Voo GRU → CDG.',
+    center: [-23.55, -46.65], zoom: 10,
+    points: [
+      { n:1, time:'11:00', name:'Saída de casa para o GRU', lat:-23.5505, lng:-46.6333, type:'drive' },
+      { n:2, time:'14:40', name:'Decolagem GRU → CDG · G3 5000', lat:-23.4356, lng:-46.4731, type:'photo' }
+    ]
+  },
+  '05': {
+    title: 'Sex 05/06 · Chegada em Paris',
+    subtitle: 'Pouso 07h05. Saint-Germain, Champs-Élysées, picnic embaixo da Torre Eiffel.',
+    center: [48.86, 2.33], zoom: 13,
+    points: [
+      { n:1, time:'07:05', name:'Pouso CDG', lat:49.0097, lng:2.5479, type:'photo' },
+      { n:2, time:'09:30', name:'Hôtel Zora', lat:48.8665, lng:2.3477, type:'sleep' },
+      { n:3, time:'10:30', name:'Saint-Germain-des-Prés', lat:48.8540, lng:2.3340, type:'walk' },
+      { n:4, time:'11:15', name:'Saint-Sulpice', lat:48.8511, lng:2.3346, type:'photo' },
+      { n:5, time:'12:00', name:'Arc de Triomphe + Champs-Élysées', lat:48.8738, lng:2.2950, type:'walk' },
+      { n:6, time:'15:00', name:'Check-in Hôtel Zora', lat:48.8665, lng:2.3477, type:'sleep' },
+      { n:7, time:'17:00', name:'Rue Cler · comprar petiscos', lat:48.8569, lng:2.3050, type:'food' },
+      { n:8, time:'18:00', name:'Avenue de Camoëns · foto da Torre', lat:48.8568, lng:2.2873, type:'photo' },
+      { n:9, time:'18:30', name:'🧺 Picnic no Champ de Mars', lat:48.8555, lng:2.2980, type:'food' },
+      { n:10, time:'19:45', name:'Torre Eiffel ao pôr do sol', lat:48.8584, lng:2.2945, type:'photo' },
+      { n:11, time:'21:00', name:"Au P'tit Grec · Rue Mouffetard", lat:48.8429, lng:2.3499, type:'food' }
+    ]
+  },
+  '06': {
+    title: 'Sáb 06/06 · Île de la Cité · Marais · Parc des Princes',
+    subtitle: 'Início 9h30. Monumentos da Île, Marais à tarde e tour do estádio do PSG.',
+    center: [48.86, 2.33], zoom: 12,
+    points: [
+      { n:1, time:'09:30', name:'Sainte-Chapelle', lat:48.8554, lng:2.3450, type:'photo' },
+      { n:2, time:'10:45', name:'Notre-Dame · fachada', lat:48.8530, lng:2.3499, type:'photo' },
+      { n:3, time:'11:30', name:'Louvre · Pirâmide + Tuileries', lat:48.8606, lng:2.3376, type:'walk' },
+      { n:4, time:'12:45', name:"Almoço · Rue des Rosiers (L'As du Fallafel)", lat:48.8574, lng:2.3597, type:'food' },
+      { n:5, time:'14:00', name:'Le Marais + Place des Vosges', lat:48.8555, lng:2.3654, type:'walk' },
+      { n:6, time:'16:00', name:'Centre Pompidou · exterior', lat:48.8607, lng:2.3522, type:'walk' },
+      { n:7, time:'17:30', name:'Tour Parc des Princes · estádio PSG', lat:48.8414, lng:2.2530, type:'photo' },
+      { n:8, time:'20:30', name:'Jantar · Chez Janou (Marais)', lat:48.8559, lng:2.3656, type:'food' }
+    ]
+  },
+  '07': {
+    title: 'Dom 07/06 · Montmartre · Galeries · Normal · Rayon d\'Or',
+    subtitle: 'Início 9h00. Sacré-Cœur, rooftop das Galeries, Normal, mala extra e passagens cobertas.',
+    center: [48.87, 2.34], zoom: 13,
+    points: [
+      { n:1, time:'09:00', name:'Montmartre + Sacré-Cœur', lat:48.8866, lng:2.3431, type:'photo' },
+      { n:2, time:'10:30', name:'Café em Montmartre', lat:48.8866, lng:2.3375, type:'food' },
+      { n:3, time:'11:30', name:'Opéra Garnier · exterior', lat:48.8717, lng:2.3318, type:'walk' },
+      { n:4, time:'12:00', name:'Galeries Lafayette · cúpula + rooftop', lat:48.8736, lng:2.3324, type:'photo' },
+      { n:5, time:'13:00', name:'Loja Normal · Boul. Haussmann', lat:48.8730, lng:2.3320, type:'walk' },
+      { n:6, time:'13:30', name:"🧳 Rayon d'Or · mala", lat:48.8762, lng:2.3274, type:'walk' },
+      { n:7, time:'14:15', name:'🏨 Hotel · deixar compras', lat:48.8665, lng:2.3477, type:'sleep' },
+      { n:8, time:'14:45', name:'Almoço · Palais Royal', lat:48.8634, lng:2.3372, type:'food' },
+      { n:9, time:'15:45', name:'Palais Royal · Colunas de Buren', lat:48.8634, lng:2.3372, type:'walk' },
+      { n:10, time:'16:45', name:'Galerie Vivienne', lat:48.8666, lng:2.3401, type:'photo' },
+      { n:11, time:'17:30', name:'Rue Montorgueil', lat:48.8649, lng:2.3470, type:'walk' },
+      { n:12, time:'20:00', name:'Jantar · South Pigalle', lat:48.8800, lng:2.3380, type:'food' }
+    ]
+  },
+  '08': {
+    title: 'Seg 08/06 · Paris → Reims · Taittinger',
+    subtitle: 'Retirada do carro, viagem para Reims, Catedral e Taittinger às 16h.',
+    center: [49.10, 3.20], zoom: 8,
+    points: [
+      { n:1, time:'10:00', name:'Retirada SIXT · Gare Saint-Lazare', lat:48.8761, lng:2.3253, type:'drive' },
+      { n:2, time:'12:30', name:'Almoço · Le Boulingrin · Reims', lat:49.2613, lng:4.0319, type:'food' },
+      { n:3, time:'14:00', name:'Catedral Notre-Dame de Reims', lat:49.2534, lng:4.0339, type:'photo' },
+      { n:4, time:'14:45', name:'Place Royale + Porte de Mars', lat:49.2598, lng:4.0354, type:'walk' },
+      { n:5, time:'16:00', name:'🍾 Taittinger · tour + degustação', lat:49.2421, lng:4.0431, type:'wine' },
+      { n:6, time:'18:30', name:'Check-in Airbnb Reims', lat:49.2570, lng:4.0334, type:'sleep' },
+      { n:7, time:'20:00', name:'Jantar em Reims', lat:49.2580, lng:4.0320, type:'food' }
+    ]
+  },
+  '09': {
+    title: 'Ter 09/06 · Veuve Clicquot + Tarde Livre em Épernay',
+    subtitle: 'Manhã livre em Reims, Veuve às 13h30, tarde solta na Avenue de Champagne.',
+    center: [49.15, 3.99], zoom: 10,
+    points: [
+      { n:1, time:'10:00', name:'Manhã livre em Reims', lat:49.2570, lng:4.0334, type:'walk' },
+      { n:2, time:'12:00', name:'Almoço em Reims', lat:49.2580, lng:4.0330, type:'food' },
+      { n:3, time:'13:30', name:'🍾 Veuve Clicquot · tour + degustação', lat:49.2487, lng:4.0354, type:'wine' },
+      { n:4, time:'15:45', name:'Check-in Airbnb Épernay', lat:49.0428, lng:3.9622, type:'sleep' },
+      { n:5, time:'16:30', name:'Avenue de Champagne + Perrier-Jouët', lat:49.0428, lng:3.9618, type:'walk' },
+      { n:6, time:'20:00', name:'Jantar em Épernay', lat:49.0420, lng:3.9590, type:'food' }
+    ]
+  },
+  '10': {
+    title: 'Qua 10/06 · Moët + Hautvillers + Troyes',
+    subtitle: 'Moët cedo, Hautvillers e abadia de Dom Pérignon, depois Troyes medieval.',
+    center: [48.65, 4.10], zoom: 9,
+    points: [
+      { n:1, time:'09:00', name:'🍾 Moët & Chandon · tour', lat:49.0418, lng:3.9594, type:'wine' },
+      { n:2, time:'11:05', name:'Hautvillers · Abadia Dom Pérignon', lat:49.0853, lng:3.9436, type:'photo' },
+      { n:3, time:'13:30', name:'Almoço em Troyes · Le Valentino', lat:48.2972, lng:4.0744, type:'food' },
+      { n:4, time:'15:00', name:'Ruelle des Chats · centro medieval', lat:48.2972, lng:4.0744, type:'photo' },
+      { n:5, time:'16:00', name:'Catedral Saint-Pierre-et-Saint-Paul', lat:48.2992, lng:4.0790, type:'photo' },
+      { n:6, time:'17:00', name:'Basilique Saint-Urbain + Madeleine', lat:48.2988, lng:4.0719, type:'walk' },
+      { n:7, time:'18:30', name:'Check-in Airbnb Troyes', lat:48.2980, lng:4.0750, type:'sleep' },
+      { n:8, time:'20:00', name:'Jantar em Troyes', lat:48.2980, lng:4.0750, type:'food' }
+    ]
+  },
+  '11': {
+    title: 'Qui 11/06 · Troyes → Colmar · Hugel + Dopff',
+    subtitle: 'Saída 9h. Chegada ao meio-dia, almoço em Riquewihr, Hugel 14h30 e Dopff 17h.',
+    center: [48.20, 6.00], zoom: 7,
+    points: [
+      { n:1, time:'09:00', name:'Saída Troyes', lat:48.2980, lng:4.0750, type:'drive' },
+      { n:2, time:'11:30', name:'Chegada Colmar', lat:48.0772, lng:7.3567, type:'sleep' },
+      { n:3, time:'12:00', name:'Tanneurs + Maison Pfister + Koïfhus', lat:48.0780, lng:7.3573, type:'photo' },
+      { n:4, time:'13:15', name:'Almoço · Restaurant du Dolder · Riquewihr', lat:48.1672, lng:7.2998, type:'food' },
+      { n:5, time:'14:30', name:'🍷 Maison Hugel & Fils · tour ✅', lat:48.1672, lng:7.2998, type:'wine' },
+      { n:6, time:'16:00', name:'Vilarejo de Riquewihr', lat:48.1672, lng:7.2998, type:'photo' },
+      { n:7, time:'17:00', name:'🍷 Dopff au Moulin · Crémant ✅', lat:48.1666, lng:7.2982, type:'wine' },
+      { n:8, time:'18:30', name:'Check-in completo Airbnb Colmar', lat:48.0772, lng:7.3567, type:'sleep' },
+      { n:9, time:'20:00', name:'Jantar em Colmar', lat:48.0793, lng:7.3567, type:'food' }
+    ]
+  },
+  '12': {
+    title: 'Sex 12/06 · Petite Venise + Rota dos Vilarejos',
+    subtitle: 'Início 9h. Foto da Petite Venise, depois Eguisheim, Ribeauvillé e Kaysersberg.',
+    center: [48.13, 7.30], zoom: 10,
+    points: [
+      { n:1, time:'09:00', name:'Petite Venise · Pont de la Poissonnerie', lat:48.0746, lng:7.3573, type:'photo' },
+      { n:2, time:'09:45', name:'Café da manhã alsaciano', lat:48.0780, lng:7.3573, type:'food' },
+      { n:3, time:'10:45', name:'Eguisheim · vilarejo', lat:48.0428, lng:7.3072, type:'photo' },
+      { n:4, time:'11:15', name:'🍷 Cave Viticole Eguisheim', lat:48.0432, lng:7.3078, type:'wine' },
+      { n:5, time:'12:15', name:'Ribeauvillé · 3 Castelos', lat:48.1969, lng:7.3219, type:'photo' },
+      { n:6, time:'13:00', name:'🍷 Cave Trimbach ⏳', lat:48.2080, lng:7.3370, type:'wine' },
+      { n:7, time:'14:00', name:'Almoço · Winstub zum Pfifferhüs', lat:48.1969, lng:7.3219, type:'food' },
+      { n:8, time:'15:30', name:'Kaysersberg · Ponte Medieval', lat:48.1378, lng:7.2618, type:'photo' },
+      { n:9, time:'16:15', name:'🍷 Domaine Weinbach ⏳', lat:48.1428, lng:7.2733, type:'wine' },
+      { n:10, time:'17:30', name:'Tarde livre em Colmar', lat:48.0793, lng:7.3567, type:'walk' },
+      { n:11, time:'20:00', name:'Jantar em Colmar', lat:48.0793, lng:7.3567, type:'food' }
+    ]
+  },
+  '13': {
+    title: 'Sáb 13/06 · Obernai + Strasbourg',
+    subtitle: 'Manhã em Obernai, tarde inteira em Strasbourg explorando La Petite France.',
+    center: [48.52, 7.60], zoom: 9,
+    points: [
+      { n:1, time:'09:00', name:'Saída Colmar', lat:48.0793, lng:7.3567, type:'drive' },
+      { n:2, time:'09:45', name:'Obernai · Descoberta', lat:48.4628, lng:7.4818, type:'photo' },
+      { n:3, time:'10:30', name:"🍷 Cave d'Obernai", lat:48.4628, lng:7.4818, type:'wine' },
+      { n:4, time:'11:45', name:'Almoço em Strasbourg', lat:48.5818, lng:7.7510, type:'food' },
+      { n:5, time:'13:30', name:'La Petite France', lat:48.5803, lng:7.7397, type:'photo' },
+      { n:6, time:'15:00', name:'Catedral Strasbourg + Torre 332 degraus', lat:48.5818, lng:7.7510, type:'photo' },
+      { n:7, time:'16:30', name:'Palácio Rohan + Place Gutenberg', lat:48.5811, lng:7.7511, type:'walk' },
+      { n:8, time:'20:30', name:'Último jantar em Colmar', lat:48.0793, lng:7.3567, type:'food' }
+    ]
+  },
+  '14': {
+    title: 'Dom 14/06 · Colmar → Borgonha · Gevrey-Chambertin + Beaune',
+    subtitle: 'Grande travessia. Route des Grands Crus, Clos de Vougeot, Vosne-Romanée e Beaune.',
+    center: [47.50, 5.50], zoom: 8,
+    points: [
+      { n:1, time:'09:00', name:'Saída Colmar', lat:48.0793, lng:7.3567, type:'drive' },
+      { n:2, time:'11:15', name:'Gevrey-Chambertin · Route des Grands Crus', lat:47.2298, lng:4.9667, type:'photo' },
+      { n:3, time:'12:30', name:'Almoço · Le Bistrot Lucien', lat:47.2298, lng:4.9667, type:'food' },
+      { n:4, time:'14:30', name:'Clos de Vougeot · Castelo Medieval', lat:47.1772, lng:4.9620, type:'photo' },
+      { n:5, time:'15:30', name:'Vosne-Romanée · placa Romanée-Conti', lat:47.1858, lng:4.9559, type:'photo' },
+      { n:6, time:'16:30', name:'Hôtel-Dieu de Beaune', lat:47.0234, lng:4.8388, type:'photo' },
+      { n:7, time:'17:45', name:'Beaune Intramuros · muralhas', lat:47.0244, lng:4.8400, type:'walk' },
+      { n:8, time:'19:00', name:'Check-in Coto Hotel Beaune', lat:47.0234, lng:4.8388, type:'sleep' },
+      { n:9, time:'20:00', name:'Jantar · Bistrot Bourguignon', lat:47.0234, lng:4.8388, type:'food' }
+    ]
+  },
+  '15': {
+    title: 'Seg 15/06 · Meursault · Puligny-Montrachet · Beaune',
+    subtitle: 'Os 2 maiores brancos da Borgonha (Lafon e Leflaive) + Marché aux Vins.',
+    center: [46.99, 4.80], zoom: 11,
+    points: [
+      { n:1, time:'09:00', name:'Saída Beaune', lat:47.0234, lng:4.8388, type:'drive' },
+      { n:2, time:'09:15', name:'Meursault · vilarejo', lat:46.9787, lng:4.7700, type:'photo' },
+      { n:3, time:'09:45', name:'🍷 Domaine Comtes Lafon ⏳', lat:46.9810, lng:4.7723, type:'wine' },
+      { n:4, time:'11:15', name:'Vinha de Montrachet · Puligny', lat:46.9456, lng:4.7536, type:'photo' },
+      { n:5, time:'12:00', name:'🍷 Domaine Leflaive ⏳', lat:46.9430, lng:4.7510, type:'wine' },
+      { n:6, time:'13:30', name:'Almoço · Ma Cuisine · Beaune', lat:47.0244, lng:4.8400, type:'food' },
+      { n:7, time:'15:00', name:'Marché aux Vins · Beaune', lat:47.0233, lng:4.8390, type:'wine' },
+      { n:8, time:'19:00', name:'Ramparts + aperitivo', lat:47.0244, lng:4.8400, type:'walk' },
+      { n:9, time:'20:30', name:'Último jantar na Borgonha', lat:47.0244, lng:4.8400, type:'food' }
+    ]
+  },
+  '16': {
+    title: 'Ter 16/06 · Chablis → Musée de l\'Air → Voo',
+    subtitle: 'Trilogia Chardonnay completa em Chablis, museu aeroespacial e voo de volta.',
+    center: [48.40, 3.10], zoom: 8,
+    points: [
+      { n:1, time:'09:00', name:'Saída Beaune', lat:47.0234, lng:4.8388, type:'drive' },
+      { n:2, time:'10:15', name:'Chablis · vilarejo', lat:47.8133, lng:3.7989, type:'photo' },
+      { n:3, time:'10:45', name:'🍷 William Fèvre ⏳', lat:47.8133, lng:3.7965, type:'wine' },
+      { n:4, time:'12:00', name:'Almoço · Au Fil du Zinc · Chablis', lat:47.8120, lng:3.8005, type:'food' },
+      { n:5, time:'15:45', name:"✈️ Musée de l'Air et de l'Espace · Le Bourget", lat:48.9505, lng:2.4242, type:'photo' },
+      { n:6, time:'18:30', name:'Devolução SIXT · CDG', lat:49.0097, lng:2.5479, type:'drive' },
+      { n:7, time:'23:35', name:'✈️ Voo CDG → GRU', lat:49.0097, lng:2.5479, type:'photo' }
+    ]
+  }
+};
+
+const typeColors = {
+  wine: '#c97eb8', photo: '#7eb8c9', food: '#8a9a6a',
+  walk: '#e8956d', drive: '#9a8a6a', sleep: '#c8a96e'
+};
+
+let leafletMap = null;
+let mapMarkers = [];
+
+function renderDaySelector() {
+  const container = document.getElementById('day-selector');
+  const days = Object.keys(dayMaps).sort();
+  container.innerHTML = days.map(d => 
+    `<button class="map-day-btn" data-day="${d}" onclick="showDayMap('${d}',this)" style="padding:8px 14px;border:1px solid #d0cbc0;background:#fdfbf6;color:#3a2a0a;border-radius:4px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:1px;font-weight:500;transition:all 0.2s">${d}/06</button>`
+  ).join('');
+}
+
+function showDayMap(day, btn) {
+  const data = dayMaps[day];
+  if (!data) return;
+  
+  // Atualizar botão ativo
+  document.querySelectorAll('.map-day-btn').forEach(b => {
+    b.style.background = '#fdfbf6';
+    b.style.color = '#3a2a0a';
+    b.style.borderColor = '#d0cbc0';
+  });
+  if (btn) {
+    btn.style.background = '#9a6e28';
+    btn.style.color = '#fdfbf6';
+    btn.style.borderColor = '#9a6e28';
+  }
+  
+  // Atualizar título/subtítulo
+  document.getElementById('map-title').textContent = data.title;
+  document.getElementById('map-subtitle').textContent = data.subtitle;
+  
+  // Limpar mapa anterior
+  if (leafletMap) {
+    leafletMap.remove();
+    leafletMap = null;
+    mapMarkers = [];
+  }
+  
+  // Criar novo mapa
+  leafletMap = L.map('map-canvas', { scrollWheelZoom: false }).setView(data.center, data.zoom);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap',
+    maxZoom: 19
+  }).addTo(leafletMap);
+  
+  // Adicionar markers numerados
+  const latlngs = [];
+  data.points.forEach(p => {
+    const color = typeColors[p.type] || '#9a6e28';
+    const icon = L.divIcon({
+      className: 'map-num-icon',
+      html: `<div style="background:${color};color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);font-family:Jost,sans-serif">${p.n}</div>`,
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    });
+    const marker = L.marker([p.lat, p.lng], { icon }).addTo(leafletMap);
+    marker.bindPopup(`<strong>${p.n}. ${p.time}</strong><br>${p.name}`);
+    mapMarkers.push(marker);
+    latlngs.push([p.lat, p.lng]);
+  });
+  
+  // Polyline conectando os pontos
+  if (latlngs.length > 1) {
+    L.polyline(latlngs, { color: '#9a6e28', weight: 2, opacity: 0.5, dashArray: '6,8' }).addTo(leafletMap);
+  }
+  
+  // Ajustar bounds para mostrar todos os pontos
+  if (latlngs.length > 0) {
+    const bounds = L.latLngBounds(latlngs);
+    leafletMap.fitBounds(bounds, { padding: [40, 40] });
+  }
+  
+  // Renderizar legenda
+  const legend = document.getElementById('map-legend');
+  legend.innerHTML = '<div style="font-size:10px;letter-spacing:3px;color:#6a4a1a;text-transform:uppercase;margin-bottom:12px;text-align:center">Sequência do dia</div>' +
+    data.points.map(p => {
+      const color = typeColors[p.type] || '#9a6e28';
+      return `<div style="display:flex;align-items:center;gap:12px;padding:10px 14px;margin-bottom:6px;background:#fdfbf6;border:1px solid #e8e2d4;border-radius:4px">
+        <div style="background:${color};color:#fff;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:12px;flex-shrink:0">${p.n}</div>
+        <div style="font-size:11px;color:#6a5a3a;font-weight:500;letter-spacing:1px;min-width:46px">${p.time}</div>
+        <div style="font-size:13px;color:#2c2416;flex:1">${p.name}</div>
+      </div>`;
+    }).join('');
+  
+  // Forçar reflow do Leaflet (resolve problemas de tiles em tab inicialmente oculta)
+  setTimeout(() => leafletMap && leafletMap.invalidateSize(), 100);
+}
+
+// Inicializar quando a aba Mapas for clicada (sem monkey-patch do showPage)
+document.addEventListener('DOMContentLoaded', function() {
+  renderDaySelector();
+  const mapsBtn = Array.from(document.querySelectorAll('.nav-btn')).find(b => b.getAttribute('onclick') && b.getAttribute('onclick').indexOf('mapas') > -1);
+  if (mapsBtn) {
+    mapsBtn.addEventListener('click', function() {
+      setTimeout(() => {
+        const firstBtn = document.querySelector('.map-day-btn');
+        if (firstBtn && !leafletMap) {
+          showDayMap('05', firstBtn);
+        } else if (leafletMap) {
+          leafletMap.invalidateSize();
+        }
+      }, 150);
+    });
+  }
+});
+
+// Fallback caso o DOM já tenha carregado
+if (document.readyState !== 'loading') {
+  renderDaySelector();
+}
+</script>
+
 </body>
 </html>
