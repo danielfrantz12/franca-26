@@ -1128,7 +1128,7 @@ img, iframe { max-width: 100%; }
         <div style="display:flex;justify-content:space-between;font-size:12px;color:#3a2a0a"><span>Degustações Alsácia (Hugel, Trimbach, Eguisheim, Riquewihr)</span><span style="color:#c97eb8">R$ 655</span></div>
         <div style="display:flex;justify-content:space-between;font-size:12px;color:#3a2a0a"><span>Degustações Borgonha (Marché aux Vins, Meursault)</span><span style="color:#c97eb8">R$ 718</span></div>
         <div style="display:flex;justify-content:space-between;font-size:12px;color:#3a2a0a"><span>Compras de garrafas para levar</span><span style="color:#c97eb8">R$ 945</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;color:#3a2a0a"><span>Entradas (Sainte-Chapelle, Louvre, Hôtel-Dieu, Unterlinden)</span><span style="color:#c97eb8">R$ 473</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:#3a2a0a"><span>Entradas (Parc des Princes, Louvre, Hôtel-Dieu, Unterlinden)</span><span style="color:#c97eb8">R$ 473</span></div>
         <div style="display:flex;justify-content:space-between;font-size:13px;color:#a08060;font-weight:500"><span>Subtotal vinícolas + entradas</span><span style="color:#c97eb8">R$ 3.862</span></div>
       </div>
 
@@ -1339,18 +1339,11 @@ img, iframe { max-width: 100%; }
       <div>
         <div style="font-size:10px;letter-spacing:2px;color:#c8a96e;text-transform:uppercase;margin-bottom:8px">🎫 Atrações — reserva online obrigatória</div>
         <div style="display:flex;flex-direction:column;gap:5px">
-          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#7a6a3a">
-            <span style="color:#c8a96e;font-size:14px">⚠️</span>
-            <div>
-              <div>Sainte-Chapelle · 6 jun (9h30)</div>
-              <div style="font-size:10px;color:#3a2a0a">sainte-chapelle.fr · fila grande sem reserva</div>
-            </div>
-          </div>
           <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#e8956d">
             <span style="color:#e8956d;font-size:14px">🚨</span>
             <div>
-              <div><strong>Parc des Princes · Tour do estádio PSG · 6 jun (17h30)</strong></div>
-              <div style="font-size:10px;color:#3a2a0a">billetterie.psg.fr · ~€22/pessoa · <strong style="color:#e8956d">reservar JÁ — faltam 7 dias!</strong> Se 17h30 não estiver disponível, escolher slot mais cedo e me avisar para reorganizar o dia.</div>
+              <div><strong>Parc des Princes · Tour do estádio PSG · 6 jun (17h00)</strong></div>
+              <div style="font-size:10px;color:#3a2a0a">billetterie.psg.fr · ~€22/pessoa · <strong style="color:#e8956d">reservar JÁ — faltam 7 dias!</strong> Se 17h00 não estiver disponível, escolher slot mais cedo e me avisar para reorganizar o dia.</div>
             </div>
           </div>
           <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#7a6a3a">
@@ -1367,7 +1360,7 @@ img, iframe { max-width: 100%; }
     <div class="tips">
       <div class="tip"><span class="tip-icon">✈️</span><div><strong>Voo direto GRU→CDG:</strong> Air France (AF453/AF459) e LATAM (LA8068) — ~11h20. Decolagem noturna de SP, chegada matinal em Paris. Reserve com 3–4 meses de antecedência para junho.</div></div>
       <div class="tip"><span class="tip-icon">⏰</span><div><strong>Jet lag:</strong> Paris está +5h no horário de São Paulo. Chegando de manhã, mantenha-se acordado até às 21h locais no primeiro dia — resolve o jet lag rapidinho.</div></div>
-      <div class="tip"><span class="tip-icon">🎫</span><div><strong>Reserve com antecedência:</strong> Sainte-Chapelle e Parc des Princes — ambos exigem reserva online. A viagem é em poucos dias, reservar JÁ. Louvre não precisa (só por fora).</div></div>
+      <div class="tip"><span class="tip-icon">🎫</span><div><strong>Reserve com antecedência:</strong> Parc des Princes — exige reserva online. A viagem é em poucos dias, reservar JÁ. Louvre não precisa (só por fora).</div></div>
       <div class="tip"><span class="tip-icon">🚗</span><div><strong>Carro:</strong> Retire no final do Dia 3 em Paris ou na manhã do Dia 4. Devolva em Paris no Dia 13 — mesma cidade, sem taxa extra.</div></div>
       <div class="tip"><span class="tip-icon">🌤️</span><div><strong>Junho em Paris e Alsácia:</strong> dias longos (pôr do sol às 21h45!), temperatura média 20–25°C. A melhor época do ano para essa viagem.</div></div>
     </div>
@@ -1462,18 +1455,17 @@ const days = [
   },
   {
     date: "06", month: "JUN", week: "SAB", city: "Paris",
-    title: "Île de la Cité · Marais · Parc des Princes",
-    subtitle: "Início tranquilo às 9h30. Sainte-Chapelle, Marais à tarde e tour do estádio do PSG no fim do dia.",
-    tags: [{label:"Sainte-Chapelle", color:"var(--photo)"},{label:"Marais", color:"var(--walk)"},{label:"Parc des Princes", color:"var(--photo)"}],
+    title: "Compras · Marais · Parc des Princes",
+    subtitle: "Manhã de compras até 12h, Marais e Place des Vosges à tarde, volta pela Île de la Cité e Louvre, e tour do estádio do PSG no fim do dia.",
+    tags: [{label:"Compras", color:"var(--walk)"},{label:"Marais", color:"var(--walk)"},{label:"Parc des Princes", color:"var(--photo)"}],
     slots: [
-      { time:"09:30", type:"photo", name:"📸 Sainte-Chapelle — vitrais do séc. XIII", desc:"Os vitrais mais bonitos do mundo medieval — 15 janelas de 15m de altura cobrindo 2/3 das paredes. A luz da manhã atravessando os vitrais azuis é perturbadora. 1h de visita tranquila.", addr:"8 Boul. du Palais, Paris 1° · sainte-chapelle.fr · ~€13", tip:"💡 Reserva online obrigatória — sem reserva a fila pode ser 1h+. Slot das 09h30 ainda pega luz boa nos vitrais." },
-      { time:"10:45", type:"photo", name:"📸 Notre-Dame — fachada recém-restaurada", desc:"Após 5 anos de restauração pós-incêndio de 2019, a catedral reabriu em dezembro 2024 completamente restaurada. A fachada está mais limpa e detalhada que em décadas. 20 min do lado de fora — fila para entrar costuma ser grande.", addr:"Place du Parvis Notre-Dame, Paris 4° · gratuito exterior" },
-      { time:"11:30", type:"walk", name:"🏛️ Louvre — só por fora", desc:"Pirâmide de Pei pelo exterior, pátio Cour Napoléon, Arc du Carrousel e os Jardins das Tuileries. 1h para fotografar e atravessar até o final dos jardins, sem entrar no museu. Em junho a vegetação dos Tuileries está no auge.", addr:"Cour Napoléon + Jardins des Tuileries, Paris 1° · gratuito" },
-      { time:"12:45", type:"food", name:"🍽️ Almoço Marais — Rue des Rosiers", desc:"A rua judaica de Paris — falafel L'As du Fallafel (o mais famoso, fila na porta) ou Miznon (israelense moderno, sem fila). Comer caminhando pelo bairro.", addr:"Rue des Rosiers, Paris 4°" },
-      { time:"14:00", type:"walk", name:"Le Marais + Place des Vosges", desc:"O bairro mais belo de Paris — hôtels particuliers do séc. XVII, galerias de arte, lojas de design. Place des Vosges: a praça mais antiga e bonita de Paris (1612), sob os arcos com um café.", addr:"Le Marais, Paris 3°/4°" },
-      { time:"16:00", type:"walk", name:"Centre Pompidou — exterior", desc:"O prédio mais controverso de Paris — tubulações coloridas do lado de fora, escultura de Calder na praça, artistas de rua. A praça em frente é gratuita e sempre animada.", addr:"Place Georges-Pompidou, Paris 4° · gratuito exterior" },
-      { time:"16:45", type:"drive", name:"Pompidou → Parc des Princes", desc:"Metrô linha 11 até Châtelet, depois linha 9 direção Pont de Sèvres até Porte de Saint-Cloud. ~35 min total.", isDrive:true, driveInfo:"35 min · Métro lignes 11 + 9 · €2,15" },
-      { time:"17:30", type:"photo", name:"⚽ Parc des Princes — Tour do Estádio do PSG", desc:"Visita guiada ao estádio do Paris Saint-Germain. Acesso aos vestiários, túnel dos jogadores, gramado, sala de imprensa e museu do clube com troféus. ~1h30. Reservar online antes — slots costumam fechar em alta temporada.", addr:"24 Rue du Commandant Guilbaud, Paris 16° · billetterie.psg.fr · ~€22/pessoa", tip:"💡 Confirmar disponibilidade do tour para 13/06 (sábado em junho costuma ter, mas se houver evento o tour é cancelado). Alternativa: comprar Experience PSG combinado com museu." },
+      { time:"09:30", type:"walk", name:"🛍️ Compras — BHV Marais + Rue de Rivoli", desc:"Manhã de compras até as 12h. O BHV Marais (em frente ao Hôtel de Ville) é a grande loja de departamentos do bairro — moda, casa, papelaria e a famosa seção de ferragens/bricolage no subsolo. Em volta, a Rue de Rivoli concentra lojas de rua e marcas populares. ~2h30 com calma antes de mergulhar no Marais a pé.", addr:"BHV Marais · 52 Rue de Rivoli, Paris 4° · gratuito entrar", tip:"💡 Pagar com cartão internacional para câmbio comercial. O rooftop do BHV tem vista bacana e quase ninguém sobe." },
+      { time:"12:00", type:"food", name:"🍽️ Almoço Marais — Rue des Rosiers", desc:"A rua judaica de Paris — falafel L'As du Fallafel (o mais famoso, fila na porta) ou Miznon (israelense moderno, sem fila). Comer caminhando pelo bairro. A 8 min a pé do BHV.", addr:"Rue des Rosiers, Paris 4°" },
+      { time:"13:00", type:"walk", name:"🏛️ Le Marais + Place des Vosges", desc:"O bairro mais belo de Paris — hôtels particuliers do séc. XVII, galerias de arte, lojas de design. Place des Vosges: a praça mais antiga e bonita de Paris (1612), sob os arcos com um café. ~1h30 sem pressa.", addr:"Le Marais, Paris 3°/4°" },
+      { time:"14:30", type:"photo", name:"📸 Notre-Dame — fachada recém-restaurada", desc:"Volta pela Île de la Cité (~15 min a pé da Place des Vosges). Após 5 anos de restauração pós-incêndio de 2019, a catedral reabriu em dezembro 2024 completamente restaurada. A fachada está mais limpa e detalhada que em décadas. 20 min do lado de fora — fila para entrar costuma ser grande.", addr:"Place du Parvis Notre-Dame, Paris 4° · gratuito exterior" },
+      { time:"15:10", type:"walk", name:"🏛️ Louvre — só por fora", desc:"Caminhada de ~20 min pela beira do Sena até o Louvre. Pirâmide de Pei pelo exterior, pátio Cour Napoléon, Arc du Carrousel e a entrada dos Jardins das Tuileries. ~50 min para fotografar, sem entrar no museu. Em junho a vegetação dos Tuileries está no auge.", addr:"Cour Napoléon + Jardins des Tuileries, Paris 1° · gratuito" },
+      { time:"16:00", type:"drive", name:"Louvre → Parc des Princes", desc:"Metrô linha 1 (Palais Royal–Musée du Louvre) até Franklin D. Roosevelt, depois linha 9 direção Pont de Sèvres até Porte de Saint-Cloud. ~40 min — chegar ~16h45 para o tour das 17h.", isDrive:true, driveInfo:"40 min · Métro lignes 1 + 9 · €2,15 · chegar 16h45" },
+      { time:"17:00", type:"photo", name:"⚽ Parc des Princes — Tour do Estádio do PSG", desc:"Visita guiada ao estádio do Paris Saint-Germain. Acesso aos vestiários, túnel dos jogadores, gramado, sala de imprensa e museu do clube com troféus. ~1h30. Reservar online antes — slots costumam fechar em alta temporada.", addr:"24 Rue du Commandant Guilbaud, Paris 16° · billetterie.psg.fr · ~€22/pessoa", tip:"💡 Confirmar disponibilidade do tour das 17h para 06/06 (sábado em junho costuma ter, mas se houver evento o tour é cancelado). Alternativa: comprar Experience PSG combinado com museu." },
       { time:"20:30", type:"food", name:"🍷 Jantar — Chez Janou", desc:"Bistrô provençal lendário na esquina da Place des Vosges. Ambiente animado e barulhento, mesas coladas, garçons rabugentos no estilo francês clássico. Pedir o ratatouille, o magret de canard e — obrigatório — a mousse au chocolat (servida numa tigela gigante no centro da mesa, você se serve à vontade). ~€40–50 por pessoa. Reservar 1-2 dias antes pelo site ou ligar.", addr:"2 Rue Roger Verlomme, Paris 3° · chezjanou.com" },
       { time:"—", type:"sleep", name:"🏨 Hôtel Zora", desc:"4 Rue Léopold Bellan, Paris · BN 6968649555", addr:"" }
     ]
@@ -2361,18 +2353,17 @@ const dayMaps = {
     ]
   },
   '06': {
-    title: 'Sáb 06/06 · Île de la Cité · Marais · Parc des Princes',
-    subtitle: 'Início 9h30. Monumentos da Île, Marais à tarde e tour do estádio do PSG.',
+    title: 'Sáb 06/06 · Compras · Marais · Parc des Princes',
+    subtitle: 'Manhã de compras até 12h, Marais à tarde, volta pela Île e Louvre, e tour do estádio do PSG.',
     center: [48.86, 2.33], zoom: 12,
     points: [
-      { n:1, time:'09:30', name:'Sainte-Chapelle', lat:48.8554, lng:2.3450, type:'photo' },
-      { n:2, time:'10:45', name:'Notre-Dame · fachada', lat:48.8530, lng:2.3499, type:'photo' },
-      { n:3, time:'11:30', name:'Louvre · Pirâmide + Tuileries', lat:48.8606, lng:2.3376, type:'walk' },
-      { n:4, time:'12:45', name:"Almoço · Rue des Rosiers (L'As du Fallafel)", lat:48.8574, lng:2.3597, type:'food' },
-      { n:5, time:'14:00', name:'Le Marais + Place des Vosges', lat:48.8555, lng:2.3654, type:'walk' },
-      { n:6, time:'16:00', name:'Centre Pompidou · exterior', lat:48.8607, lng:2.3522, type:'walk' },
-      { n:7, time:'17:30', name:'Tour Parc des Princes · estádio PSG', lat:48.8414, lng:2.2530, type:'photo' },
-      { n:8, time:'20:30', name:'Jantar · Chez Janou (Marais)', lat:48.8559, lng:2.3656, type:'food' }
+      { n:1, time:'09:30', name:'Compras · BHV Marais + Rue de Rivoli', lat:48.8573, lng:2.3522, type:'walk' },
+      { n:2, time:'12:00', name:"Almoço · Rue des Rosiers (L'As du Fallafel)", lat:48.8574, lng:2.3597, type:'food' },
+      { n:3, time:'13:00', name:'Le Marais + Place des Vosges', lat:48.8555, lng:2.3654, type:'walk' },
+      { n:4, time:'14:30', name:'Notre-Dame · fachada', lat:48.8530, lng:2.3499, type:'photo' },
+      { n:5, time:'15:10', name:'Louvre · Pirâmide + Tuileries', lat:48.8606, lng:2.3376, type:'walk' },
+      { n:6, time:'17:00', name:'Tour Parc des Princes · estádio PSG', lat:48.8414, lng:2.2530, type:'photo' },
+      { n:7, time:'20:30', name:'Jantar · Chez Janou (Marais)', lat:48.8559, lng:2.3656, type:'food' }
     ]
   },
   '07': {
